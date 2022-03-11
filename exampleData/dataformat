@@ -1,0 +1,20 @@
+{
+    map:
+    score:
+    etc:
+    player1: {
+        name:
+        hero:
+        data:
+        stuff:
+    }
+    player2: {
+        name:
+        hero:
+        data:
+        stuff:
+    }
+    .
+    .
+    .
+}
