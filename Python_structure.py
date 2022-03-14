@@ -1,5 +1,11 @@
 import json
 
+def writeJson(contents):
+    f = open("PurdueStat/demofile.json", "w")
+    f.write(contents)
+    f.close()
+    return
+
 def getMapName():
     return "Oasis"
 
@@ -80,3 +86,4 @@ if __name__ == '__main__':
     #print(match)
     json_match = json.dumps(match)
     print(json_match)
+    writeJson((json_match))
