@@ -1,1 +1,258 @@
-[{"map": "Oasis", "map_score": [0, 0], "map_type": "Control", "player1": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player2": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player3": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player4": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player5": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player6": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player7": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player8": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player9": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player10": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player11": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player12": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}}, {"map": "Oasis", "map_score": [0, 0], "map_type": "Control", "player1": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player2": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player3": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player4": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player5": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player6": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player7": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player8": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player9": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player10": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player11": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}, "player12": {"name": "Golex", "role": "main_tank", "avg_time_to_ult": 88.375, "avg_time_ult_held": 19.857, "final_stats": {}, "stats_per_minute": {}, "ult_timings": [], "heroes_played": {}}}]
+[
+    {
+        "map": "Oasis",
+        "map_score": [
+            0,
+            0
+        ],
+        "map_type": "Control",
+        "player1": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player2": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player3": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player4": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player5": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player6": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player7": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player8": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player9": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player10": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player11": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player12": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        }
+    },
+    {
+        "map": "Oasis",
+        "map_score": [
+            0,
+            0
+        ],
+        "map_type": "Control",
+        "player1": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player2": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player3": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player4": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player5": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player6": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player7": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player8": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player9": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player10": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player11": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        },
+        "player12": {
+            "name": "Golex",
+            "role": "main_tank",
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {},
+            "stats_per_minute": {},
+            "ult_timings": [],
+            "heroes_played": {}
+        }
+    }
+]

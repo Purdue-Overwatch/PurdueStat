@@ -84,6 +84,6 @@ if __name__ == '__main__':
         match.append(map_dic)
 
     #print(match)
-    json_match = json.dumps(match)
+    json_match = json.dumps(match, indent=4)
     print(json_match)
     writeJson((json_match))
