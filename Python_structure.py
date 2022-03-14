@@ -86,4 +86,4 @@ if __name__ == '__main__':
     #print(match)
     json_match = json.dumps(match, indent=4)
     print(json_match)
-    writeJson((json_match))
+    #writeJson((json_match))
