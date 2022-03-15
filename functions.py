@@ -66,8 +66,18 @@ def getMapScore():
     return [0, 0]
 
 
-def getMapType():
-    return "Control"
+def getMapType(filename):
+    map_name = getMapName(filename)
+    if map_name in ["Busan", "Ilios", "Lijiang Tower", "Nepal", "Oasis"]:
+        return "Control"
+    if map_name in ["Hanamura", "Horizon Lunar Colony", "Paris", "Temple of Anubis", "Volskaya Industries"]:
+        return "Assault"
+    if map_name in ["Dorado", "Havana", "Junkertown", "Rialto", "Route 66", "Watchpoint Gibraltar"]:
+        return "Escort"
+    if map_name in ["Blizzard World", "Echenwalde", "Hollywood", "King's Row", "Numbani"]:
+        return "Hybrid"
+    else:
+        print("NAN")
 
 
 def getName():
@@ -310,7 +320,7 @@ def getGenFunctions(filename):
     return {
         "getMapName": getMapName(filename),
         "getMapScore": getMapScore(),
-        "getMapType": getMapType(),
+        "getMapType": getMapType(filename),
         "getName": getName(),
         "getRole": getRole(),
         "getTimeToUlt": getTimeToUlt(),
