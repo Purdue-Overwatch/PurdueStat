@@ -60,5 +60,5 @@ if __name__ == '__main__':
     print(json_match)
 
     # when uncommented this line will update the demofile.json
-            # I commeneted it so that if your file structure was different it would not error
+    # I commeneted it so that if your file structure was different it would not error
     writeJson((json_match))
