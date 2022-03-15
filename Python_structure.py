@@ -1,4 +1,5 @@
 import json
+from test import *
 
 # opens a test .json file and writes the contents to that file
 # only works if your folder is named PurdueStat for now
@@ -31,16 +32,63 @@ def getTimeUltHeld():
     return 19.857
 
 def getFinalStats():
-    return {}
+    return {
+        "all_damage_dealt": finalstatDfunc["getAllDamageDealt"],
+        "barrier_damage_dealt": finalstatDfunc["getBarrierDamage"],
+        "cooldown1": finalstatDfunc["getCooldown1"],
+        "cooldown2": finalstatDfunc["getCooldown2"],
+        "damage_blocked": finalstatDfunc["getDamageBlocked"],
+        "damage_taken": finalstatDfunc["getDamageTaken"],
+        "deaths": finalstatDfunc["getDeaths"],
+        "eliminations": finalstatDfunc["getEliminations"],
+        "environmental_deaths": finalstatDfunc["getEnviroDeaths"],
+        "environmental_kills": finalstatDfunc["getEnviroKills"],
+        "final_blows": finalstatDfunc["getFinalBlows"],
+        "healing_dealt": finalstatDfunc["getHealingDealt"],
+        "healing_received": finalstatDfunc["getHealingReceived"],
+        "hero_damage_dealt": finalstatDfunc["getHeroDamageDealt"],
+        "objective_kills": finalstatDfunc["getObjectiveKills"],
+        "solo_kills": finalstatDfunc["getSoloKills"],
+        "ultimate_charge": finalstatDfunc["getUltimateCharge"],
+        "ultimates_earned": finalstatDfunc["getUltimatesEarned"],
+        "ultimates_used": finalstatDfunc["getUltimatesUsed"]
 
+    }
+
+# Needs updated, uses finalDfunc not stats per minute
 def getStatsPerMinute():
-    return {}
+    return {
+        "all_damage_dealt": finalstatDfunc["getAllDamageDealt"],
+        "barrier_damage_dealt": finalstatDfunc["getBarrierDamage"],
+        "cooldown1": finalstatDfunc["getCooldown1"],
+        "cooldown2": finalstatDfunc["getCooldown2"],
+        "damage_blocked": finalstatDfunc["getDamageBlocked"],
+        "damage_taken": finalstatDfunc["getDamageTaken"],
+        "deaths": finalstatDfunc["getDeaths"],
+        "eliminations": finalstatDfunc["getEliminations"],
+        "environmental_deaths": finalstatDfunc["getEnviroDeaths"],
+        "environmental_kills": finalstatDfunc["getEnviroKills"],
+        "final_blows": finalstatDfunc["getFinalBlows"],
+        "healing_dealt": finalstatDfunc["getHealingDealt"],
+        "healing_received": finalstatDfunc["getHealingReceived"],
+        "hero_damage_dealt": finalstatDfunc["getHeroDamageDealt"],
+        "objective_kills": finalstatDfunc["getObjectiveKills"],
+        "solo_kills": finalstatDfunc["getSoloKills"],
+        "ultimate_charge": finalstatDfunc["getUltimateCharge"],
+        "ultimates_earned": finalstatDfunc["getUltimatesEarned"],
+        "ultimates_used": finalstatDfunc["getUltimatesUsed"]
+
+    }
 
 def getUltTimings():
-    return []
+    return [[[100,-1]],[[126,-1]],[[125,160],[234,277],[390,-1]]]
 
 def getHeroesPlayed():
-    return {}
+    return {
+                "heroes": ["D.Va", "WreckingBall"],
+                "D.Va":835,
+                "WreckingBall":94
+            }
 
 # creates a dictionary of the functions specified above
 functionDict = {

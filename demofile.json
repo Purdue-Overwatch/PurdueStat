@@ -11,120 +11,1008 @@
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player2": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player3": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player4": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player5": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player6": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player7": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player8": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player9": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player10": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player11": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player12": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         }
     },
     {
@@ -139,120 +1027,1008 @@
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player2": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player3": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player4": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player5": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player6": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player7": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player8": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player9": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player10": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player11": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         },
         "player12": {
             "name": "Golex",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
             "avg_time_ult_held": 19.857,
-            "final_stats": {},
-            "stats_per_minute": {},
-            "ult_timings": [],
-            "heroes_played": {}
+            "final_stats": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "stats_per_minute": {
+                "all_damage_dealt": 6942066.6,
+                "barrier_damage_dealt": 137.7,
+                "cooldown1": 0.0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730.0,
+                "damage_taken": 17221.91,
+                "deaths": 69,
+                "eliminations": 53,
+                "environmental_deaths": 2,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0.0,
+                "healing_received": 0.0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100.0,
+                "ultimates_earned": 5,
+                "ultimates_used": 2
+            },
+            "ult_timings": [
+                [
+                    [
+                        100,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        126,
+                        -1
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ],
+            "heroes_played": {
+                "heroes": [
+                    "D.Va",
+                    "WreckingBall"
+                ],
+                "D.Va": 835,
+                "WreckingBall": 94
+            }
         }
     }
 ]
