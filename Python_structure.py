@@ -1,6 +1,6 @@
 from cgi import test
 import json
-import test as t
+import functions
 import sys
 
 # opens a test .json file and writes the contents to that file
@@ -11,11 +11,11 @@ def writeJson(contents):
     f.close()
     return
 
-finalStatDict = t.getFinalStats()
+finalStatDict = functions.getFinalStats()
 
-minStatDict = t.getStatsPerMin()
+minStatDict = functions.getStatsPerMin()
 
-genFunctDict = t.getGenFunctions()
+genFunctDict = functions.getGenFunctions()
 
 # this line only runs when this script is ran as main
 def main(filepath: str) -> int:
