@@ -29,7 +29,6 @@ if __name__ == '__main__':
     f.write(array_json)
     f.close()
 
-
     match = []
     # currently loops twice, would need to loop for as many files as we have
     # this loop adds entries into the match list, allowing more than 1 map be to represented
@@ -47,17 +46,18 @@ if __name__ == '__main__':
 
         # this loop creates each entry for the 12 player
         for i in range(1, 13):
-            player = {
-                "name": genFunctDict["getName"],
-                "role": genFunctDict["getRole"],
-                "avg_time_to_ult": genFunctDict["getTimeToUlt"],
-                "avg_time_ult_held": genFunctDict["getTimeUltHeld"],
-                "final_stats": genFunctDict["getFinalStats"],
-                "stats_per_minute": genFunctDict["getStatsPerMin"],
-                "ult_timings": genFunctDict["getUltTimings"],
-                "heroes_played": genFunctDict["getHeroesPlayed"],
-            }
             player_number = "player" + str(i)
+            player = {
+                "name": functions.getName(),
+                "role": functions.getRole(),
+                "avg_time_to_ult": functions.getTimeToUlt(),
+                "avg_time_ult_held": functions.getTimeUltHeld(),
+                "final_stats": functions.getFinalStats(),
+                "stats_per_minute": functions.getStatsPerMin(),
+                "ult_timings": functions.getUltTimings(),
+                "heroes_played": functions.getHeroesPlayed(),
+            }
+
         # updates the map dictionary with the current player of the loop
             map_dic[player_number] = player
 
