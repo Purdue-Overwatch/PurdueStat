@@ -61,6 +61,6 @@ if __name__ == '__main__':
     # the output printed to terminal
     # print(json_match)
 
-    f = open("demofile.json", "w")
+    f = open("testingTempfiles/demofile.json", "w")
     f.write(json_match)
     f.close()
