@@ -81,7 +81,7 @@ def getStatsPerMinute():
     }
 
 def getUltTimings():
-    return [[[100,-1]],[[126,-1]],[[125,160],[234,277],[390,-1]]]
+    return [[[52,57],[153,154]],[[64,120],[168,169],[294,309]],[[125,160],[234,277],[390,-1]]]
 
 def getHeroesPlayed():
     return {
