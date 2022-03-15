@@ -1,7 +1,9 @@
 '''
 Defines getter functions and organizes them into dictionaries to be imported into other files. 
 
-(Sherdy describe what you did here)
+Defines utility function readLogFile for reading in an Overwatch log file and seperating it into an event file, a CSV file, and an
+info file.
+Defines utility function CSVToArray for converting an input CSV to a python 3 dimensional list
 '''
 
 import re
@@ -43,7 +45,10 @@ def readLogfile(filename):
     mapInfofile.close()
     pass
 
-# converts the inputed CSV file to an array
+# convert the input CSV file to a list that holds each row of a matrix
+# array is a list of lists where each entry in array is a line of the input file and that line is broken into a list using comas as seperators
+# array[0][0] is the first line of the input file and the first seperated string
+# array[0][1] is the first line and the second seperated string, and so on
 def CSVToArray(filename):
     with open(filename) as CSVfile:
         file_read = csv.reader(CSVfile)
