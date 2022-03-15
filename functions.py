@@ -57,6 +57,7 @@ def CSVToArray(filename):
 
 
 # start gen info functions
+# completed
 def getMapName(filename):
     map_array = CSVToArray(filename)
     return map_array[0][0][11:]
@@ -66,6 +67,7 @@ def getMapScore():
     return [0, 0]
 
 
+# completed
 def getMapType(filename):
     map_name = getMapName(filename)
     if map_name in ["Busan", "Ilios", "Lijiang Tower", "Nepal", "Oasis"]:
