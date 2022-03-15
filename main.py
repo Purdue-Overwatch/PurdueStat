@@ -17,8 +17,11 @@ minStatDict = functions.getStatsPerMin()
 
 genFunctDict = functions.getGenFunctions()
 
-# this line only runs when this script is ran as main
+# ignore this for now
 def main(filepath: str) -> int:
+    pass
+    
+if __name__ == '__main__':
     match = []
     # currently loops twice, would need to loop for as many files as we have
     # this loop adds entries into the match list, allowing more than 1 map be to represented
@@ -59,7 +62,3 @@ def main(filepath: str) -> int:
     # when uncommented this line will update the demofile.json
             # I commeneted it so that if your file structure was different it would not error
     #writeJson((json_match))
-    
-    # temp main, will explain later how this runs and how we can edit it to fit our needs
-if __name__ == '__main__':
-    sys.exit(main(*sys.argv[1:]))
