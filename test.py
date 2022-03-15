@@ -1,3 +1,41 @@
+# start gen info functions
+def getMapName():
+    return "Oasis"
+
+def getMapScore():
+    return [0,0]
+
+def getMapType():
+    return "Control"
+
+def getName():
+    return "Golex"
+
+def getRole():
+    return "main_tank"
+
+def getTimeToUlt():
+    return 88.375
+
+def getTimeUltHeld():
+    return 19.857
+
+    # what the fuck
+def getUltTimings():
+    return [
+            [ [52, 57], [153, 154]  ], 
+            [ [64, 120], [168, 169], [294, 309] ], 
+            [ [125, 160], [234, 277], [390,-1] ] 
+            ]
+
+def getHeroesPlayed():
+    return {
+                "heroes": ["D.Va", "WreckingBall"],
+                "D.Va":835,
+                "WreckingBall":94
+            }
+
+# start final stat functions
 def getAllDamageDealt():
     return 6942066.6
 
@@ -55,125 +93,121 @@ def getUltimatesEarned():
 def getUltimatesUsed():
     return 2
 
-def getAllDamageTen():
+# start per min stat functions
+def getAllDamageMin():
     return 1123.652099031216
 
-def getBarrierDamageTen():
+def getBarrierDamageMin():
     return 515.48
 
-def getCooldown1Ten():
+def getCooldown1Min():
     return 0.0
 
-def getCooldown2Ten():
+def getCooldown2Min():
     return 0.454
 
-def getDamageBlockedTen():
+def getDamageBlockedMin():
     return 693.003
 
-def getDamageTakenTen():
+def getDamageTakenMin():
     return 1112.2869
 
-def getDeathsTen():
+def getDeathsMin():
     return 0.645855
 
-def getEliminationsTen():
+def getEliminationsMin():
     return 1.94
 
-def getEnviroDeathsTen():
+def getEnviroDeathsMin():
     return 0.06458
 
-def getEnviroKillsTen():
+def getEnviroKillsMin():
     return 0.0
 
-def getFinalBlowsTen():
+def getFinalBlowsMin():
     return 0.8396
 
-def getHealingDealtTen():
+def getHealingDealtMin():
     return 0.0
 
-def getHealingReceivedTen():
+def getHealingReceivedMin():
     return 0.0
 
-def getHeroDamageDealtTen():
+def getHeroDamageDealtMin():
     return 608.1687
 
-def getObjectiveKillsTen():
+def getObjectiveKillsMin():
     return 0.775
 
-def getSoloKillsTen():
+def getSoloKillsMin():
     return 1000
 
-def getUltimateChargeTen():
+def getUltimateChargeMin():
     return 6.458
 
-def getUltimatesEarnedTen():
+def getUltimatesEarnedMin():
     return 0.322927
 
-def getUltimatesUsedTen():
+def getUltimatesUsedMin():
     return 0.12917
 
-finalstatDfunc = {
-    "getAllDamageDealt": getAllDamageDealt(),
-    "getBarrierDamage": getBarrierDamage(),
-    "getCooldown1": getCooldown1(),
-    "getCooldown2": getCooldown2(),
-    "getDamageBlocked": getDamageBlocked(),
-    "getDamageTaken": getDamageTaken(),
-    "getDeaths": getDeaths(),
-    "getEliminations": getEliminations(),
-    "getEnviroDeaths": getEnviroDeaths(),
-    "getEnviroKills": getEnviroKills(),
-    "getFinalBlows": getFinalBlows(),
-    "getHealingDealt": getHealingDealt(),
-    "getHealingReceived": getHealingReceived(),
-    "getHeroDamageDealt": getHeroDamageDealt(),
-    "getObjectiveKills": getObjectiveKills(),
-    "getSoloKills": getSoloKills(),
-    "getUltimateCharge": getUltimateCharge(),
-    "getUltimatesEarned": getUltimatesEarned(),
-    "getUltimatesUsed": getUltimatesUsed()
-}
 def getFinalStats():
     return {
-        "all_damage_dealt": finalstatDfunc["getAllDamageDealt"],
-        "barrier_damage_dealt": finalstatDfunc["getBarrierDamage"],
-        "cooldown1": finalstatDfunc["getCooldown1"],
-        "cooldown2": finalstatDfunc["getCooldown2"],
-        "damage_blocked": finalstatDfunc["getDamageBlocked"],
-        "damage_taken": finalstatDfunc["getDamageTaken"],
-        "deaths": finalstatDfunc["getDeaths"],
-        "eliminations": finalstatDfunc["getEliminations"],
-        "environmental_deaths": finalstatDfunc["getEnviroDeaths"],
-        "environmental_kills": finalstatDfunc["getEnviroKills"],
-        "final_blows": finalstatDfunc["getFinalBlows"],
-        "healing_dealt": finalstatDfunc["getHealingDealt"],
-        "healing_received": finalstatDfunc["getHealingReceived"],
-        "hero_damage_dealt": finalstatDfunc["getHeroDamageDealt"],
-        "objective_kills": finalstatDfunc["getObjectiveKills"],
-        "solo_kills": finalstatDfunc["getSoloKills"],
-        "ultimate_charge": finalstatDfunc["getUltimateCharge"],
-        "ultimates_earned": finalstatDfunc["getUltimatesEarned"],
-        "ultimates_used": finalstatDfunc["getUltimatesUsed"]
-
+        "all_damage_dealt": getAllDamageDealt,
+        "barrier_damage_dealt": getBarrierDamage,
+        "cooldown1": getCooldown1,
+        "cooldown2": getCooldown2,
+        "damage_blocked": getDamageBlocked,
+        "damage_taken": getDamageTaken,
+        "deaths": getDeaths,
+        "eliminations": getEliminations,
+        "environmental_deaths": getEnviroDeaths,
+        "environmental_kills": getEnviroKills,
+        "final_blows": getFinalBlows,
+        "healing_dealt": getHealingDealt,
+        "healing_received": getHealingReceived,
+        "hero_damage_dealt": getHeroDamageDealt,
+        "objective_kills": getObjectiveKills,
+        "solo_kills": getSoloKills,
+        "ultimate_charge": getUltimateCharge,
+        "ultimates_earned": getUltimatesEarned,
+        "ultimates_used": getUltimatesUsed,
     }
-statperminDFunc = {
-    "getAllDamageTen": getAllDamageTen(),
-    "getBarrierDamageTen": getBarrierDamageTen(),
-    "getCooldown1Ten": getCooldown1Ten(),
-    "getCooldown2Ten": getCooldown2Ten(),
-    "getDamageBlockedTen": getDamageBlockedTen(),
-    "getDamageTakenTen": getDamageTakenTen(),
-    "getDeathsTen": getDeathsTen(),
-    "getEliminationsTen": getEliminationsTen(),
-    "getEnviroDeathsTen": getEnviroDeathsTen(),
-    "getEnviroKillsTen": getEnviroKillsTen(),
-    "getFinalBlowsTen": getFinalBlowsTen(),
-    "getHealingDealtTen": getHealingDealtTen(),
-    "getHealingReceivedTen": getHealingReceivedTen(),
-    "getHeroDamageDealtTen": getHeroDamageDealtTen(),
-    "getObjectiveKillsTen": getObjectiveKillsTen(),
-    "getSoloKillsTen": getSoloKillsTen(),
-    "getUltimateChargeTen": getUltimateChargeTen(),
-    "getUltimatesEarnedTen": getUltimatesEarnedTen(),
-    "getUltimatesUsedTen": getUltimatesUsedTen()
-}
+
+def getStatsPerMin():
+    return {
+        "all_damage_dealt": getAllDamageMin,
+        "barrier_damage_dealt": getBarrierDamageMin,
+        "cooldown1": getCooldown1Min,
+        "cooldown2": getCooldown2Min,
+        "damage_blocked": getDamageBlockedMin,
+        "damage_taken": getDamageTakenMin,
+        "deaths": getDeathsMin,
+        "eliminations": getEliminationsMin,
+        "environmental_deaths": getEnviroDeathsMin,
+        "environmental_kills": getEnviroKillsMin,
+        "final_blows": getFinalBlowsMin,
+        "healing_dealt": getHealingDealtMin,
+        "healing_received": getHealingReceivedMin,
+        "hero_damage_dealt": getHeroDamageDealtMin,
+        "objective_kills": getObjectiveKillsMin,
+        "solo_kills": getSoloKillsMin,
+        "ultimate_charge": getUltimateChargeMin,
+        "ultimates_earned": getUltimatesEarnedMin,
+        "ultimates_used": getUltimatesUsedMin,
+    }
+
+def getGenFunctions():
+    return {
+        "getMapName": getMapName,
+        "getMapScore": getMapScore,
+        "getMapType": getMapType,
+        "getName": getName,
+        "getRole": getRole,
+        "getTimeToUlt": getTimeToUlt,
+        "getTimeUltHeld": getTimeUltHeld,
+        "getFinalStats": getFinalStats,
+        "getStatsPerMin": getStatsPerMin,
+        "getUltTimings": getUltTimings,
+        "getHeroesPlayed": getHeroesPlayed
+    }
