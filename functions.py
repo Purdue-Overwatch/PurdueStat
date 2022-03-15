@@ -1,4 +1,5 @@
 import re
+import csv
 
 # This function takes in a logfile filename and creates 3 temp files that can be found in the testingTempfiles folder
 # takes an input of a filepath and has no outputs
@@ -6,7 +7,7 @@ def readLogfile(filename):
 
     # opens each file in the mode needed
     logfile = open(filename, 'r')
-    csvfile = open("testingTempfiles/testtempCSV.txt", 'a')
+    csvfile = open("testingTempfiles/tempCSV.txt", 'a')
     eventfile = open("testingTempfiles/tempEvents.txt", 'a')
     mapInfofile = open("testingTempfiles/tempMapInfo.txt", 'w')
 
@@ -35,6 +36,14 @@ def readLogfile(filename):
     eventfile.close()
     mapInfofile.close()
     pass
+
+# converts the inputed CSV file to an arrat
+def CSVToArray(filename):
+    with open(filename) as CSVfile:
+        file_read = csv.reader(CSVfile)
+        array = list(file_read)
+    return array
+
 
 # start gen info functions
 def getMapName():

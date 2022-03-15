@@ -19,7 +19,13 @@ def main(filepath: str) -> int:
 
 
 if __name__ == '__main__':
+    # breaks the logfile up into its temp files
     functions.readLogfile("exampleData\src2.txt")
+
+    # creates an array for the csvfile that was converted
+    array = functions.CSVToArray("testingTempfiles/tempCSV.txt")
+    array = json.dumps(array, indent=4)
+    print(array)
 
     match = []
     # currently loops twice, would need to loop for as many files as we have
