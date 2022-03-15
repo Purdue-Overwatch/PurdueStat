@@ -10,7 +10,7 @@ finalStatDict = functions.getFinalStats()
 
 minStatDict = functions.getStatsPerMin()
 
-genFunctDict = functions.getGenFunctions()
+genFunctDict = functions.getGenFunctions("testingTempfiles/tempMapInfo.txt")
 
 
 # ignore this for now

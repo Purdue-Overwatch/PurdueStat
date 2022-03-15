@@ -57,8 +57,8 @@ def CSVToArray(filename):
 
 
 # start gen info functions
-def getMapName():
-    map_array = CSVToArray("testingTempfiles/tempMapInfo.txt")
+def getMapName(filename):
+    map_array = CSVToArray(filename)
     return map_array[0][0][11:]
 
 
@@ -306,9 +306,9 @@ def getStatsPerMin():
     }
 
 
-def getGenFunctions():
+def getGenFunctions(filename):
     return {
-        "getMapName": getMapName(),
+        "getMapName": getMapName(filename),
         "getMapScore": getMapScore(),
         "getMapType": getMapType(),
         "getName": getName(),
