@@ -6,7 +6,7 @@ import sys
 # opens a test .json file and writes the contents to that file
 # only works if your folder is named PurdueStat for now
 def writeJson(contents):
-    f = open("PurdueStat/demofile.json", "w")
+    f = open("demofile.json", "w")
     f.write(contents)
     f.close()
     return
