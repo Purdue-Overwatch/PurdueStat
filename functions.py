@@ -56,6 +56,11 @@ def CSVToArray(filename):
     return array
 
 
+readLogfile("exampleData\src2.txt")
+
+# creates an array for the csvfile that was converted
+array = CSVToArray("testingTempfiles/tempCSV.txt")
+
 # start gen info functions
 # completed
 def getMapName(filename):
@@ -76,18 +81,67 @@ def getMapType(filename):
         return "Assault"
     if map_name in ["Dorado", "Havana", "Junkertown", "Rialto", "Route 66", "Watchpoint Gibraltar"]:
         return "Escort"
-    if map_name in ["Blizzard World", "Echenwalde", "Hollywood", "King's Row", "Numbani"]:
+    if map_name in ["Blizzard World", "Eichenwalde", "Hollywood", "King's Row", "Numbani"]:
         return "Hybrid"
     else:
         print("NAN")
 
 
-def getName():
-    return "Golex"
+def getTeam(player_name):
+    map_info = CSVToArray("testingTempfiles/tempMapInfo.txt")
+    # team1 = map_info[0][1]
+    # team2 = map_info[0][2]
+    teamList = map_info[1][:]
+    teamList[0] = teamList[0][11:]
+
+    if player_name in teamList[0:6]:
+        return "team1"
+    elif player_name in teamList[6:12]:
+        return "team2"
+    else:
+        return "notFound"
+
+def defineRole(heroes):
+    if heroes in ["Reinhart", "Orisa", "Winston"]:
+        return "main_tank"
+    if heroes in ["D.Va", "Roadhog", "Sigma", "WreckingBall", "Zarya"]:
+        return "off_tank"
+    if heroes in ["Ashe", "Bastion", "Cassidy", "Reaper", "Soldier76", "Sombra", "Tracer", "Widowmaker"]:
+        return "hitscan_dps"
+    if heroes in ["Doomfist", "Echo", "Genji", "Hanzo", "Junkrat", "Mei", "Pharah", "Symmetra", "Torbjorn"]:
+        return "flex_dps"
+    if heroes in ["Lucio", "Zenyatta", "Mercy", "Brigitte"]:
+        return "main_support"
+    if heroes in ["Ana", "Baptiste", "Moira"]:
+        return "off_support"
 
 
-def getRole():
-    return "main_tank"
+def getName(i):
+    for j in range(0, 13):
+        info = array[j][1:3]
+        name = info[0]
+        hero = info[1]
+        team = getTeam(name)
+        role = defineRole(hero)
+        roleList = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
+        # check if name is in team 1 array?
+        # check if roles line up (if role = roleList[i]
+        if (i >= 0 & i <= 6) & (team == "team1") & (role == roleList[i]):
+            return name
+        elif (i >= 7 & i <= 12) & (team == "team2") & (role == roleList[i - 6]):
+            return name
+        else:
+            return "error"
+
+
+print(getName(7))
+
+def getRole(i):
+    info = array[i][1:3]
+    character = info[1]
+    role = defineRole(character)
+    return role
+
 
 
 def getTimeToUlt():

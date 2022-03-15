@@ -29,6 +29,8 @@ if __name__ == '__main__':
     f.write(array_json)
     f.close()
 
+    for i in range(0, 12):
+        print(array[i][1:3])
 
     match = []
     # currently loops twice, would need to loop for as many files as we have
