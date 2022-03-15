@@ -5,11 +5,6 @@ import sys
 
 # opens a test .json file and writes the contents to that file
 # only works if your folder is named PurdueStat for now
-def writeJson(contents):
-    f = open("demofile.json", "w")
-    f.write(contents)
-    f.close()
-    return
 
 finalStatDict = functions.getFinalStats()
 
@@ -61,4 +56,6 @@ if __name__ == '__main__':
 
     # when uncommented this line will update the demofile.json
             # I commeneted it so that if your file structure was different it would not error
-    writeJson((json_match))
+    f = open("demofile.json", "w")
+    f.write(json_match)
+    f.close()
