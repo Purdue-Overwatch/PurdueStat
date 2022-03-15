@@ -19,6 +19,8 @@ def main(filepath: str) -> int:
 
 
 if __name__ == '__main__':
+    functions.readLogfile("exampleData\src2.txt")
+
     match = []
     # currently loops twice, would need to loop for as many files as we have
     # this loop adds entries into the match list, allowing more than 1 map be to represented

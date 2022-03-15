@@ -1,3 +1,41 @@
+import re
+
+# This function takes in a logfile filename and creates 3 temp files that can be found in the testingTempfiles folder
+# takes an input of a filepath and has no outputs
+def readLogfile(filename):
+
+    # opens each file in the mode needed
+    logfile = open(filename, 'r')
+    csvfile = open("testingTempfiles/testtempCSV.txt", 'a')
+    eventfile = open("testingTempfiles/tempEvents.txt", 'a')
+    mapInfofile = open("testingTempfiles/tempMapInfo.txt", 'w')
+
+    # removes the previous contents of these files since they are opened in append
+    csvfile.truncate(0)
+    eventfile.truncate(0)
+
+    # if a word in this list is in the line it will move that line to the tempevents file
+    listOfTriggers = ["False", "True", "FinalBlow"]
+
+    # splits the first 2 lines that contain the map info into thier own file
+    for i in range(0,2):
+        mapLines = logfile.readline()
+        mapInfofile.write(str(mapLines))
+
+    # splits the events from the rest of the info so that a csv format file is left
+    for line in logfile:
+        if any(trigger in line for trigger in listOfTriggers) | (
+                re.match("\[\d+:\d+:\d+] [0-9]+\.[0-9]+,(([0-9]+\.[0-9]+)|\d+),(([0-9]+\.[0-9]+)|\d+)\n", line) is not None):
+            eventfile.write(line)
+        else:
+            csvfile.write(line)
+
+    logfile.close()
+    csvfile.close()
+    eventfile.close()
+    mapInfofile.close()
+    pass
+
 # start gen info functions
 def getMapName():
     return "Oasis"
