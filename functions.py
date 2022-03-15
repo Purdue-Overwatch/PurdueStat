@@ -1,3 +1,9 @@
+'''
+Defines getter functions and organizes them into dictionaries to be imported into other files. 
+
+(Sherdy describe what you did here)
+'''
+
 import re
 import csv
 
