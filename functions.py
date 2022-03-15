@@ -37,7 +37,7 @@ def readLogfile(filename):
     mapInfofile.close()
     pass
 
-# converts the inputed CSV file to an arrat
+# converts the inputed CSV file to an array
 def CSVToArray(filename):
     with open(filename) as CSVfile:
         file_read = csv.reader(CSVfile)
