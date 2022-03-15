@@ -24,8 +24,14 @@ if __name__ == '__main__':
 
     # creates an array for the csvfile that was converted
     array = functions.CSVToArray("testingTempfiles/tempCSV.txt")
-    array = json.dumps(array, indent=4)
-    print(array)
+    array_json = json.dumps(array, indent=4)
+    f = open("arrayfile.json", "w")
+    f.write(array_json)
+    f.close()
+
+    # testing code here to find the timestamp
+    for i in range(0,13):
+        print(array[i][1])
 
     match = []
     # currently loops twice, would need to loop for as many files as we have
