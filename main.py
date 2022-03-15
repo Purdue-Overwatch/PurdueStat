@@ -29,9 +29,6 @@ if __name__ == '__main__':
     f.write(array_json)
     f.close()
 
-    # testing code here to find the timestamp
-    for i in range(0,13):
-        print(array[i][1])
 
     match = []
     # currently loops twice, would need to loop for as many files as we have
