@@ -58,7 +58,8 @@ def CSVToArray(filename):
 
 # start gen info functions
 def getMapName():
-    return "Oasis"
+    map_array = CSVToArray("testingTempfiles/tempMapInfo.txt")
+    return map_array[0][0][11:]
 
 
 def getMapScore():
