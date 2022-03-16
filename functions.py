@@ -102,7 +102,7 @@ def getTeam(player_name):
         return "notFound"
 
 def defineRole(heroes):
-    if heroes in ["Reinhart", "Orisa", "Winston"]:
+    if heroes in ["Reinhardt", "Orisa", "Winston"]:
         return "main_tank"
     if heroes in ["D.Va", "Roadhog", "Sigma", "WreckingBall", "Zarya"]:
         return "off_tank"
@@ -110,14 +110,14 @@ def defineRole(heroes):
         return "hitscan_dps"
     if heroes in ["Doomfist", "Echo", "Genji", "Hanzo", "Junkrat", "Mei", "Pharah", "Symmetra", "Torbjorn"]:
         return "flex_dps"
-    if heroes in ["Lucio", "Zenyatta", "Mercy", "Brigitte"]:
+    if heroes in ["L\u00c3\u00bacio", "Zenyatta", "Mercy", "Brigitte"]:
         return "main_support"
     if heroes in ["Ana", "Baptiste", "Moira"]:
         return "off_support"
 
 
 def getName(i):
-    for j in range(0, 13):
+    for j in range(0, 12):
         info = array[j][1:3]
         name = info[0]
         hero = info[1]
@@ -126,22 +126,24 @@ def getName(i):
         roleList = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
         # check if name is in team 1 array?
         # check if roles line up (if role = roleList[i]
-        if (i >= 0 & i <= 6) & (team == "team1") & (role == roleList[i]):
-            return name
-        elif (i >= 7 & i <= 12) & (team == "team2") & (role == roleList[i - 6]):
-            return name
-        else:
-            return "error"
+        if (i >= 1) & (i <= 6) & (team == "team1"):
+            if role == roleList[i - 1]:
+                return name
+        elif (i >= 7) & (i <= 12) & (team == "team2"):
+            if role == roleList[i - 7]:
+                return name
+    return "Error"
 
 
-print(getName(7))
-
-def getRole(i):
-    info = array[i][1:3]
-    character = info[1]
-    role = defineRole(character)
+def getRole(player_name):
+    role = 'Error'
+    for j in range(0, 12):
+        info = array[j][1:3]
+        name = info[0]
+        if name == player_name:
+            hero = info[1]
+            role = defineRole(hero)
     return role
-
 
 
 def getTimeToUlt():

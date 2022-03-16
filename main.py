@@ -10,7 +10,7 @@ finalStatDict = functions.getFinalStats()
 
 minStatDict = functions.getStatsPerMin()
 
-genFunctDict = functions.getGenFunctions("testingTempfiles/tempMapInfo.txt")
+#genFunctDict = functions.getGenFunctions("testingTempfiles/tempMapInfo.txt")
 
 
 # ignore this for now
@@ -35,9 +35,9 @@ if __name__ == '__main__':
     for i in range(0,2):
         # creates the outermoust dictionary that is for each map
         map_dic = {
-            "map": genFunctDict["getMapName"],
-            "map_score": genFunctDict["getMapScore"],
-            "map_type": genFunctDict["getMapType"],
+            "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
+            "map_score": functions.getMapScore(),
+            "map_type": functions.getMapType("testingTempfiles/tempMapInfo.txt"),
         }
 
         # these lines set default values for the player variables so that they can't be undefined
@@ -48,8 +48,8 @@ if __name__ == '__main__':
         for i in range(1, 13):
             player_number = "player" + str(i)
             player = {
-                "name": functions.getName(),
-                "role": functions.getRole(),
+                "name": functions.getName(i),
+                "role": functions.getRole(functions.getName(i)),
                 "avg_time_to_ult": functions.getTimeToUlt(),
                 "avg_time_ult_held": functions.getTimeUltHeld(),
                 "final_stats": functions.getFinalStats(),
