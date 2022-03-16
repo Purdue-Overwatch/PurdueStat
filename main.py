@@ -28,7 +28,7 @@ if __name__ == '__main__':
     # this loop adds entries into the match list, allowing more than 1 map be to represented
     for j in range(0,1):
         # creates the outermoust dictionary that is for each map
-        map_dic = {
+        map_dict = {
             "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
             "map_score": functions.getMapScore(),
             "map_type": functions.getMapType("testingTempfiles/tempMapInfo.txt"),
@@ -53,10 +53,10 @@ if __name__ == '__main__':
                 "heroes_played": functions.getHeroesPlayed(),
             }
         # updates the map dictionary with the current player of the loop
-            map_dic[playerNumber] = player
+            map_dict[playerNumber] = player
 
         # this line adds the map to the match list
-        match.append(map_dic)
+        match.append(map_dict)
         # print(map_dic)
 
     # converts match to a json format

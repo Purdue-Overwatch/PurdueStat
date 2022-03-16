@@ -177,6 +177,7 @@ def getHeroesPlayed():
 
 
 # start final stat functions
+
 # completed
 def getFinalEntries(arr):
     length = len(arr)
@@ -186,6 +187,15 @@ def getFinalEntries(arr):
     return final_entries
 
 
+def getFinalInfo(input_name, statnum):
+    final_entries = getFinalEntries(array)
+    for j in range(0, 12):
+        name = final_entries[j][1]
+        if name == input_name:
+            stat = final_entries[j][statnum - 1]
+            return float(stat)
+    return "Error"
+
 # completed
 def getAllDamageDealt(input_name):
     return getBarrierDamage(input_name) + getHeroDamageDealt(input_name)
@@ -193,87 +203,75 @@ def getAllDamageDealt(input_name):
 
 # completed
 def getBarrierDamage(input_name):
-    final_entries = getFinalEntries(array)
-    for j in range(0, 12):
-        name = final_entries[j][1]
-        if name == input_name:
-            sheilddmg = final_entries[j][4]
-            return float(sheilddmg)
-    return "Error"
+    return getFinalInfo(input_name, 5)
 
 
-def getCooldown1():
-    return 0.0
+def getCooldown1(input_name):
+    return getFinalInfo(input_name, 25)
 
 
-def getCooldown2():
-    return 7.03
+def getCooldown2(input_name):
+    return getFinalInfo(input_name, 26)
 
 
-def getDamageBlocked():
-    return 10730.0
+def getDamageBlocked(input_name):
+    return getFinalInfo(input_name, 6)
 
 
-def getDamageTaken():
-    return 17221.91
+def getDamageTaken(input_name):
+    return getFinalInfo(input_name, 7)
 
 
-def getDeaths():
-    return 69
+def getDeaths(input_name):
+    return getFinalInfo(input_name, 8)
 
 
-def getEliminations():
-    return 53
+def getEliminations(input_name):
+    return getFinalInfo(input_name, 9)
 
 
-def getEnviroDeaths():
-    return 2
+def getEnviroDeaths(input_name):
+    return getFinalInfo(input_name, 11)
 
 
-def getEnviroKills():
-    return 1
+def getEnviroKills(input_name):
+    return getFinalInfo(input_name, 12)
 
 
-def getFinalBlows():
-    return 13
+def getFinalBlows(input_name):
+    return getFinalInfo(input_name, 10)
 
 
-def getHealingDealt():
-    return 0.0
+def getHealingDealt(input_name):
+    return getFinalInfo(input_name, 13)
 
 
-def getHealingReceived():
-    return 0.0
+def getHealingReceived(input_name):
+    return getFinalInfo(input_name, 18)
 
 
 def getHeroDamageDealt(input_name):
-    final_entries = getFinalEntries(array)
-    for j in range(0, 12):
-        name = final_entries[j][1]
-        if name == input_name:
-            herodmg = final_entries[j][3]
-            return float(herodmg)
-    return "Error"
+    return getFinalInfo(input_name, 4)
 
 
-def getObjectiveKills():
-    return 12
+def getObjectiveKills(input_name):
+    return getFinalInfo(input_name, 14)
 
 
-def getSoloKills():
-    return 2
+def getSoloKills(input_name):
+    return getFinalInfo(input_name, 15)
 
 
-def getUltimateCharge():
-    return 100.0
+def getUltimateCharge(input_name):
+    return getFinalInfo(input_name, 19)
 
 
-def getUltimatesEarned():
-    return 5
+def getUltimatesEarned(input_name):
+    return getFinalInfo(input_name, 16)
 
 
-def getUltimatesUsed():
-    return 2
+def getUltimatesUsed(input_name):
+    return getFinalInfo(input_name, 17)
 
 
 # start per min stat functions
@@ -357,23 +355,23 @@ def getFinalStats(name):
     return {
         "all_damage_dealt": getAllDamageDealt(name),
         "barrier_damage_dealt": getBarrierDamage(name),
-        "cooldown1": getCooldown1(),
-        "cooldown2": getCooldown2(),
-        "damage_blocked": getDamageBlocked(),
-        "damage_taken": getDamageTaken(),
-        "deaths": getDeaths(),
-        "eliminations": getEliminations(),
-        "environmental_deaths": getEnviroDeaths(),
-        "environmental_kills": getEnviroKills(),
-        "final_blows": getFinalBlows(),
-        "healing_dealt": getHealingDealt(),
-        "healing_received": getHealingReceived(),
+        "cooldown1": getCooldown1(name),
+        "cooldown2": getCooldown2(name),
+        "damage_blocked": getDamageBlocked(name),
+        "damage_taken": getDamageTaken(name),
+        "deaths": getDeaths(name),
+        "eliminations": getEliminations(name),
+        "environmental_deaths": getEnviroDeaths(name),
+        "environmental_kills": getEnviroKills(name),
+        "final_blows": getFinalBlows(name),
+        "healing_dealt": getHealingDealt(name),
+        "healing_received": getHealingReceived(name),
         "hero_damage_dealt": getHeroDamageDealt(name),
-        "objective_kills": getObjectiveKills(),
-        "solo_kills": getSoloKills(),
-        "ultimate_charge": getUltimateCharge(),
-        "ultimates_earned": getUltimatesEarned(),
-        "ultimates_used": getUltimatesUsed(),
+        "objective_kills": getObjectiveKills(name),
+        "solo_kills": getSoloKills(name),
+        "ultimate_charge": getUltimateCharge(name),
+        "ultimates_earned": getUltimatesEarned(name),
+        "ultimates_used": getUltimatesUsed(name),
     }
 
 
