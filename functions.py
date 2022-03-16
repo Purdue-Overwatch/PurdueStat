@@ -61,6 +61,7 @@ readLogfile("exampleData\src2.txt")
 # creates an array for the csvfile that was converted
 array = CSVToArray("testingTempfiles/tempCSV.txt")
 
+
 # start gen info functions
 # completed
 def getMapName(filename):
@@ -87,17 +88,17 @@ def getMapType(filename):
         print("NAN")
 
 
-#completed
+# completed
 def getTeam(player_name):
     map_info = CSVToArray("testingTempfiles/tempMapInfo.txt")
     # team1 = map_info[0][1]
     # team2 = map_info[0][2]
-    teamList = map_info[1][:]
-    teamList[0] = teamList[0][11:]
+    teamlist = map_info[1][:]
+    teamlist[0] = teamlist[0][11:]
 
-    if player_name in teamList[0:6]:
+    if player_name in teamlist[0:6]:
         return "team1"
-    elif player_name in teamList[6:12]:
+    elif player_name in teamlist[6:12]:
         return "team2"
     else:
         return "notFound"
@@ -127,14 +128,14 @@ def getName(i):
         hero = info[1]
         team = getTeam(name)
         role = defineRole(hero)
-        roleList = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
+        rolelist = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
         # check if name is in team 1 array?
         # check if roles line up (if role = roleList[i]
         if (i >= 1) & (i <= 6) & (team == "team1"):
-            if role == roleList[i - 1]:
+            if role == rolelist[i - 1]:
                 return name
         elif (i >= 7) & (i <= 12) & (team == "team2"):
-            if role == roleList[i - 7]:
+            if role == rolelist[i - 7]:
                 return name
     return "Error"
 
@@ -151,22 +152,20 @@ def getRole(player_name):
     return role
 
 
-def getTimeToUlt():
-    return 88.375
-
-
-def getTimeUltHeld():
-    return 19.857
-
-    # what the fuck
-
-
 def getUltTimings():
     return [
         [[52, 57], [153, 154]],
         [[64, 120], [168, 169], [294, 309]],
         [[125, 160], [234, 277], [390, -1]]
     ]
+
+
+def getTimeToUlt():
+    return 88.375
+
+
+def getTimeUltHeld():
+    return 19.857
 
 
 def getHeroesPlayed():
