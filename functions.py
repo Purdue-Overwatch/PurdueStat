@@ -87,6 +87,7 @@ def getMapType(filename):
         print("NAN")
 
 
+#completed
 def getTeam(player_name):
     map_info = CSVToArray("testingTempfiles/tempMapInfo.txt")
     # team1 = map_info[0][1]
@@ -101,6 +102,8 @@ def getTeam(player_name):
     else:
         return "notFound"
 
+
+# completed
 def defineRole(heroes):
     if heroes in ["Reinhardt", "Orisa", "Winston"]:
         return "main_tank"
@@ -116,6 +119,7 @@ def defineRole(heroes):
         return "off_support"
 
 
+# completed
 def getName(i):
     for j in range(0, 12):
         info = array[j][1:3]
@@ -135,6 +139,7 @@ def getName(i):
     return "Error"
 
 
+# completed
 def getRole(player_name):
     role = 'Error'
     for j in range(0, 12):
