@@ -17,8 +17,8 @@ if __name__ == '__main__':
     functions.readLogfile("exampleData\src2.txt")
 
     # creates an array for the csvfile that was converted
-    array = functions.CSVToArray("testingTempfiles/tempCSV.txt")
-    array_json = json.dumps(array, indent=4)
+    CSVarray = functions.CSVToArray("testingTempfiles/tempCSV.txt")
+    array_json = json.dumps(CSVarray, indent=4)
     f = open("arrayfile.json", "w")
     f.write(array_json)
     f.close()
@@ -27,7 +27,7 @@ if __name__ == '__main__':
     # currently loops twice, would need to loop for as many files as we have
     # this loop adds entries into the match list, allowing more than 1 map be to represented
     for j in range(0,1):
-        # creates the outermoust dictionary that is for each map
+        # creates the outermost dictionary that is for each map
         map_dict = {
             "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
             "map_score": functions.getMapScore(),
@@ -41,14 +41,14 @@ if __name__ == '__main__':
         # this loop creates each entry for the 12 player
         for i in range(1, 13):
             playerNumber = "player" + str(i)
-            playerName = functions.getName(i)
+            playerName = functions.getName(i, CSVarray)
             player = {
                 "name": playerName,
-                "role": functions.getRole(playerName),
+                "role": functions.getRole(playerName, CSVarray),
                 "avg_time_to_ult": functions.getTimeToUlt(),
                 "avg_time_ult_held": functions.getTimeUltHeld(),
-                "final_stats": functions.getFinalStats(playerName),
-                "stats_per_minute": functions.getStatsPerMin(playerName),
+                "final_stats": functions.getFinalStats(playerName, CSVarray),
+                "stats_per_minute": functions.getStatsPerMin(playerName, CSVarray),
                 "ult_timings": functions.getUltTimings(),
                 "heroes_played": functions.getHeroesPlayed(),
             }
