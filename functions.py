@@ -200,71 +200,71 @@ def getAllDamageDealt(input_name, array):
 def getBarrierDamage(input_name, array):
     return getFinalInfo(input_name, array, 5)
 
-
+# completed
 def getCooldown1(input_name, array):
     return getFinalInfo(input_name, array, 25)
 
-
+# completed
 def getCooldown2(input_name, array):
     return getFinalInfo(input_name, array, 26)
 
-
+# completed
 def getDamageBlocked(input_name, array):
     return getFinalInfo(input_name, array, 6)
 
-
+# completed
 def getDamageTaken(input_name, array):
     return getFinalInfo(input_name, array, 7)
 
-
+# completed
 def getDeaths(input_name, array):
     return getFinalInfo(input_name, array, 8)
 
-
+# completed
 def getEliminations(input_name, array):
     return getFinalInfo(input_name, array, 9)
 
-
+# completed
 def getEnviroDeaths(input_name, array):
     return getFinalInfo(input_name, array, 11)
 
-
+# completed
 def getEnviroKills(input_name, array):
     return getFinalInfo(input_name, array, 12)
 
-
+# completed
 def getFinalBlows(input_name, array):
     return getFinalInfo(input_name, array, 10)
 
-
+# completed
 def getHealingDealt(input_name, array):
     return getFinalInfo(input_name, array, 13)
 
-
+# completed
 def getHealingReceived(input_name, array):
     return getFinalInfo(input_name, array, 18)
 
-
+# completed
 def getHeroDamageDealt(input_name, array):
     return getFinalInfo(input_name, array, 4)
 
-
+# completed
 def getObjectiveKills(input_name, array):
     return getFinalInfo(input_name, array, 14)
 
-
+# completed
 def getSoloKills(input_name, array):
     return getFinalInfo(input_name, array, 15)
 
-
+# completed
 def getUltimateCharge(input_name, array):
     return getFinalInfo(input_name, array, 19)
 
-
+# completed
 def getUltimatesEarned(input_name, array):
     return getFinalInfo(input_name, array, 16)
 
-
+# completed
 def getUltimatesUsed(input_name, array):
     return getFinalInfo(input_name, array, 17)
 
