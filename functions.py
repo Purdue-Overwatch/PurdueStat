@@ -176,6 +176,8 @@ def getHeroesPlayed():
     }
 
 
+# start final stat functions
+# completed
 def getFinalEntries(arr):
     length = len(arr)
     final_entries = []
@@ -184,15 +186,15 @@ def getFinalEntries(arr):
     return final_entries
 
 
-# start final stat functions
+# completed
 def getAllDamageDealt(input_name):
     return getBarrierDamage(input_name) + getHeroDamageDealt(input_name)
 
 
+# completed
 def getBarrierDamage(input_name):
     final_entries = getFinalEntries(array)
     for j in range(0, 12):
-        info = final_entries[j][1:4]
         name = final_entries[j][1]
         if name == input_name:
             sheilddmg = final_entries[j][4]
@@ -247,7 +249,6 @@ def getHealingReceived():
 def getHeroDamageDealt(input_name):
     final_entries = getFinalEntries(array)
     for j in range(0, 12):
-        info = final_entries[j][1:4]
         name = final_entries[j][1]
         if name == input_name:
             herodmg = final_entries[j][3]
