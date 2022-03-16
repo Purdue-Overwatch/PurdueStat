@@ -48,7 +48,7 @@ if __name__ == '__main__':
                 "avg_time_to_ult": functions.getTimeToUlt(),
                 "avg_time_ult_held": functions.getTimeUltHeld(),
                 "final_stats": functions.getFinalStats(playerName),
-                "stats_per_minute": functions.getStatsPerMin(),
+                "stats_per_minute": functions.getStatsPerMin(playerName),
                 "ult_timings": functions.getUltTimings(),
                 "heroes_played": functions.getHeroesPlayed(),
             }

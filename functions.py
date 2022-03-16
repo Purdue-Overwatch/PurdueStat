@@ -275,80 +275,16 @@ def getUltimatesUsed(input_name):
 
 
 # start per min stat functions
-def getAllDamageMin():
-    return 1123.652099031216
 
-
-def getBarrierDamageMin():
-    return 515.48
-
-
-def getCooldown1Min():
-    return 0.0
-
-
-def getCooldown2Min():
-    return 0.454
-
-
-def getDamageBlockedMin():
-    return 693.003
-
-
-def getDamageTakenMin():
-    return 1112.2869
-
-
-def getDeathsMin():
-    return 0.645855
-
-
-def getEliminationsMin():
-    return 1.94
-
-
-def getEnviroDeathsMin():
-    return 0.06458
-
-
-def getEnviroKillsMin():
-    return 0.0
-
-
-def getFinalBlowsMin():
-    return 0.8396
-
-
-def getHealingDealtMin():
-    return 0.0
-
-
-def getHealingReceivedMin():
-    return 0.0
-
-
-def getHeroDamageDealtMin():
-    return 608.1687
-
-
-def getObjectiveKillsMin():
-    return 0.775
-
-
-def getSoloKillsMin():
-    return 1000
-
-
-def getUltimateChargeMin():
-    return 6.458
-
-
-def getUltimatesEarnedMin():
-    return 0.322927
-
-
-def getUltimatesUsedMin():
-    return 0.12917
+'''NOTE: PLEASE READ BELOW'''
+''' PLEASE READ!!!!! '''
+# convertMin does NOT exclude round pauses in its calculations!!!!
+def convertMin(stat):
+    finalStats = getFinalEntries(array)[0]
+    finalSec = round(float(finalStats[0][11:]))
+    initialSec = round(float(array[0][0][11:]))
+    timeSec = finalSec - initialSec
+    return stat / (timeSec / 60)
 
 
 def getFinalStats(name):
@@ -375,26 +311,26 @@ def getFinalStats(name):
     }
 
 
-def getStatsPerMin():
+def getStatsPerMin(name):
     return {
-        "all_damage_dealt": getAllDamageMin(),
-        "barrier_damage_dealt": getBarrierDamageMin(),
-        "cooldown1": getCooldown1Min(),
-        "cooldown2": getCooldown2Min(),
-        "damage_blocked": getDamageBlockedMin(),
-        "damage_taken": getDamageTakenMin(),
-        "deaths": getDeathsMin(),
-        "eliminations": getEliminationsMin(),
-        "environmental_deaths": getEnviroDeathsMin(),
-        "environmental_kills": getEnviroKillsMin(),
-        "final_blows": getFinalBlowsMin(),
-        "healing_dealt": getHealingDealtMin(),
-        "healing_received": getHealingReceivedMin(),
-        "hero_damage_dealt": getHeroDamageDealtMin(),
-        "objective_kills": getObjectiveKillsMin(),
-        "solo_kills": getSoloKillsMin(),
-        "ultimate_charge": getUltimateChargeMin(),
-        "ultimates_earned": getUltimatesEarnedMin(),
-        "ultimates_used": getUltimatesUsedMin(),
+        "all_damage_dealt": convertMin(getAllDamageDealt(name)),
+        "barrier_damage_dealt": convertMin(getBarrierDamage(name)),
+        "cooldown1": convertMin(getCooldown1(name)),
+        "cooldown2": convertMin(getCooldown2(name)),
+        "damage_blocked": convertMin(getDamageBlocked(name)),
+        "damage_taken": convertMin(getDamageTaken(name)),
+        "deaths": convertMin(getDeaths(name)),
+        "eliminations": convertMin(getEliminations(name)),
+        "environmental_deaths": convertMin(getEnviroDeaths(name)),
+        "environmental_kills": convertMin(getEnviroKills(name)),
+        "final_blows": convertMin(getFinalBlows(name)),
+        "healing_dealt": convertMin(getHealingDealt(name)),
+        "healing_received": convertMin(getHealingReceived(name)),
+        "hero_damage_dealt": convertMin(getHeroDamageDealt(name)),
+        "objective_kills": convertMin(getObjectiveKills(name)),
+        "solo_kills": convertMin(getSoloKills(name)),
+        "ultimate_charge": convertMin(getUltimateCharge(name)),
+        "ultimates_earned": convertMin(getUltimatesEarned(name)),
+        "ultimates_used": convertMin(getUltimatesUsed(name)),
     }
 
