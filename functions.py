@@ -200,7 +200,6 @@ def getFinalInfo(input_name, statnum):
 def getAllDamageDealt(input_name):
     return getBarrierDamage(input_name) + getHeroDamageDealt(input_name)
 
-
 # completed
 def getBarrierDamage(input_name):
     return getFinalInfo(input_name, 5)
