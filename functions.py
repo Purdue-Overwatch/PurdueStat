@@ -186,7 +186,7 @@ def getFinalEntries(arr):
         final_entries.append(arr[length - i])
     return final_entries
 
-# completed
+
 def getFinalInfo(input_name, statnum):
     final_entries = getFinalEntries(array)
     for j in range(0, 12):
@@ -204,71 +204,71 @@ def getAllDamageDealt(input_name):
 def getBarrierDamage(input_name):
     return getFinalInfo(input_name, 5)
 
-# completed
+
 def getCooldown1(input_name):
     return getFinalInfo(input_name, 25)
 
-# completed
+
 def getCooldown2(input_name):
     return getFinalInfo(input_name, 26)
 
-# completed
+
 def getDamageBlocked(input_name):
     return getFinalInfo(input_name, 6)
 
-# completed
+
 def getDamageTaken(input_name):
     return getFinalInfo(input_name, 7)
 
-# completed
+
 def getDeaths(input_name):
     return getFinalInfo(input_name, 8)
 
-# completed
+
 def getEliminations(input_name):
     return getFinalInfo(input_name, 9)
 
-# completed
+
 def getEnviroDeaths(input_name):
     return getFinalInfo(input_name, 11)
 
-# completed
+
 def getEnviroKills(input_name):
     return getFinalInfo(input_name, 12)
 
-# completed
+
 def getFinalBlows(input_name):
     return getFinalInfo(input_name, 10)
 
-# completed
+
 def getHealingDealt(input_name):
     return getFinalInfo(input_name, 13)
 
-# completed
+
 def getHealingReceived(input_name):
     return getFinalInfo(input_name, 18)
 
-# completed
+
 def getHeroDamageDealt(input_name):
     return getFinalInfo(input_name, 4)
 
-# completed
+
 def getObjectiveKills(input_name):
     return getFinalInfo(input_name, 14)
 
-# completed
+
 def getSoloKills(input_name):
     return getFinalInfo(input_name, 15)
 
-# completed
+
 def getUltimateCharge(input_name):
     return getFinalInfo(input_name, 19)
 
-# completed
+
 def getUltimatesEarned(input_name):
     return getFinalInfo(input_name, 16)
 
-# completed
+
 def getUltimatesUsed(input_name):
     return getFinalInfo(input_name, 17)
 
