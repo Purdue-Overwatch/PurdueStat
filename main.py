@@ -26,7 +26,7 @@ if __name__ == '__main__':
     match = []
     # currently loops twice, would need to loop for as many files as we have
     # this loop adds entries into the match list, allowing more than 1 map be to represented
-    for i in range(0,1):
+    for j in range(0,1):
         # creates the outermoust dictionary that is for each map
         map_dic = {
             "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
