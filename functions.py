@@ -176,13 +176,28 @@ def getHeroesPlayed():
     }
 
 
+def getFinalEntries(arr):
+    length = len(arr)
+    final_entries = []
+    for i in range(1, 13):
+        final_entries.append(arr[length - i])
+    return final_entries
+
+
 # start final stat functions
-def getAllDamageDealt():
-    return 6942066.6
+def getAllDamageDealt(input_name):
+    return getBarrierDamage(input_name) + getHeroDamageDealt(input_name)
 
 
-def getBarrierDamage():
-    return 137.7
+def getBarrierDamage(input_name):
+    final_entries = getFinalEntries(array)
+    for j in range(0, 12):
+        info = final_entries[j][1:4]
+        name = final_entries[j][1]
+        if name == input_name:
+            sheilddmg = final_entries[j][4]
+            return float(sheilddmg)
+    return "Error"
 
 
 def getCooldown1():
@@ -229,8 +244,15 @@ def getHealingReceived():
     return 0.0
 
 
-def getHeroDamageDealt():
-    return 9416.48
+def getHeroDamageDealt(input_name):
+    final_entries = getFinalEntries(array)
+    for j in range(0, 12):
+        info = final_entries[j][1:4]
+        name = final_entries[j][1]
+        if name == input_name:
+            herodmg = final_entries[j][3]
+            return float(herodmg)
+    return "Error"
 
 
 def getObjectiveKills():
@@ -330,10 +352,10 @@ def getUltimatesUsedMin():
     return 0.12917
 
 
-def getFinalStats():
+def getFinalStats(name):
     return {
-        "all_damage_dealt": getAllDamageDealt(),
-        "barrier_damage_dealt": getBarrierDamage(),
+        "all_damage_dealt": getAllDamageDealt(name),
+        "barrier_damage_dealt": getBarrierDamage(name),
         "cooldown1": getCooldown1(),
         "cooldown2": getCooldown2(),
         "damage_blocked": getDamageBlocked(),
@@ -345,7 +367,7 @@ def getFinalStats():
         "final_blows": getFinalBlows(),
         "healing_dealt": getHealingDealt(),
         "healing_received": getHealingReceived(),
-        "hero_damage_dealt": getHeroDamageDealt(),
+        "hero_damage_dealt": getHeroDamageDealt(name),
         "objective_kills": getObjectiveKills(),
         "solo_kills": getSoloKills(),
         "ultimate_charge": getUltimateCharge(),
@@ -377,18 +399,3 @@ def getStatsPerMin():
         "ultimates_used": getUltimatesUsedMin(),
     }
 
-
-def getGenFunctions(filename):
-    return {
-        "getMapName": getMapName(filename),
-        "getMapScore": getMapScore(),
-        "getMapType": getMapType(filename),
-        "getName": getName(),
-        "getRole": getRole(),
-        "getTimeToUlt": getTimeToUlt(),
-        "getTimeUltHeld": getTimeUltHeld(),
-        "getFinalStats": getFinalStats(),
-        "getStatsPerMin": getStatsPerMin(),
-        "getUltTimings": getUltTimings(),
-        "getHeroesPlayed": getHeroesPlayed(),
-    }

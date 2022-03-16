@@ -6,12 +6,6 @@ import sys
 # opens a test .json file and writes the contents to that file
 # only works if your folder is named PurdueStat for now
 
-finalStatDict = functions.getFinalStats()
-
-minStatDict = functions.getStatsPerMin()
-
-#genFunctDict = functions.getGenFunctions("testingTempfiles/tempMapInfo.txt")
-
 
 # ignore this for now
 def main(filepath: str) -> int:
@@ -32,7 +26,7 @@ if __name__ == '__main__':
     match = []
     # currently loops twice, would need to loop for as many files as we have
     # this loop adds entries into the match list, allowing more than 1 map be to represented
-    for i in range(0,2):
+    for i in range(0,1):
         # creates the outermoust dictionary that is for each map
         map_dic = {
             "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
@@ -46,20 +40,20 @@ if __name__ == '__main__':
 
         # this loop creates each entry for the 12 player
         for i in range(1, 13):
-            player_number = "player" + str(i)
+            playerNumber = "player" + str(i)
+            playerName = functions.getName(i)
             player = {
-                "name": functions.getName(i),
-                "role": functions.getRole(functions.getName(i)),
+                "name": playerName,
+                "role": functions.getRole(playerName),
                 "avg_time_to_ult": functions.getTimeToUlt(),
                 "avg_time_ult_held": functions.getTimeUltHeld(),
-                "final_stats": functions.getFinalStats(),
+                "final_stats": functions.getFinalStats(playerName),
                 "stats_per_minute": functions.getStatsPerMin(),
                 "ult_timings": functions.getUltTimings(),
                 "heroes_played": functions.getHeroesPlayed(),
             }
-
         # updates the map dictionary with the current player of the loop
-            map_dic[player_number] = player
+            map_dic[playerNumber] = player
 
         # this line adds the map to the match list
         match.append(map_dic)
