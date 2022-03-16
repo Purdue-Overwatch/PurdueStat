@@ -56,6 +56,12 @@ def CSVToArray(filename):
     return array
 
 
+readLogfile("exampleData\src2.txt")
+
+# creates an array for the csvfile that was converted
+array = CSVToArray("testingTempfiles/tempCSV.txt")
+
+
 # start gen info functions
 # completed
 def getMapName(filename):
@@ -115,7 +121,7 @@ def defineRole(heroes):
 
 
 # completed
-def getName(i, array):
+def getName(i):
     for j in range(0, 12):
         info = array[j][1:3]
         name = info[0]
@@ -135,7 +141,7 @@ def getName(i, array):
 
 
 # completed
-def getRole(player_name, array):
+def getRole(player_name):
     role = 'Error'
     for j in range(0, 12):
         info = array[j][1:3]
@@ -173,15 +179,15 @@ def getHeroesPlayed():
 # start final stat functions
 
 # completed
-def getFinalEntries(array):
-    length = len(array)
+def getFinalEntries(arr):
+    length = len(arr)
     final_entries = []
     for i in range(1, 13):
-        final_entries.append(array[length - i])
+        final_entries.append(arr[length - i])
     return final_entries
 
 
-def getFinalInfo(input_name, statnum, array):
+def getFinalInfo(input_name, statnum):
     final_entries = getFinalEntries(array)
     for j in range(0, 12):
         name = final_entries[j][1]
@@ -191,90 +197,89 @@ def getFinalInfo(input_name, statnum, array):
     return "Error"
 
 # completed
-def getAllDamageDealt(input_name, array):
-    return getBarrierDamage(input_name, array) + getHeroDamageDealt(input_name, array)
+def getAllDamageDealt(input_name):
+    return getBarrierDamage(input_name) + getHeroDamageDealt(input_name)
 
 
 # completed
-def getBarrierDamage(input_name, array):
-    return getFinalInfo(input_name, 5, array)
+def getBarrierDamage(input_name):
+    return getFinalInfo(input_name, 5)
 
 
-def getCooldown1(input_name, array):
-    return getFinalInfo(input_name, 25, array)
+def getCooldown1(input_name):
+    return getFinalInfo(input_name, 25)
 
 
-def getCooldown2(input_name, array):
-    return getFinalInfo(input_name, 26, array)
+def getCooldown2(input_name):
+    return getFinalInfo(input_name, 26)
 
 
-def getDamageBlocked(input_name, array):
-    return getFinalInfo(input_name, 6, array)
+def getDamageBlocked(input_name):
+    return getFinalInfo(input_name, 6)
 
 
-def getDamageTaken(input_name, array):
-    return getFinalInfo(input_name, 7, array)
+def getDamageTaken(input_name):
+    return getFinalInfo(input_name, 7)
 
 
-def getDeaths(input_name, array):
-    return getFinalInfo(input_name, 8, array)
+def getDeaths(input_name):
+    return getFinalInfo(input_name, 8)
 
 
-def getEliminations(input_name, array):
-    return getFinalInfo(input_name, 9, array)
+def getEliminations(input_name):
+    return getFinalInfo(input_name, 9)
 
 
-def getEnviroDeaths(input_name, array):
-    return getFinalInfo(input_name, 11, array)
+def getEnviroDeaths(input_name):
+    return getFinalInfo(input_name, 11)
 
 
-def getEnviroKills(input_name, array):
-    return getFinalInfo(input_name, 12, array)
+def getEnviroKills(input_name):
+    return getFinalInfo(input_name, 12)
 
 
-def getFinalBlows(input_name, array):
-    return getFinalInfo(input_name, 10, array)
+def getFinalBlows(input_name):
+    return getFinalInfo(input_name, 10)
 
 
-def getHealingDealt(input_name, array):
-    return getFinalInfo(input_name, 13, array)
+def getHealingDealt(input_name):
+    return getFinalInfo(input_name, 13)
 
 
-def getHealingReceived(input_name, array):
-    return getFinalInfo(input_name, 18, array)
+def getHealingReceived(input_name):
+    return getFinalInfo(input_name, 18)
 
 
-def getHeroDamageDealt(input_name, array):
-    return getFinalInfo(input_name, 4, array)
+def getHeroDamageDealt(input_name):
+    return getFinalInfo(input_name, 4)
 
 
-def getObjectiveKills(input_name, array):
-    return getFinalInfo(input_name, 14, array)
+def getObjectiveKills(input_name):
+    return getFinalInfo(input_name, 14)
 
 
-def getSoloKills(input_name, array):
-    return getFinalInfo(input_name, 15, array)
+def getSoloKills(input_name):
+    return getFinalInfo(input_name, 15)
 
 
-def getUltimateCharge(input_name, array):
-    return getFinalInfo(input_name, 19, array)
+def getUltimateCharge(input_name):
+    return getFinalInfo(input_name, 19)
 
 
-def getUltimatesEarned(input_name, array):
-    return getFinalInfo(input_name, 16, array)
+def getUltimatesEarned(input_name):
+    return getFinalInfo(input_name, 16)
 
 
-def getUltimatesUsed(input_name, array):
-    return getFinalInfo(input_name, 17, array)
+def getUltimatesUsed(input_name):
+    return getFinalInfo(input_name, 17)
 
 
 # start per min stat functions
+
 '''NOTE: PLEASE READ BELOW'''
 ''' PLEASE READ!!!!! '''
 # convertMin does NOT exclude round pauses in its calculations!!!!
-
-
-def convertMin(stat, array):
+def convertMin(stat):
     finalStats = getFinalEntries(array)[0]
     finalSec = round(float(finalStats[0][11:]))
     initialSec = round(float(array[0][0][11:]))
@@ -282,50 +287,50 @@ def convertMin(stat, array):
     return stat / (timeSec / 60)
 
 
-def getFinalStats(name, array):
+def getFinalStats(name):
     return {
-        "all_damage_dealt": getAllDamageDealt(name, array),
-        "barrier_damage_dealt": getBarrierDamage(name, array),
-        "cooldown1": getCooldown1(name, array),
-        "cooldown2": getCooldown2(name, array),
-        "damage_blocked": getDamageBlocked(name, array),
-        "damage_taken": getDamageTaken(name, array),
-        "deaths": getDeaths(name, array),
-        "eliminations": getEliminations(name, array),
-        "environmental_deaths": getEnviroDeaths(name, array),
-        "environmental_kills": getEnviroKills(name, array),
-        "final_blows": getFinalBlows(name, array),
-        "healing_dealt": getHealingDealt(name, array),
-        "healing_received": getHealingReceived(name, array),
-        "hero_damage_dealt": getHeroDamageDealt(name, array),
-        "objective_kills": getObjectiveKills(name, array),
-        "solo_kills": getSoloKills(name, array),
-        "ultimate_charge": getUltimateCharge(name, array),
-        "ultimates_earned": getUltimatesEarned(name, array),
-        "ultimates_used": getUltimatesUsed(name, array),
+        "all_damage_dealt": getAllDamageDealt(name),
+        "barrier_damage_dealt": getBarrierDamage(name),
+        "cooldown1": getCooldown1(name),
+        "cooldown2": getCooldown2(name),
+        "damage_blocked": getDamageBlocked(name),
+        "damage_taken": getDamageTaken(name),
+        "deaths": getDeaths(name),
+        "eliminations": getEliminations(name),
+        "environmental_deaths": getEnviroDeaths(name),
+        "environmental_kills": getEnviroKills(name),
+        "final_blows": getFinalBlows(name),
+        "healing_dealt": getHealingDealt(name),
+        "healing_received": getHealingReceived(name),
+        "hero_damage_dealt": getHeroDamageDealt(name),
+        "objective_kills": getObjectiveKills(name),
+        "solo_kills": getSoloKills(name),
+        "ultimate_charge": getUltimateCharge(name),
+        "ultimates_earned": getUltimatesEarned(name),
+        "ultimates_used": getUltimatesUsed(name),
     }
 
 
-def getStatsPerMin(name, array):
+def getStatsPerMin(name):
     return {
-        "all_damage_dealt": convertMin(getAllDamageDealt(name, array), array),
-        "barrier_damage_dealt": convertMin(getBarrierDamage(name, array), array),
-        "cooldown1": convertMin(getCooldown1(name, array), array),
-        "cooldown2": convertMin(getCooldown2(name, array), array),
-        "damage_blocked": convertMin(getDamageBlocked(name, array), array),
-        "damage_taken": convertMin(getDamageTaken(name, array), array),
-        "deaths": convertMin(getDeaths(name, array), array),
-        "eliminations": convertMin(getEliminations(name, array), array),
-        "environmental_deaths": convertMin(getEnviroDeaths(name, array), array),
-        "environmental_kills": convertMin(getEnviroKills(name, array), array),
-        "final_blows": convertMin(getFinalBlows(name, array), array),
-        "healing_dealt": convertMin(getHealingDealt(name, array), array),
-        "healing_received": convertMin(getHealingReceived(name, array), array),
-        "hero_damage_dealt": convertMin(getHeroDamageDealt(name, array), array),
-        "objective_kills": convertMin(getObjectiveKills(name, array), array),
-        "solo_kills": convertMin(getSoloKills(name, array), array),
-        "ultimate_charge": convertMin(getUltimateCharge(name, array), array),
-        "ultimates_earned": convertMin(getUltimatesEarned(name, array), array),
-        "ultimates_used": convertMin(getUltimatesUsed(name, array), array),
+        "all_damage_dealt": convertMin(getAllDamageDealt(name)),
+        "barrier_damage_dealt": convertMin(getBarrierDamage(name)),
+        "cooldown1": convertMin(getCooldown1(name)),
+        "cooldown2": convertMin(getCooldown2(name)),
+        "damage_blocked": convertMin(getDamageBlocked(name)),
+        "damage_taken": convertMin(getDamageTaken(name)),
+        "deaths": convertMin(getDeaths(name)),
+        "eliminations": convertMin(getEliminations(name)),
+        "environmental_deaths": convertMin(getEnviroDeaths(name)),
+        "environmental_kills": convertMin(getEnviroKills(name)),
+        "final_blows": convertMin(getFinalBlows(name)),
+        "healing_dealt": convertMin(getHealingDealt(name)),
+        "healing_received": convertMin(getHealingReceived(name)),
+        "hero_damage_dealt": convertMin(getHeroDamageDealt(name)),
+        "objective_kills": convertMin(getObjectiveKills(name)),
+        "solo_kills": convertMin(getSoloKills(name)),
+        "ultimate_charge": convertMin(getUltimateCharge(name)),
+        "ultimates_earned": convertMin(getUltimatesEarned(name)),
+        "ultimates_used": convertMin(getUltimatesUsed(name)),
     }
 

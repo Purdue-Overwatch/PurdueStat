@@ -35,7 +35,7 @@ if __name__ == '__main__':
         }
 
         # these lines set default values for the player variables so that they can't be undefined
-        player_number = "NAN"
+        player_number = -1
         player = {}
 
         # this loop creates each entry for the 12 player
