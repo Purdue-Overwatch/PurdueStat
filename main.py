@@ -2,22 +2,21 @@ from cgi import test
 import json
 import functions
 import sys
+import os
 
 # opens a test .json file and writes the contents to that file
 # only works if your folder is named PurdueStat for now
 
-
-# ignore this for now
-def main(filepath: str) -> int:
-    pass
+path = os.path.dirname(__file__)
 
 
 if __name__ == '__main__':
     # breaks the logfile up into its temp files
-    functions.readLogfile("exampleData\src2.txt")
+    functions.readLogfile(f"{path}\\exampleData\\src2.txt")
 
     # creates an array for the csvfile that was converted
-    CSVarray = functions.CSVToArray("testingTempfiles/tempCSV.txt")
+    CSVarray = functions.CSVToArray(f"{path}\\testingTempfiles\\tempCSV.txt")
+    print(CSVarray)
     array_json = json.dumps(CSVarray, indent=4)
     f = open("arrayfile.json", "w")
     f.write(array_json)

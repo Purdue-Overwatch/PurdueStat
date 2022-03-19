@@ -8,6 +8,9 @@ Defines utility function CSVToArray for converting an input CSV to a python 3 di
 
 import re
 import csv
+import os
+
+path = os.path.dirname(__file__)
 
 # This function takes in a logfile filename and creates 3 temp files that can be found in the testingTempfiles folder
 # takes an input of a filepath and has no outputs
@@ -15,9 +18,9 @@ def readLogfile(filename):
 
     # opens each file in the mode needed
     logfile = open(filename, 'r')
-    csvfile = open("testingTempfiles/tempCSV.txt", 'a')
-    eventfile = open("testingTempfiles/tempEvents.txt", 'a')
-    mapInfofile = open("testingTempfiles/tempMapInfo.txt", 'w')
+    csvfile = open(f"{path}\\testingTempfiles/tempCSV.txt", 'a')
+    eventfile = open(f"{path}\\testingTempfiles/tempEvents.txt", 'a')
+    mapInfofile = open(f"{path}\\testingTempfiles/tempMapInfo.txt", 'w')
 
     # removes the previous contents of these files since they are opened in append
     csvfile.truncate(0)
