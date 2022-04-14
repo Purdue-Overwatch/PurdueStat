@@ -58,9 +58,6 @@ def CSVToArray(filename):
         array = list(file_read)
     return array
 
-
-
-
 # start gen info functions
 # completed
 def getMapName(filename):
@@ -140,18 +137,19 @@ def getName(i, array):
 
 
 # completed
-def getRole(player_name, array):
-    role = 'Error'
+"""
+Iterate through players from array, when the player names match up return the role they played
+"""
+def getRole(player_name, array) -> str:
     for j in range(0, 12):
-        info = array[j][1:3]
-        name = info[0]
-        if name == player_name:
-            hero = info[1]
-            role = defineRole(hero)
-    return role
+        if array[j][1] == player_name: 
+            return defineRole(array[j][2]) 
+    return 'Error'
 
+def getUltTimings(player_name, array):
+    # 18th thing
+    ult_arr = []
 
-def getUltTimings():
     return [
         [[52, 57], [153, 154]],
         [[64, 120], [168, 169], [294, 309]],
