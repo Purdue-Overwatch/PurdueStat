@@ -48,7 +48,7 @@ if __name__ == '__main__':
                 "avg_time_ult_held": functions.getTimeUltHeld(),
                 "final_stats": functions.getFinalStats(playerName, CSVarray),
                 "stats_per_minute": functions.getStatsPerMin(playerName, CSVarray),
-                "ult_timings": functions.getUltTimings(),
+                "ult_timings": functions.getUltTimings(playerName, CSVarray),
                 "heroes_played": functions.getHeroesPlayed(),
             }
         # updates the map dictionary with the current player of the loop

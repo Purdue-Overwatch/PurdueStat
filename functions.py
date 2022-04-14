@@ -14,6 +14,9 @@ path = os.path.dirname(__file__)
 
 # This function takes in a logfile filename and creates 3 temp files that can be found in the testingTempfiles folder
 # takes an input of a filepath and has no outputs
+
+"""NOT COMPLETED"""
+"""needs tested for not KOTH maps"""
 def readLogfile(filename):
 
     # opens each file in the mode needed
@@ -27,8 +30,8 @@ def readLogfile(filename):
     eventfile.truncate(0)
 
     # if a word in this list is in the line it will move that line to the tempevents file
-    listOfTriggers = ["False", "True", "FinalBlow"]
-
+    listOfEventTriggers = ["FinalBlow", "Resurrected", "DuplicatingStart", "DuplicatingEnd"]
+    listOfMapInfoTriggers = ["False", "True"]
     # splits the first 2 lines that contain the map info into thier own file
     for i in range(0,2):
         mapLines = logfile.readline()
@@ -36,9 +39,11 @@ def readLogfile(filename):
 
     # splits the events from the rest of the info so that a csv format file is left
     for line in logfile:
-        if any(trigger in line for trigger in listOfTriggers) | (
-                re.match("\[\d+:\d+:\d+] [0-9]+\.[0-9]+,(([0-9]+\.[0-9]+)|\d+),(([0-9]+\.[0-9]+)|\d+)\n", line) is not None):
+        if any(trigger in line for trigger in listOfEventTriggers):
             eventfile.write(line)
+        if any(trigger in line for trigger in listOfMapInfoTriggers) | (
+                re.match("\[\d+:\d+:\d+] [0-9]+\.[0-9]+,(([0-9]+\.[0-9]+)|\d+),(([0-9]+\.[0-9]+)|\d+)\n", line) is not None):
+            mapInfofile.write(line)
         else:
             csvfile.write(line)
 
@@ -48,19 +53,24 @@ def readLogfile(filename):
     mapInfofile.close()
     pass
 
-# convert the input CSV file to a list that holds each row of a matrix
-# array is a list of lists where each entry in array is a line of the input file and that line is broken into a list using comas as seperators
-# array[0][0] is the first line of the input file and the first seperated string
-# array[0][1] is the first line and the second seperated string, and so on
-def CSVToArray(filename):
+
+    ''' 
+    convert the input CSV file to a list that holds each row of a matrix
+    array is a list of lists where each entry in array is a line of the input file and that line is broken into a list 
+    using comas as separators
+    array[0][0] is the first line of the input file and the first separated string
+    array[0][1] is the first line and the second separated string, and so on
+    '''
+def CSVToArray(filename) -> list:
     with open(filename) as CSVfile:
         file_read = csv.reader(CSVfile)
         array = list(file_read)
     return array
 
+
 # start gen info functions
 # completed
-def getMapName(filename):
+def getMapName(filename) -> str:
     map_array = CSVToArray(filename)
     return map_array[0][0][11:]
 
@@ -70,7 +80,7 @@ def getMapScore():
 
 
 # completed
-def getMapType(filename):
+def getMapType(filename) -> str:
     map_name = getMapName(filename)
     if map_name in ["Busan", "Ilios", "Lijiang Tower", "Nepal", "Oasis"]:
         return "Control"
@@ -85,7 +95,7 @@ def getMapType(filename):
 
 
 # completed
-def getTeam(player_name):
+def getTeam(player_name) -> str:
     map_info = CSVToArray("testingTempfiles/tempMapInfo.txt")
     # team1 = map_info[0][1]
     # team2 = map_info[0][2]
@@ -101,7 +111,7 @@ def getTeam(player_name):
 
 
 # completed
-def defineRole(heroes):
+def defineRole(heroes) -> str:
     if heroes in ["Reinhardt", "Orisa", "Winston"]:
         return "main_tank"
     if heroes in ["D.Va", "Roadhog", "Sigma", "WreckingBall", "Zarya"]:
@@ -117,7 +127,7 @@ def defineRole(heroes):
 
 
 # completed
-def getName(i, array):
+def getName(i, array) -> str:
     for j in range(0, 12):
         info = array[j][1:3]
         name = info[0]
@@ -146,7 +156,8 @@ def getRole(player_name, array) -> str:
             return defineRole(array[j][2]) 
     return 'Error'
 
-def getUltTimings(player_name, array):
+
+def getUltTimings(player_name, array) -> list:
     # 18th thing
     ult_arr = []
 
@@ -176,7 +187,7 @@ def getHeroesPlayed():
 # start final stat functions
 
 # completed
-def getFinalEntries(array):
+def getFinalEntries(array) -> list:
     length = len(array)
     final_entries = []
     for i in range(1, 13):
@@ -184,89 +195,108 @@ def getFinalEntries(array):
     return final_entries
 
 
-def getFinalInfo(input_name, array, statnum):
+def getFinalInfo(input_name, array, statnum) -> float:
     final_entries = getFinalEntries(array)
     for j in range(0, 12):
         name = final_entries[j][1]
         if name == input_name:
             stat = final_entries[j][statnum - 1]
             return float(stat)
-    return "Error"
+    return None
+
 
 # completed
-def getAllDamageDealt(input_name, array):
+def getAllDamageDealt(input_name, array) -> float:
     return getBarrierDamage(input_name, array) + getHeroDamageDealt(input_name, array)
 
+
 # completed
-def getBarrierDamage(input_name, array):
+def getBarrierDamage(input_name, array) -> float:
     return getFinalInfo(input_name, array, 5)
 
+
 # completed
-def getCooldown1(input_name, array):
+def getCooldown1(input_name, array) -> float:
     return getFinalInfo(input_name, array, 25)
 
+
 # completed
-def getCooldown2(input_name, array):
+def getCooldown2(input_name, array) -> float:
     return getFinalInfo(input_name, array, 26)
 
+
 # completed
-def getDamageBlocked(input_name, array):
+def getDamageBlocked(input_name, array) -> float:
     return getFinalInfo(input_name, array, 6)
 
+
 # completed
-def getDamageTaken(input_name, array):
+def getDamageTaken(input_name, array) -> float:
     return getFinalInfo(input_name, array, 7)
 
+
 # completed
-def getDeaths(input_name, array):
+def getDeaths(input_name, array) -> float:
     return getFinalInfo(input_name, array, 8)
 
+
 # completed
-def getEliminations(input_name, array):
+def getEliminations(input_name, array) -> float:
     return getFinalInfo(input_name, array, 9)
 
+
 # completed
-def getEnviroDeaths(input_name, array):
+def getEnviroDeaths(input_name, array) -> float:
     return getFinalInfo(input_name, array, 11)
 
+
 # completed
-def getEnviroKills(input_name, array):
+def getEnviroKills(input_name, array) -> float:
     return getFinalInfo(input_name, array, 12)
 
+
 # completed
-def getFinalBlows(input_name, array):
+def getFinalBlows(input_name, array) -> float:
     return getFinalInfo(input_name, array, 10)
 
+
 # completed
-def getHealingDealt(input_name, array):
+def getHealingDealt(input_name, array) -> float:
     return getFinalInfo(input_name, array, 13)
 
+
 # completed
-def getHealingReceived(input_name, array):
+def getHealingReceived(input_name, array) -> float:
     return getFinalInfo(input_name, array, 18)
 
+
 # completed
-def getHeroDamageDealt(input_name, array):
+def getHeroDamageDealt(input_name, array) -> float:
     return getFinalInfo(input_name, array, 4)
 
+
 # completed
-def getObjectiveKills(input_name, array):
+def getObjectiveKills(input_name, array) -> float:
     return getFinalInfo(input_name, array, 14)
 
+
 # completed
-def getSoloKills(input_name, array):
+def getSoloKills(input_name, array) -> float:
     return getFinalInfo(input_name, array, 15)
 
+
 # completed
-def getUltimateCharge(input_name, array):
+def getUltimateCharge(input_name, array) -> float:
     return getFinalInfo(input_name, array, 19)
 
-# completed
-def getUltimatesEarned(input_name, array):
-    return getFinalInfo(input_name, array, 16)
 
 # completed
-def getUltimatesUsed(input_name, array):
+def getUltimatesEarned(input_name, array) -> float:
+    return getFinalInfo(input_name, array, 16)
+
+
+# completed
+def getUltimatesUsed(input_name, array) -> float:
     return getFinalInfo(input_name, array, 17)
 
 
@@ -275,7 +305,7 @@ def getUltimatesUsed(input_name, array):
 '''NOTE: PLEASE READ BELOW'''
 ''' PLEASE READ!!!!! '''
 # convertMin does NOT exclude round pauses in its calculations!!!!
-def convertMin(stat, array):
+def convertMin(stat, array) -> float:
     finalStats = getFinalEntries(array)[0]
     finalSec = round(float(finalStats[0][11:]))
     initialSec = round(float(array[0][0][11:]))
@@ -283,7 +313,7 @@ def convertMin(stat, array):
     return stat / (timeSec / 60)
 
 
-def getFinalStats(name, array):
+def getFinalStats(name, array) -> dict:
     return {
         "all_damage_dealt": getAllDamageDealt(name, array),
         "barrier_damage_dealt": getBarrierDamage(name, array),
@@ -307,7 +337,7 @@ def getFinalStats(name, array):
     }
 
 
-def getStatsPerMin(name, array):
+def getStatsPerMin(name, array) -> dict:
     return {
         "all_damage_dealt": convertMin(getAllDamageDealt(name, array), array),
         "barrier_damage_dealt": convertMin(getBarrierDamage(name, array), array),
