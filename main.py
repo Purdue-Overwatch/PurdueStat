@@ -4,28 +4,23 @@ import functions
 import sys
 import os
 
-# opens a test .json file and writes the contents to that file
-# only works if your folder is named PurdueStat for now
 
-path = os.path.dirname(__file__)
-
-
-if __name__ == '__main__':
-    # breaks the logfile up into its temp files
-    functions.readLogfile(f"{path}\\exampleData\\src2.txt")
-
-    # creates an array for the csvfile that was converted
-    CSVarray = functions.CSVToArray(f"{path}\\testingTempfiles\\tempCSV.txt")
-    print(CSVarray)
-    array_json = json.dumps(CSVarray, indent=4)
-    f = open("arrayfile.json", "w")
-    f.write(array_json)
-    f.close()
-
+def main(filenames):
+    # initializes the match list that is appended once for every logfile
     match = []
-    # currently loops twice, would need to loop for as many files as we have
-    # this loop adds entries into the match list, allowing more than 1 map be to represented
-    for j in range(0, 1):
+    print(len(filenames))
+    for j in range(0, len(filenames)):
+        path = os.path.dirname(__file__)
+        # breaks the logfile up into its temp files
+        functions.readLogfile(f"{path}\\{filenames[j]}")
+
+        # creates an array for the csvfile that was converted
+        CSVarray = functions.CSVToArray(f"{path}\\testingTempfiles\\tempCSV.txt")
+        array_json = json.dumps(CSVarray, indent=4)
+        f = open("arrayfile.json", "w")
+        f.write(array_json)
+        f.close()
+
         # creates the outermost dictionary that is for each map
         map_dict = {
             "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
@@ -41,6 +36,7 @@ if __name__ == '__main__':
         for i in range(1, 13):
             playerNumber = "player" + str(i)
             playerName = functions.getName(i, CSVarray)
+            print(playerName)
             player = {
                 "name": playerName,
                 "role": functions.getRole(playerName, CSVarray),
@@ -51,7 +47,7 @@ if __name__ == '__main__':
                 "ult_timings": functions.getUltTimings(playerName, CSVarray),
                 "heroes_played": functions.getHeroesPlayed(),
             }
-        # updates the map dictionary with the current player of the loop
+            # updates the map dictionary with the current player of the loop
             map_dict[playerNumber] = player
 
         # this line adds the map to the match list
@@ -66,3 +62,15 @@ if __name__ == '__main__':
     f = open("testingTempfiles/demofile.json", "w")
     f.write(json_match)
     f.close()
+
+
+if __name__ == '__main__':
+
+    filenames = ['MoreScrims/testscrim2/Log-2022-04-11-20-06-16.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-20-25-37.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-20-46-40.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-04-58.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-24-25.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']
+
+    main(filenames)

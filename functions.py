@@ -111,6 +111,11 @@ def getTeam(player_name) -> str:
 
 
 # completed
+# note for brody, from brody
+# make a dictionary with each player as a key and assign each player a role based on priority of the hero they are playing
+# to check priority find both players playing a role and loop through the possible heros until the hero the person is playing
+# is found in the list, the first hero found will be the main tank, or flex dps, or main sup, and the other player will default
+# to the other role, do this for each team
 def defineRole(heroes) -> str:
     if heroes in ["Reinhardt", "Orisa", "Winston"]:
         return "main_tank"
@@ -128,6 +133,7 @@ def defineRole(heroes) -> str:
 
 # completed
 def getName(i, array) -> str:
+    i = i + 1
     for j in range(0, 12):
         info = array[j][1:3]
         name = info[0]
@@ -137,11 +143,30 @@ def getName(i, array) -> str:
         rolelist = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
         # check if name is in team 1 array?
         # check if roles line up (if role = roleList[i]
-        if (i >= 1) & (i <= 6) & (team == "team1"):
-            if role == rolelist[i - 1]:
+        if (i >= 2) & (i <= 7) & (team == "team1"):
+            if role == rolelist[i - 2]:
                 return name
-        elif (i >= 7) & (i <= 12) & (team == "team2"):
-            if role == rolelist[i - 7]:
+        elif (i >= 8) & (i <= 13) & (team == "team2"):
+            if role == rolelist[i - 8]:
+                return name
+
+    for j in range(0, 12):
+        info = array[j][1:3]
+        name = info[0]
+        hero = info[1]
+        team = getTeam(name)
+        role = defineRole(hero)
+        rolelist = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
+        # check if name is in team 1 array?
+        # check if roles line up (if role = roleList[i]
+        if (i >= 2) & (i <= 7) & (team == "team1"):
+            if role == (rolelist[i - 1] or rolelist[i - 2]):
+                return name
+        elif (i >= 8) & (i <= 13) & (team == "team2"):
+            if (i == 13):
+                if role == (rolelist[4] or rolelist[5]):
+                    return name
+            elif role == (rolelist[i - 7] or rolelist[i - 8]):
                 return name
     return "Error"
 
@@ -207,7 +232,7 @@ def getFinalInfo(input_name, array, statnum) -> float:
 
 # completed
 def getAllDamageDealt(input_name, array) -> float:
-    return getBarrierDamage(input_name, array) + getHeroDamageDealt(input_name, array)
+    return float(getBarrierDamage(input_name, array)) + float(getHeroDamageDealt(input_name, array))
 
 
 # completed
