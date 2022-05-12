@@ -6,7 +6,7 @@
             0
         ],
         "map_type": "Control",
-        "player0": {
+        "player1": {
             "name": "alohomora",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -102,7 +102,7 @@
                 "WreckingBall": 94
             }
         },
-        "player1": {
+        "player2": {
             "name": "TinyDino",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -198,7 +198,7 @@
                 "WreckingBall": 94
             }
         },
-        "player2": {
+        "player3": {
             "name": "SherdyShark",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -294,7 +294,7 @@
                 "WreckingBall": 94
             }
         },
-        "player3": {
+        "player4": {
             "name": "Otakuor",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -390,7 +390,7 @@
                 "WreckingBall": 94
             }
         },
-        "player4": {
+        "player5": {
             "name": "WrpDrkmattr",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -486,7 +486,7 @@
                 "WreckingBall": 94
             }
         },
-        "player5": {
+        "player6": {
             "name": "TrickyZerg",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -582,7 +582,7 @@
                 "WreckingBall": 94
             }
         },
-        "player6": {
+        "player7": {
             "name": "Raptor27z",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -678,7 +678,7 @@
                 "WreckingBall": 94
             }
         },
-        "player7": {
+        "player8": {
             "name": "Esfenita",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -774,7 +774,7 @@
                 "WreckingBall": 94
             }
         },
-        "player8": {
+        "player9": {
             "name": "Ellie",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -870,7 +870,7 @@
                 "WreckingBall": 94
             }
         },
-        "player9": {
+        "player10": {
             "name": "muungdal",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -966,7 +966,7 @@
                 "WreckingBall": 94
             }
         },
-        "player10": {
+        "player11": {
             "name": "HubbleSpaceX",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -1062,7 +1062,7 @@
                 "WreckingBall": 94
             }
         },
-        "player11": {
+        "player12": {
             "name": "Matz7u7",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -1166,7 +1166,7 @@
             0
         ],
         "map_type": "Assault",
-        "player0": {
+        "player1": {
             "name": "alohomora",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -1262,7 +1262,7 @@
                 "WreckingBall": 94
             }
         },
-        "player1": {
+        "player2": {
             "name": "TinyDino",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -1358,7 +1358,7 @@
                 "WreckingBall": 94
             }
         },
-        "player2": {
+        "player3": {
             "name": "SherdyShark",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -1454,7 +1454,7 @@
                 "WreckingBall": 94
             }
         },
-        "player3": {
+        "player4": {
             "name": "Otakuor",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -1550,7 +1550,7 @@
                 "WreckingBall": 94
             }
         },
-        "player4": {
+        "player5": {
             "name": "WrpDrkmattr",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -1646,7 +1646,7 @@
                 "WreckingBall": 94
             }
         },
-        "player5": {
+        "player6": {
             "name": "TrickyZerg",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -1742,7 +1742,7 @@
                 "WreckingBall": 94
             }
         },
-        "player6": {
+        "player7": {
             "name": "Matz7u7",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -1838,7 +1838,7 @@
                 "WreckingBall": 94
             }
         },
-        "player7": {
+        "player8": {
             "name": "Esfenita",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -1934,7 +1934,7 @@
                 "WreckingBall": 94
             }
         },
-        "player8": {
+        "player9": {
             "name": "muungdal",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -2030,7 +2030,7 @@
                 "WreckingBall": 94
             }
         },
-        "player9": {
+        "player10": {
             "name": "HubbleSpaceX",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -2126,7 +2126,7 @@
                 "WreckingBall": 94
             }
         },
-        "player10": {
+        "player11": {
             "name": "Raptor27z",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -2222,7 +2222,7 @@
                 "WreckingBall": 94
             }
         },
-        "player11": {
+        "player12": {
             "name": "Perico",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -2326,7 +2326,7 @@
             0
         ],
         "map_type": "Hybrid",
-        "player0": {
+        "player1": {
             "name": "alohomora",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -2422,7 +2422,7 @@
                 "WreckingBall": 94
             }
         },
-        "player1": {
+        "player2": {
             "name": "TinyDino",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -2518,7 +2518,7 @@
                 "WreckingBall": 94
             }
         },
-        "player2": {
+        "player3": {
             "name": "SherdyShark",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -2614,7 +2614,7 @@
                 "WreckingBall": 94
             }
         },
-        "player3": {
+        "player4": {
             "name": "Bonzai",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -2710,7 +2710,7 @@
                 "WreckingBall": 94
             }
         },
-        "player4": {
+        "player5": {
             "name": "WrpDrkmattr",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -2806,7 +2806,7 @@
                 "WreckingBall": 94
             }
         },
-        "player5": {
+        "player6": {
             "name": "TrickyZerg",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -2902,7 +2902,7 @@
                 "WreckingBall": 94
             }
         },
-        "player6": {
+        "player7": {
             "name": "Matz7u7",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -2998,7 +2998,7 @@
                 "WreckingBall": 94
             }
         },
-        "player7": {
+        "player8": {
             "name": "Esfenita",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -3094,7 +3094,7 @@
                 "WreckingBall": 94
             }
         },
-        "player8": {
+        "player9": {
             "name": "HubbleSpaceX",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -3190,7 +3190,7 @@
                 "WreckingBall": 94
             }
         },
-        "player9": {
+        "player10": {
             "name": "muungdal",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -3286,7 +3286,7 @@
                 "WreckingBall": 94
             }
         },
-        "player10": {
+        "player11": {
             "name": "Raptor27z",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -3382,7 +3382,7 @@
                 "WreckingBall": 94
             }
         },
-        "player11": {
+        "player12": {
             "name": "Perico",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -3486,7 +3486,7 @@
             0
         ],
         "map_type": "Escort",
-        "player0": {
+        "player1": {
             "name": "alohomora",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -3582,7 +3582,7 @@
                 "WreckingBall": 94
             }
         },
-        "player1": {
+        "player2": {
             "name": "TinyDino",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -3678,7 +3678,7 @@
                 "WreckingBall": 94
             }
         },
-        "player2": {
+        "player3": {
             "name": "SherdyShark",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -3774,7 +3774,7 @@
                 "WreckingBall": 94
             }
         },
-        "player3": {
+        "player4": {
             "name": "Bonzai",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -3870,7 +3870,7 @@
                 "WreckingBall": 94
             }
         },
-        "player4": {
+        "player5": {
             "name": "WrpDrkmattr",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -3966,7 +3966,7 @@
                 "WreckingBall": 94
             }
         },
-        "player5": {
+        "player6": {
             "name": "TrickyZerg",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -4062,7 +4062,7 @@
                 "WreckingBall": 94
             }
         },
-        "player6": {
+        "player7": {
             "name": "Matz7u7",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -4158,7 +4158,7 @@
                 "WreckingBall": 94
             }
         },
-        "player7": {
+        "player8": {
             "name": "Esfenita",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -4254,7 +4254,7 @@
                 "WreckingBall": 94
             }
         },
-        "player8": {
+        "player9": {
             "name": "muungdal",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -4350,7 +4350,7 @@
                 "WreckingBall": 94
             }
         },
-        "player9": {
+        "player10": {
             "name": "HubbleSpaceX",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -4446,7 +4446,7 @@
                 "WreckingBall": 94
             }
         },
-        "player10": {
+        "player11": {
             "name": "Perico",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -4542,7 +4542,7 @@
                 "WreckingBall": 94
             }
         },
-        "player11": {
+        "player12": {
             "name": "Raptor27z",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -4646,7 +4646,7 @@
             0
         ],
         "map_type": "Escort",
-        "player0": {
+        "player1": {
             "name": "alohomora",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -4742,7 +4742,7 @@
                 "WreckingBall": 94
             }
         },
-        "player1": {
+        "player2": {
             "name": "TinyDino",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -4838,7 +4838,7 @@
                 "WreckingBall": 94
             }
         },
-        "player2": {
+        "player3": {
             "name": "SherdyShark",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -4934,7 +4934,7 @@
                 "WreckingBall": 94
             }
         },
-        "player3": {
+        "player4": {
             "name": "Otakuor",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -5030,7 +5030,7 @@
                 "WreckingBall": 94
             }
         },
-        "player4": {
+        "player5": {
             "name": "WrpDrkmattr",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -5126,7 +5126,7 @@
                 "WreckingBall": 94
             }
         },
-        "player5": {
+        "player6": {
             "name": "TrickyZerg",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -5222,7 +5222,7 @@
                 "WreckingBall": 94
             }
         },
-        "player6": {
+        "player7": {
             "name": "Matz7u7",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -5318,7 +5318,7 @@
                 "WreckingBall": 94
             }
         },
-        "player7": {
+        "player8": {
             "name": "muungdal",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -5414,7 +5414,7 @@
                 "WreckingBall": 94
             }
         },
-        "player8": {
+        "player9": {
             "name": "HubbleSpaceX",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -5510,7 +5510,7 @@
                 "WreckingBall": 94
             }
         },
-        "player9": {
+        "player10": {
             "name": "\u00c7\u201aZ\u00c8\u2020\u00c5\u0160\u00c5\u00a6\u00c5\u2013\u00c8\u201eX\u00c7\u201a",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -5606,7 +5606,7 @@
                 "WreckingBall": 94
             }
         },
-        "player10": {
+        "player11": {
             "name": "Perico",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -5702,7 +5702,7 @@
                 "WreckingBall": 94
             }
         },
-        "player11": {
+        "player12": {
             "name": "Raptor27z",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -5806,7 +5806,7 @@
             0
         ],
         "map_type": "Escort",
-        "player0": {
+        "player1": {
             "name": "alohomora",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -5902,7 +5902,7 @@
                 "WreckingBall": 94
             }
         },
-        "player1": {
+        "player2": {
             "name": "TinyDino",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -5998,7 +5998,7 @@
                 "WreckingBall": 94
             }
         },
-        "player2": {
+        "player3": {
             "name": "SherdyShark",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -6094,7 +6094,7 @@
                 "WreckingBall": 94
             }
         },
-        "player3": {
+        "player4": {
             "name": "Otakuor",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -6190,7 +6190,7 @@
                 "WreckingBall": 94
             }
         },
-        "player4": {
+        "player5": {
             "name": "WrpDrkmattr",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -6286,7 +6286,7 @@
                 "WreckingBall": 94
             }
         },
-        "player5": {
+        "player6": {
             "name": "TrickyZerg",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,
@@ -6382,7 +6382,7 @@
                 "WreckingBall": 94
             }
         },
-        "player6": {
+        "player7": {
             "name": "HubbleSpaceX",
             "role": "main_tank",
             "avg_time_to_ult": 88.375,
@@ -6478,7 +6478,7 @@
                 "WreckingBall": 94
             }
         },
-        "player7": {
+        "player8": {
             "name": "Perico",
             "role": "off_tank",
             "avg_time_to_ult": 88.375,
@@ -6574,7 +6574,7 @@
                 "WreckingBall": 94
             }
         },
-        "player8": {
+        "player9": {
             "name": "Matz7u7",
             "role": "hitscan_dps",
             "avg_time_to_ult": 88.375,
@@ -6670,7 +6670,7 @@
                 "WreckingBall": 94
             }
         },
-        "player9": {
+        "player10": {
             "name": "Raptor27z",
             "role": "flex_dps",
             "avg_time_to_ult": 88.375,
@@ -6766,7 +6766,7 @@
                 "WreckingBall": 94
             }
         },
-        "player10": {
+        "player11": {
             "name": "\u00c7\u201aZ\u00c8\u2020\u00c5\u0160\u00c5\u00a6\u00c5\u2013\u00c8\u201eX\u00c7\u201a",
             "role": "main_support",
             "avg_time_to_ult": 88.375,
@@ -6862,7 +6862,7 @@
                 "WreckingBall": 94
             }
         },
-        "player11": {
+        "player12": {
             "name": "muungdal",
             "role": "flex_support",
             "avg_time_to_ult": 88.375,

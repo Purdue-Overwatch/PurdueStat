@@ -35,7 +35,7 @@ def main(filenames):
 
         # this loop creates each entry for the 12 player
         for i in range(0, 12):
-            playerNumber = "player" + str(i)
+            playerNumber = "player" + str(i+1)
             playerName = playerDict[i]
             player = {
                 "name": playerName,
