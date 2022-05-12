@@ -8,7 +8,6 @@ import os
 def main(filenames):
     # initializes the match list that is appended once for every logfile
     match = []
-    print(len(filenames))
     for j in range(0, len(filenames)):
         path = os.path.dirname(__file__)
         # breaks the logfile up into its temp files
