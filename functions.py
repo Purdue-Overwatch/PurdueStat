@@ -208,8 +208,8 @@ def makePlayerDict(array):
         sortedsupport = assignRoles(supportplayers, supportheroes)
         ordered_names.append(sortedtank[0])
         ordered_names.append(sortedtank[1])
-        ordered_names.append(sorteddps[0])
         ordered_names.append(sorteddps[1])
+        ordered_names.append(sorteddps[0])
         ordered_names.append(sortedsupport[0])
         ordered_names.append(sortedsupport[1])
     return ordered_names
@@ -263,7 +263,32 @@ def getTimeUltHeld():
     return 19.857
 
 
-def getHeroesPlayed():
+def getHeroesPlayed(name, array):
+    time = 0
+    hero = 'NA'
+    heroes_played = {}
+    herolist = []
+    herotimes = []
+    for line in array:
+
+        if line[1:3][0] == name:
+            temp = hero
+            hero = line[1:3][1]
+            prevhero = temp
+
+            if (hero != prevhero) & (prevhero != 'NA'):
+                herolist.append(prevhero)
+                herotimes.append(time)
+                time = 0
+            time += 1
+    herolist.append(hero)
+    herotimes.append(time)
+    heroes_played["heroes"] = herolist
+    for i in range(len(herolist)):
+        heroes_played[herolist[i]] = herotimes[i]
+    print(heroes_played)
+
+
     return {
         "heroes": ["D.Va", "WreckingBall"],
         "D.Va": 835,
