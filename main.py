@@ -32,14 +32,15 @@ def main(filenames):
         player_number = -1
         player = {}
 
+        playerDict = functions.makePlayerDict(CSVarray)
+
         # this loop creates each entry for the 12 player
-        for i in range(1, 13):
+        for i in range(0, 12):
             playerNumber = "player" + str(i)
-            playerName = functions.getName(i, CSVarray)
-            print(playerName)
+            playerName = playerDict[i]
             player = {
                 "name": playerName,
-                "role": functions.getRole(playerName, CSVarray),
+                "role": functions.getRole(playerName, playerDict),
                 "avg_time_to_ult": functions.getTimeToUlt(),
                 "avg_time_ult_held": functions.getTimeUltHeld(),
                 "final_stats": functions.getFinalStats(playerName, CSVarray),
@@ -66,11 +67,12 @@ def main(filenames):
 
 if __name__ == '__main__':
 
-    filenames = ['MoreScrims/testscrim2/Log-2022-04-11-20-06-16.txt',
+    filenames = ['exampleData/src1.txt']
+    '''filenames = ['MoreScrims/testscrim2/Log-2022-04-11-20-06-16.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-20-25-37.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-20-46-40.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-04-58.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-24-25.txt',
-                 'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']'''
 
     main(filenames)

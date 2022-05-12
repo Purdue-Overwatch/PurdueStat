@@ -117,20 +117,15 @@ def getTeam(player_name) -> str:
 # is found in the list, the first hero found will be the main tank, or flex dps, or main sup, and the other player will default
 # to the other role, do this for each team
 def defineRole(heroes) -> str:
-    if heroes in ["Reinhardt", "Orisa", "Winston"]:
-        return "main_tank"
-    if heroes in ["D.Va", "Roadhog", "Sigma", "WreckingBall", "Zarya"]:
-        return "off_tank"
-    if heroes in ["Ashe", "Bastion", "Cassidy", "Reaper", "Soldier76", "Sombra", "Tracer", "Widowmaker"]:
-        return "hitscan_dps"
-    if heroes in ["Doomfist", "Echo", "Genji", "Hanzo", "Junkrat", "Mei", "Pharah", "Symmetra", "Torbjorn"]:
-        return "flex_dps"
-    if heroes in ["L\u00c3\u00bacio", "Zenyatta", "Mercy", "Brigitte"]:
-        return "main_support"
-    if heroes in ["Ana", "Baptiste", "Moira"]:
-        return "off_support"
+    if heroes in ["Reinhardt", "Orisa", "Winston","D.Va", "Roadhog", "Sigma", "WreckingBall", "Zarya"]:
+        return "Tank"
+    if heroes in ["Ashe", "Bastion", "Cassidy", "Reaper", "Soldier76", "Sombra", "Tracer", "Widowmaker","Doomfist", "Echo", "Genji", "Hanzo", "Junkrat", "Mei", "Pharah", "Symmetra", "Torbjorn"]:
+        return "Dps"
+    if heroes in ["L\u00c3\u00bacio", "Zenyatta", "Mercy", "Brigitte","Ana", "Baptiste", "Moira"]:
+        return "Support"
 
 
+'''
 # completed
 def getName(i, array) -> str:
     i = i + 1
@@ -149,26 +144,100 @@ def getName(i, array) -> str:
         elif (i >= 8) & (i <= 13) & (team == "team2"):
             if role == rolelist[i - 8]:
                 return name
+'''
 
+
+def assignRoles(players, heroes):
+    tanklist = ["Reinhardt", "Winston", "Orisa", "WreckingBall", "Roadhog", "Zarya", "Sigma", "D.Va"]
+    dpslist = ["Echo", "Pharah", "Doomfist", "Junkrat", "Mei", "Sombra", "Torbjorn", "Genji", "Hanzo", "Symmetra", "Reaper", "Soldier76", "Tracer", "Bastion", "Ashe", "Cassidy", "Widowmaker"]
+    suplist = ["L\u00c3\u00bacio", "Brigitte", "Mercy", "Moira", "Zenyatta", "Baptiste", "Ana"]
+    hero1 = heroes[0]
+    hero2 = heroes[1]
+    output = []
+    if defineRole(heroes[0]) == "Tank":
+        for hero in tanklist:
+            if hero1 == hero:
+                output.append(players[0])
+                output.append(players[1])
+                break
+            elif hero2 == hero:
+                output.append(players[1])
+                output.append(players[0])
+                break
+    elif defineRole(heroes[0]) == "Dps":
+        for hero in dpslist:
+            if hero1 == hero:
+                output.append(players[0])
+                output.append(players[1])
+                break
+            elif hero2 == hero:
+                output.append(players[1])
+                output.append(players[0])
+                break
+    elif defineRole(heroes[0]) == "Support":
+        for hero in suplist:
+            if hero1 == hero:
+                output.append(players[0])
+                output.append(players[1])
+                break
+            elif hero2 == hero:
+                output.append(players[1])
+                output.append(players[0])
+                break
+    return output
+
+
+def makePlayerDict(array):
+    names = []
+    heroes = []
+    team1players = []
+    team1heroes = []
+    team2players = []
+    team2heroes = []
+    ordered_names = []
     for j in range(0, 12):
         info = array[j][1:3]
-        name = info[0]
-        hero = info[1]
-        team = getTeam(name)
-        role = defineRole(hero)
-        rolelist = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
-        # check if name is in team 1 array?
-        # check if roles line up (if role = roleList[i]
-        if (i >= 2) & (i <= 7) & (team == "team1"):
-            if role == (rolelist[i - 1] or rolelist[i - 2]):
-                return name
-        elif (i >= 8) & (i <= 13) & (team == "team2"):
-            if (i == 13):
-                if role == (rolelist[4] or rolelist[5]):
-                    return name
-            elif role == (rolelist[i - 7] or rolelist[i - 8]):
-                return name
-    return "Error"
+        names.append(info[0])
+        heroes.append(info[1])
+    for i in range(0, 12):
+        team = getTeam(names[i])
+        if team == "team1":
+            team1players.append(names[i])
+            team1heroes.append(heroes[i])
+        elif team == "team2":
+            team2players.append(names[i])
+            team2heroes.append(heroes[i])
+        else:
+            pass
+    for [team, heroes] in [[team1players, team1heroes], [team2players, team2heroes]]:
+        tankplayers = []
+        tankheroes = []
+        dpsplayers = []
+        dpsheroes = []
+        supportplayers = []
+        supportheroes = []
+        for i in range(0,6):
+            if defineRole(heroes[i]) == "Tank":
+                tankplayers.append(team[i])
+                tankheroes.append(heroes[i])
+            elif defineRole(heroes[i]) == "Dps":
+                dpsplayers.append(team[i])
+                dpsheroes.append(heroes[i])
+            elif defineRole(heroes[i]) == "Support":
+                supportplayers.append(team[i])
+                supportheroes.append(heroes[i])
+            else:
+                pass
+        sortedtank = assignRoles(tankplayers, tankheroes)
+        sorteddps = assignRoles(dpsplayers, dpsheroes)
+        sortedsupport = assignRoles(supportplayers, supportheroes)
+        ordered_names.append(sortedtank[0])
+        ordered_names.append(sortedtank[1])
+        ordered_names.append(sorteddps[0])
+        ordered_names.append(sorteddps[1])
+        ordered_names.append(sortedsupport[0])
+        ordered_names.append(sortedsupport[1])
+    return ordered_names
 
 
 # completed
@@ -176,9 +245,27 @@ def getName(i, array) -> str:
 Iterate through players from array, when the player names match up return the role they played
 """
 def getRole(player_name, array) -> str:
+    count = 0
+    for player in array:
+        if player == player_name:
+            if count % 6 == 0:
+                return "main_tank"
+            elif count % 6 == 1:
+                return "off_tank"
+            elif count % 6 == 2:
+                return "hitscan_dps"
+            elif count % 6 == 3:
+                return "flex_dps"
+            elif count % 6 == 4:
+                return "main_support"
+            elif count % 6 == 5:
+                return "flex_support"
+        count += 1
+
+
     for j in range(0, 12):
-        if array[j][1] == player_name: 
-            return defineRole(array[j][2]) 
+        if array[j][1] == player_name:
+            return defineRole(array[j][2])
     return 'Error'
 
 
@@ -384,4 +471,3 @@ def getStatsPerMin(name, array) -> dict:
         "ultimates_earned": convertMin(getUltimatesEarned(name, array), array),
         "ultimates_used": convertMin(getUltimatesUsed(name, array), array),
     }
-
