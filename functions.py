@@ -117,17 +117,17 @@ def getTeam(player_name) -> str:
 # is found in the list, the first hero found will be the main tank, or flex dps, or main sup, and the other player will default
 # to the other role, do this for each team
 def defineRole(heroes) -> str:
-    if heroes in ["Reinhardt", "Orisa", "Winston","D.Va", "Roadhog", "Sigma", "WreckingBall", "Zarya"]:
+    if heroes in ["Reinhardt", "Orisa", "Winston","D.Va", "Roadhog", "Sigma", "Wrecking Ball", "Zarya"]:
         return "Tank"
-    if heroes in ["Ashe", "Bastion", "Cassidy", "Reaper", "Soldier76", "Sombra", "Tracer", "Widowmaker","Doomfist", "Echo", "Genji", "Hanzo", "Junkrat", "Mei", "Pharah", "Symmetra", "Torbjorn"]:
+    if heroes in ["Ashe", "Bastion", "Cassidy", "Reaper", "Soldier: 76", "Sombra", "Tracer", "Widowmaker","Doomfist", "Echo", "Genji", "Hanzo", "Junkrat", "Mei", "Pharah", "Symmetra", "Torbjorn"]:
         return "Dps"
     if heroes in ["L\u00c3\u00bacio", "Zenyatta", "Mercy", "Brigitte","Ana", "Baptiste", "Moira"]:
         return "Support"
 
 
 def assignRoles(players, heroes):
-    tanklist = ["Reinhardt", "Winston", "Orisa", "WreckingBall", "Roadhog", "Zarya", "Sigma", "D.Va"]
-    dpslist = ["Echo", "Pharah", "Doomfist", "Junkrat", "Mei", "Sombra", "Torbjorn", "Genji", "Hanzo", "Symmetra", "Reaper", "Soldier76", "Tracer", "Bastion", "Ashe", "Cassidy", "Widowmaker"]
+    tanklist = ["Reinhardt", "Winston", "Orisa", "Wrecking Ball", "Roadhog", "Zarya", "Sigma", "D.Va"]
+    dpslist = ["Echo", "Pharah", "Doomfist", "Junkrat", "Mei", "Sombra", "Torbjorn", "Genji", "Hanzo", "Symmetra", "Reaper", "Soldier: 76", "Tracer", "Bastion", "Ashe", "Cassidy", "Widowmaker"]
     suplist = ["L\u00c3\u00bacio", "Brigitte", "Mercy", "Moira", "Zenyatta", "Baptiste", "Ana"]
     hero1 = heroes[0]
     hero2 = heroes[1]
