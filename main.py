@@ -5,7 +5,7 @@ import sys
 import os
 
 
-def main(filenames):
+def main(filenames, outputfile):
     # initializes the match list that is appended once for every logfile
     match = []
     for j in range(0, len(filenames)):
@@ -59,20 +59,24 @@ def main(filenames):
     # the output printed to terminal
     # print(json_match)
 
-    f = open("testingTempfiles/demofile.json", "w")
-    f.write(json_match)
-    f.close()
+    # if the outputfile is 'stdout' print to the terminal otherwise print to the specified file
+    if outputfile != 'stdout':
+        f = open(outputfile, "w")
+        f.write(json_match)
+        f.close()
+    else:
+        print(json_match)
 
 
 if __name__ == '__main__':
-    # filenames = ['exampleData/src2.txt']
-
+    filenames = ['exampleData/src2.txt']
+    '''
     filenames = ['MoreScrims/testscrim2/Log-2022-04-11-20-06-16.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-20-25-37.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-20-46-40.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-04-58.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-24-25.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']
+    '''
 
-
-    main(filenames)
+    main(filenames,"testingTempfiles/demofile.json")
