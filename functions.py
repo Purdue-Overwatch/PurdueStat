@@ -111,11 +111,6 @@ def getTeam(player_name) -> str:
 
 
 # completed
-# note for brody, from brody
-# make a dictionary with each player as a key and assign each player a role based on priority of the hero they are playing
-# to check priority find both players playing a role and loop through the possible heros until the hero the person is playing
-# is found in the list, the first hero found will be the main tank, or flex dps, or main sup, and the other player will default
-# to the other role, do this for each team
 def defineRole(heroes) -> str:
     if heroes in ["Reinhardt", "Orisa", "Winston","D.Va", "Roadhog", "Sigma", "Wrecking Ball", "Zarya"]:
         return "Tank"
@@ -125,6 +120,7 @@ def defineRole(heroes) -> str:
         return "Support"
 
 
+# completed
 def assignRoles(players, heroes):
     tanklist = ["Reinhardt", "Winston", "Orisa", "Wrecking Ball", "Roadhog", "Zarya", "Sigma", "D.Va"]
     dpslist = ["Echo", "Pharah", "Doomfist", "Junkrat", "Mei", "Sombra", "Torbjorn", "Genji", "Hanzo", "Symmetra", "Reaper", "Soldier: 76", "Tracer", "Bastion", "Ashe", "Cassidy", "Widowmaker"]
@@ -165,6 +161,7 @@ def assignRoles(players, heroes):
     return output
 
 
+# completed
 def makePlayerDict(array):
     names = []
     heroes = []
