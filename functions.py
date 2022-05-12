@@ -263,7 +263,7 @@ def getTimeUltHeld():
     return 19.857
 
 
-def getHeroesPlayed(name, array):
+def getHeroesPlayed(name, array)->dict:
     time = 0
     hero = 'NA'
     heroes_played = {}
@@ -287,11 +287,7 @@ def getHeroesPlayed(name, array):
     for i in range(len(herolist)):
         heroes_played[herolist[i]] = herotimes[i]
 
-    return {
-        "heroes": ["D.Va", "WreckingBall"],
-        "D.Va": 835,
-        "WreckingBall": 94
-    }
+    return heroes_played
 
 
 # start final stat functions
