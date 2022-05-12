@@ -286,8 +286,6 @@ def getHeroesPlayed(name, array):
     heroes_played["heroes"] = herolist
     for i in range(len(herolist)):
         heroes_played[herolist[i]] = herotimes[i]
-    print(heroes_played)
-
 
     return {
         "heroes": ["D.Va", "WreckingBall"],

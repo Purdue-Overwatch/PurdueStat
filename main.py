@@ -65,8 +65,8 @@ def main(filenames):
 
 
 if __name__ == '__main__':
-    filenames = ['exampleData/src2.txt']
-    '''
+    # filenames = ['exampleData/src2.txt']
+
     filenames = ['MoreScrims/testscrim2/Log-2022-04-11-20-06-16.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-20-25-37.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-20-46-40.txt',
@@ -74,5 +74,5 @@ if __name__ == '__main__':
                  'MoreScrims/testscrim2/Log-2022-04-11-21-24-25.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']
 
-    '''
+
     main(filenames)
