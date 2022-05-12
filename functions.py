@@ -125,28 +125,6 @@ def defineRole(heroes) -> str:
         return "Support"
 
 
-'''
-# completed
-def getName(i, array) -> str:
-    i = i + 1
-    for j in range(0, 12):
-        info = array[j][1:3]
-        name = info[0]
-        hero = info[1]
-        team = getTeam(name)
-        role = defineRole(hero)
-        rolelist = ["main_tank", "off_tank", "hitscan_dps", "flex_dps", "main_support", "off_support"]
-        # check if name is in team 1 array?
-        # check if roles line up (if role = roleList[i]
-        if (i >= 2) & (i <= 7) & (team == "team1"):
-            if role == rolelist[i - 2]:
-                return name
-        elif (i >= 8) & (i <= 13) & (team == "team2"):
-            if role == rolelist[i - 8]:
-                return name
-'''
-
-
 def assignRoles(players, heroes):
     tanklist = ["Reinhardt", "Winston", "Orisa", "WreckingBall", "Roadhog", "Zarya", "Sigma", "D.Va"]
     dpslist = ["Echo", "Pharah", "Doomfist", "Junkrat", "Mei", "Sombra", "Torbjorn", "Genji", "Hanzo", "Symmetra", "Reaper", "Soldier76", "Tracer", "Bastion", "Ashe", "Cassidy", "Widowmaker"]
