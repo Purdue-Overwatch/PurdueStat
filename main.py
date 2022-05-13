@@ -6,7 +6,7 @@ import sys
 import os
 
 
-def main(outputfile: str, filepath: str) -> int:
+def main(outputfile: list, filepath: list) -> int:
     # initializes the match list that is appended once for every logfile
     match = []
 
