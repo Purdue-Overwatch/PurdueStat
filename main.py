@@ -1,3 +1,4 @@
+
 from cgi import test
 import json
 import functions
@@ -5,13 +6,14 @@ import sys
 import os
 
 
-def main(filepath: str) -> int:
+def main(outputfile: str, filepath: str) -> int:
     # initializes the match list that is appended once for every logfile
     match = []
-    for j in range(0, len(filepath)):
+
+    for file in filepath:
         path = os.path.dirname(__file__)
         # breaks the logfile up into its temp files
-        functions.readLogfile(f"{path}\\{filepath}")
+        functions.readLogfile(f"{path}\\{file}")
 
         # creates an array for the csvfile that was converted
         CSVarray = functions.CSVToArray(f"{path}\\testingTempfiles\\tempCSV.txt")
@@ -34,9 +36,11 @@ def main(filepath: str) -> int:
         playerDict = functions.makePlayerDict(CSVarray)
 
         # this loop creates each entry for the 12 player
-        for i in range(0, 12):
+        i = 0 # this is ugly but you wrote it park so u cant blame brody :) - past park
+        # ily brody <3 - park
+        for playerName in playerDict:
             playerNumber = "player" + str(i+1)
-            playerName = playerDict[i]
+            i += 1
             player = {
                 "name": playerName,
                 "role": functions.getRole(playerName, playerDict),
@@ -60,7 +64,7 @@ def main(filepath: str) -> int:
     # print(json_match)
 
     # if the outputfile is 'stdout' print to the terminal otherwise print to the specified file
-    outputfile = 'stdout'
+    outputfile = outputfile[0]
     if outputfile != 'stdout':
         f = open(outputfile, "w")
         f.write(json_match)
@@ -80,5 +84,4 @@ if __name__ == '__main__':
                  'MoreScrims/testscrim2/Log-2022-04-11-21-24-25.txt',
                  'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']
     '''
-    
-    sys.exit(main(*sys.argv[1:]))
+    sys.exit(main(outputfile=sys.argv[1:2], filepath=sys.argv[2:]))

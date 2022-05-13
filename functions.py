@@ -254,7 +254,7 @@ def getUltTimings(player_name, array) -> list:
         [[125, 160], [234, 277], [390, -1]]
     ]
 
-
+# PARK DO THIS U DUMB FUCK
 def getTimeToUlt():
     return 88.375
 
