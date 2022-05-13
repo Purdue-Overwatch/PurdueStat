@@ -68,6 +68,8 @@ def main(filepath: str) -> int:
     else:
         print(json_match)
 
+    return 0
+
 
 if __name__ == '__main__':
     '''
