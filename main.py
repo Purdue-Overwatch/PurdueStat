@@ -1,64 +1,87 @@
-# Main class
-__author__ = "Park"
-__version__ = "08/02/2022"
 
+from cgi import test
+import json
+import functions
+import sys
 import os
-import pymongo
-from player import Player
 
-address = os.getenv('PURDUESTAT_MONGO_ADDRESS')
-client = pymongo.MongoClient(address)
-db = client["game_server"]
-collection = db["games"]
-game_db = collection.find_one({"_id": "dbecea12163e"}) # take in id
 
-def create_teams():
-        teams_dict = {"team 1": 
-                        {"name": game_db["_team_one"]["_name"], 
-                        "players": {0: None,
-                                    1: None,
-                                    2: None,
-                                    3: None,
-                                    4: None,
-                                    5: None,}}, 
-                    "team 2": 
-                        {"name": game_db["_team_two"]["_name"], 
-                        "players": {0: None,
-                                    1: None,
-                                    2: None,
-                                    3: None,
-                                    4: None,
-                                    5: None,}}}
+def main(outputfile: list, filepath: list) -> int:
+    # initializes the match list that is appended once for every logfile
+    match = []
 
-        teams = ["_team_one", "_team_two"]
-        for team in teams:
-            player_list = game_db[team]["_players"]
-            for i in range(len(player_list)):
-                player = Player(player_list[i]["_name"], game_db, i, team)
-                if team == "_team_one":
-                    teams_dict["team 1"]["players"][i] = player.name
-                else: 
-                    teams_dict["team 2"]["players"][i] = player.name
-        return teams_dict
+    for file in filepath:
+        path = os.path.dirname(__file__)
+        # breaks the logfile up into its temp files
+        functions.readLogfile(f"{path}\\{file}")
 
-if __name__ == "__main__":
-    teams = create_teams()
-    print(teams)
+        # creates an array for the csvfile that was converted
+        CSVarray = functions.CSVToArray(f"{path}\\testingTempfiles\\tempCSV.txt")
+        array_json = json.dumps(CSVarray, indent=4)
+        f = open("arrayfile.json", "w")
+        f.write(array_json)
+        f.close()
 
-# Snippets
-# =====================================================================================================================
-# mode setter
-"""
-if self.map in ["Busan", "Ilios", "Lijiang Tower", "Nepal", "Oasis"]:
-    self.mode = "Control"
-#2CP disappearing in ow2
-elif self.map in ["Hanamura", "Horizon Lunar Colony", "Paris", "Temple of Anubis", "Volskaya Industries"]:
-    self.mode = "Assault"
-elif self.map in ["Dorado", "Havana", "Junkertown", "Rialto", "Route 66", "Watchpoint Gibraltar"]:
-    self.mode = "Escort"
-elif self.map in ["Blizzard World", "Eichenwalde", "Hollywood", "King's Row", "Numbani"]:
-    self.mode = "Hybrid"
-else:
-    self.mode = "Error. Unknown map."
-"""
-# =====================================================================================================================
+        # creates the outermost dictionary that is for each map
+        map_dict = {
+            "map": functions.getMapName("testingTempfiles/tempMapInfo.txt"),
+            "map_score": functions.getMapScore(),
+            "map_type": functions.getMapType("testingTempfiles/tempMapInfo.txt"),
+        }
+
+        # these lines set default values for the player variables so that they can't be undefined
+        player_number = -1
+        player = {}
+
+        playerDict = functions.makePlayerDict(CSVarray)
+
+        # this loop creates each entry for the 12 player
+        i = 0 # this is ugly but you wrote it park so u cant blame brody :) - past park
+        # ily brody <3 - park
+        for playerName in playerDict:
+            playerNumber = "player" + str(i+1)
+            i += 1
+            player = {
+                "name": playerName,
+                "role": functions.getRole(playerName, playerDict),
+                "avg_time_to_ult": functions.getTimeToUlt(),
+                "avg_time_ult_held": functions.getTimeUltHeld(),
+                "final_stats": functions.getFinalStats(playerName, CSVarray),
+                "stats_per_minute": functions.getStatsPerMin(playerName, CSVarray),
+                "ult_timings": functions.getUltTimings(playerName, CSVarray),
+                "heroes_played": functions.getHeroesPlayed(playerName, CSVarray),
+            }
+            # updates the map dictionary with the current player of the loop
+            map_dict[playerNumber] = player
+
+        # this line adds the map to the match list
+        match.append(map_dict)
+        # print(map_dic)
+
+    # converts match to a json format
+    json_match = json.dumps(match, indent=4)
+    # the output printed to terminal
+    # print(json_match)
+
+    # if the outputfile is 'stdout' print to the terminal otherwise print to the specified file
+    outputfile = outputfile[0]
+    if outputfile != 'stdout':
+        f = open(outputfile, "w")
+        f.write(json_match)
+        f.close()
+    else:
+        print(json_match)
+
+    return 0
+
+
+if __name__ == '__main__':
+    '''
+    filepath = ['MoreScrims/testscrim2/Log-2022-04-11-20-06-16.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-20-25-37.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-20-46-40.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-04-58.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-24-25.txt',
+                 'MoreScrims/testscrim2/Log-2022-04-11-21-45-31.txt']
+    '''
+    sys.exit(main(outputfile=sys.argv[1:2], filepath=sys.argv[2:]))
