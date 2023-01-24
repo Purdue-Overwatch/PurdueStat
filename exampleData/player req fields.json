@@ -1,0 +1,59 @@
+{
+    "player1": {
+        "name": "Golex",
+        "role": "main_tank",
+        "avg_time_to_ult": 88.375,
+        "avg_time_ult_held": 19.857142857142858,
+        "final_stats": {
+            "all_damage_dealt": 19447.14,
+            "barrier_damage_dealt": 6260.64,
+            "cooldown1": 0.21,
+            "cooldown2": 5.24,
+            "damage_blocked": 18686.6,
+            "damage_taken": 13968.65,
+            "deaths": 9,
+            "eliminations": 40,
+            "environmental_deaths": 1,
+            "environmental_kills": 1,
+            "final_blows": 13,
+            "healing_dealt": 0,
+            "healing_received": 0,
+            "hero_damage_dealt": 13186.5,
+            "objective_kills": 24,
+            "solo_kills": 1,
+            "ultimate_charge": 100,
+            "ultimates_earned": 8,
+            "ultimates_used": 7
+        },
+        "stats_per_minute": {
+            "all_damage_dealt": 1256.004736275565,
+            "barrier_damage_dealt": 404.3470398277718,
+            "cooldown1": 0.013562970936490849,
+            "cooldown2": 0.33842841765339077,
+            "damage_blocked": 1206.8848223896662,
+            "damage_taken": 902.1733046286329,
+            "deaths": 0.581270182992465,
+            "eliminations": 2.583423035522067,
+            "environmental_deaths": 0.06458557588805167,
+            "environmental_kills": 0.06458557588805167,
+            "final_blows": 0.8396124865446717,
+            "healing_dealt": 0,
+            "healing_received": 0,
+            "hero_damage_dealt": 851.6576964477932,
+            "objective_kills": 1.5500538213132402,
+            "solo_kills": 0.06458557588805167,
+            "ultimate_charge": 6.458557588805167,
+            "ultimates_earned": 0.5166846071044133,
+            "ultimates_used": 0.4520990312163617
+        },
+        "ult_timings": [  [  [ 52,57 ] , [ 153,154 ]  ] , [  [ 64,120 ] , [ 168,169 ] , [ 294,309 ]  ] , [  [ 97,103 ] , [ 227,282 ] , [ 383,-1 ]  ]  ] ,
+        "heroes_played": {
+            "heroes": [
+                "Reinhardt",
+                "Winston"
+            ],
+            "Reinhardt": 534,
+            "Winston": 395
+        }
+    }
+}
