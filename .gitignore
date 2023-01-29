@@ -3,7 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Virtual Environment
+.env
+.envrc
+env/
 
-# Stuff to ignore
+# IDE generated files
 .idea/
-playground/
+
+# Development stuff
+development/
+
+# Old stuff
+Archive/

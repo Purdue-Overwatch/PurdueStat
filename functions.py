@@ -5,15 +5,16 @@ Defines utility function readLogFile for reading in an Overwatch log file and se
 info file.
 '''
 
-"""
+############################################################
+#                                                          #
+#                                                          #
+#                                                          #
+#  THIS FILE HAS BEEN DEPRECATED. USE FOR REFERENCE ONLY.  #
+#                                                          #
+#                                                          #
+#                                                          #
+############################################################
 
-
-
-THIS FILE HAS BEEN DEPRECATED. USE FOR REFERENCE ONLY.
-
-
-
-"""
 import os
 import pymongo
 
