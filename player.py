@@ -140,7 +140,7 @@ class Player:
         }
         self.stats_per_ten = stats_per_ten
 
-    def set_ult_timings(self):
+    def set_ult_timings(self): #TODO: Fix this, was written by AI
         '''
         Sets the timings of the player's ultimates.
         '''
