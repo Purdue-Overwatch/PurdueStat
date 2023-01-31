@@ -13,6 +13,7 @@ env/
 
 # Development stuff
 development/
+dev_*
 
 # Old stuff
 Archive/
