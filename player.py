@@ -10,19 +10,25 @@ class Player:
     the index of the player in the game database, and the team the player is on as input
     and calculates the rest of the data.
     '''
-    def __init__(self, name: str, game_db: dict, index: int, team: str):
-        self.name = name
+    def __init__(self, game_db: dict, index: int, team: str):
         self.game_db = game_db
         self.index = index
         self.team = team
         self.data = game_db[team]['_players'][index]
-        self.heroes_played = self.set_heroes()
+        self.name = None
+        self.heroes_played = None
         self.role = None
         self.avg_time_to_ult = None
         self.avg_time_ult_held = None
         self.final_stats = None
         self.stats_per_ten = None
         self.ult_timings = None
+
+    def set_name(self):
+        '''
+        Sets the name of the player.
+        '''
+        self.name = self.data['_name']
 
     def set_heroes(self):
         '''
@@ -34,59 +40,64 @@ class Player:
             hero = self.game_db[self.team]['_players'][self.index]['_heroes'][tick]
             heroes.add(hero)
 
-        return heroes
+        self.heroes_played = list(heroes)
 
     def set_role(self):
         '''
         Sets the role of the player based on the heroes they played.
         '''
         heroes = self.heroes_played
+        role = None
         if heroes in TANK_HEROES:
-            return 'Tank'
-        if heroes in DAMAGE_HEROES:
-            return 'DPS'
-        if heroes in SUPPORT_HEROES:
-            return 'Support'
+            role = 'Tank'
+        elif heroes in DAMAGE_HEROES:
+            role = 'DPS'
+        elif heroes in SUPPORT_HEROES:
+            role = 'Support'
+        self.role = role
 
-    def set_avg_time_to_ult(self):
+    def set_ult_stats(self):
         '''
-        Sets the average time it takes for the player to get their ultimate.
-        '''
-        ult_charge_arr = self.data['_ultimate_charge']
-        time_stamps = self.game_db['_time_stamps']
-        time_arr = []
-        prev_charge = None
-        start_time = None
-
-        for charge, time in ult_charge_arr, time_stamps:
-            if prev_charge != 0 and charge == 0:
-                start_time = time
-            if prev_charge != 100 and charge == 100:
-                time_to_ult = time - start_time
-                time_arr.append(time_to_ult)
-        
-        avg_time = sum(time_arr) / len(time_arr)
-        return round(avg_time, 2)
-
-    def set_avg_time_ult_held(self):
-        '''
-        Sets the average time the player holds their ultimate.
+        Sets the timing, time held, and time to stats of the player's ultimates.
         '''
         ult_charge_arr = self.data['_ultimate_charge']
-        time_stamps = self.game_db['_time_stamps']
-        time_arr = []
-        prev_charge = None
-        start_time = None
-
-        for charge, time in ult_charge_arr, time_stamps:
-            if prev_charge != 100 and charge == 100:
-                start_time = time
-            if prev_charge == 100 and charge == 0:
-                time_ult_held = time - start_time
-                time_arr.append(time_ult_held)
+        time_stamp_arr = self.game_db['_time_stamps']
         
-        avg_time = sum(time_arr) / len(time_arr)
-        self.set_avg_time_ult_held = round(avg_time, 2)
+        ult_timings = []
+        held_ult_arr = []
+        to_ult_arr = []
+        prev_charge = 0
+        prev_time = 0
+        round_index = -1 # offset by 1 to account for the first round
+
+        for (charge, time) in zip(ult_charge_arr, time_stamp_arr):
+            # the following is designed to prevent unnecessary checks while maintaining readability.
+            # i could have made it more efficient, but it would be hard to understand.
+            round_starting = time - prev_time > 10
+            ult_earned = prev_charge != 100 and charge == 100
+            ult_used = prev_charge == 100 and charge == 0
+            if round_starting:
+                round_index += 1
+                ult_timings.append([])
+                ult_timings[round_index] = []
+                start_time = time
+            else:
+                if ult_earned: # ult earned?
+                    earn_time = time
+                    time_to_ult = time - start_time
+                    to_ult_arr.append(time_to_ult)
+                elif ult_used: # ult used?
+                    start_time = time
+                    time_ult_held = time - earn_time
+                    ult_timings[round_index].append([round(earn_time), round(time)])
+                    held_ult_arr.append(time_ult_held)
+            
+            prev_charge = charge
+            prev_time = time
+        
+        self.avg_time_to_ult = round(sum(to_ult_arr) / len(to_ult_arr), 2)
+        self.avg_time_ult_held = round(sum(held_ult_arr) / len(held_ult_arr), 2)
+        self.ult_timings = ult_timings
 
     def set_final_stats(self):
         '''
@@ -107,14 +118,14 @@ class Player:
             "final_blows": self.data['_final_blows'][-1],
             "healing_dealt": self.data['_healing_dealt'][-1],
             "healing_received": self.data['_healing_received'][-1],
-            "objective_kills": self.data['_objective_kills'][-1],
+            "objective_kills": self.data['_object_kills'][-1],
             "solo_kills": self.data['_solo_kills'][-1],
             "ultimates_earned": self.data['_ultimates_earned'][-1],
             "ultimates_used": self.data['_ultimates_used'][-1],
         }
         self.final_stats = final_stats
 
-    def set_stats_per_ten(self):
+    def set_stats_per_ten(self): #TODO
         '''
         Sets the stats of the player per 10 minutes.
         '''
@@ -140,22 +151,12 @@ class Player:
         }
         self.stats_per_ten = stats_per_ten
 
-    def set_ult_timings(self): #TODO: Fix this, was written by AI
+    def set_all(self):
         '''
-        Sets the timings of the player's ultimates.
+        Sets all the player's stats.
         '''
-        ult_charge_arr = self.data['_ultimate_charge']
-        time_stamps = self.game_db['_time_stamps']
-        ult_timings = []
-        prev_charge = None
-        start_time = None
-
-        for charge, time in ult_charge_arr, time_stamps:
-            if prev_charge != 100 and charge == 100:
-                start_time = time
-            if prev_charge == 100 and charge == 0:
-                time_ult_held = time - start_time
-                ult_timings.append(time_ult_held)
-        
-        self.ult_timings = ult_timings
-
+        self.set_heroes()
+        self.set_role()
+        self.set_ult_stats()
+        self.set_final_stats()
+        self.set_stats_per_ten()
