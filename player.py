@@ -3,6 +3,8 @@ This module contains the Player class, which is used to store the data of a play
 '''
 __author__ = 'Park'
 
+# TODO: look into using numpy arrays instead of lists if speed is an issue
+
 TANK_HEROES = ['Reinhardt', 'Winston', 'Orisa', 'Wrecking Ball', \
     'Roadhog', 'Zarya', 'Sigma', 'D.Va']
 
@@ -12,10 +14,10 @@ DAMAGE_HEROES = ['Echo', 'Pharah', 'Doomfist', 'Junkrat', 'Mei', \
 
 SUPPORT_HEROES = ['L\u00c3\u00bacio', 'Brigitte', 'Mercy', 'Moira', \
     'Zenyatta', 'Baptiste', 'Ana']
-pass
+
 class Player:
     """
-    A class used to represent a player
+    A player class that stores the data of a player.
 
     Attributes
     ----------
@@ -42,6 +44,8 @@ class Player:
     stats_per_ten : dict
         the stats of the player per 10 minutes
     ult_timings : list
+        the times the player earns and uses their ultimate
+    round_timings : list
         the times the player earns and uses their ultimate
 
     Methods
@@ -74,7 +78,7 @@ class Player:
         self.avg_time_to_ult = None
         self.avg_time_ult_held = None
         self.final_stats = None
-        self.stats_per_ten = None
+        self.stats_per_ten = {}
         self.ult_timings = None
 
     def set_name(self):
@@ -129,7 +133,7 @@ class Player:
             round_starting = time - prev_time > 10
             ult_earned = prev_charge != 100 and charge == 100
             ult_used = prev_charge == 100 and charge == 0
-            if round_starting:
+            if round_starting: # new round?
                 round_index += 1
                 ult_timings.append([])
                 ult_timings[round_index] = []
@@ -141,7 +145,8 @@ class Player:
             elif ult_used: # ult used?
                 start_time = time
                 time_ult_held = time - earn_time
-                ult_timings[round_index].append([round(earn_time), round(time)])
+                ult_times = [time_to_ult, time_ult_held]
+                ult_timings[round_index].append(ult_times)
                 held_ult_arr.append(time_ult_held)
 
             prev_charge = charge
@@ -177,32 +182,24 @@ class Player:
         }
         self.final_stats = final_stats
 
-    def set_per_ten_stats(self): #TODO
+    def set_per_ten_stats(self):
         '''
-        Sets the stats of the player per 10 minutes.
+        Sets the average stats of the player per 10 minutes using the final stats.
         '''
-        hero_dmg = None
-        barrier_dmg = None
 
-        stats_per_ten = {
-            "barrier_damage_dealt": None,
-            "hero_damage_dealt": None,
-            "all_damage_dealt": None,
-            "damage_blocked": None,
-            "damage_taken": None,
-            "deaths": None,
-            "eliminations": None,
-            "environmental_deaths": None,
-            "environmental_kills": None,
-            "final_blows": None,
-            "healing_dealt": None,
-            "healing_received": None,
-            "objective_kills": None,
-            "solo_kills": None,
-            "ultimates_earned": None,
-            "ultimates_used": None,
-        }
-        self.stats_per_ten = stats_per_ten
+        time_stamps = self.game_db['_time_stamps'] # line 188 to 197 calcultes the game length
+        game_length = 0
+        prev_time = 0
+        start_time = time_stamps[0]
+        for time in time_stamps:
+            if time - prev_time > 5: #if new round
+                game_length += prev_time - start_time #add round length
+                start_time = time
+            prev_time = time
+        game_length = prev_time - start_time #add last round
+
+        for key, val in self.final_stats.items():
+            self.stats_per_ten[key] = val / game_length * 6
 
     def set_all(self):
         '''
