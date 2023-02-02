@@ -12,7 +12,7 @@ DAMAGE_HEROES = ['Echo', 'Pharah', 'Doomfist', 'Junkrat', 'Mei', \
 
 SUPPORT_HEROES = ['L\u00c3\u00bacio', 'Brigitte', 'Mercy', 'Moira', \
     'Zenyatta', 'Baptiste', 'Ana']
-
+pass
 class Player:
     """
     A class used to represent a player
@@ -183,6 +183,7 @@ class Player:
         '''
         hero_dmg = None
         barrier_dmg = None
+
         stats_per_ten = {
             "barrier_damage_dealt": None,
             "hero_damage_dealt": None,
@@ -203,14 +204,6 @@ class Player:
         }
         self.stats_per_ten = stats_per_ten
 
-    def set_game_stats(self):
-        '''
-        Sets the game stats of the player.
-        set_per_ten_stats() uses the values calculated by set_final_stats().
-        '''
-        self.set_final_stats()
-        self.set_per_ten_stats()
-
     def set_all(self):
         '''
         Sets all the player's stats.
@@ -218,4 +211,5 @@ class Player:
         self.set_heroes()
         self.set_role()
         self.set_time_stats()
-        self.set_game_stats()
+        self.set_final_stats()
+        self.set_per_ten_stats()
