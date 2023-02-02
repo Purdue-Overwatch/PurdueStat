@@ -10,6 +10,7 @@ env/
 
 # IDE generated files
 .idea/
+.vscode/
 
 # Development stuff
 development/
