@@ -1,15 +1,68 @@
+'''
+This module contains the Player class, which is used to store the data of a player.
+'''
 __author__ = 'Park'
 
-TANK_HEROES = ['Reinhardt', 'Winston', 'Orisa', 'Wrecking Ball', 'Roadhog', 'Zarya', 'Sigma', 'D.Va']
-DAMAGE_HEROES = ['Echo', 'Pharah', 'Doomfist', 'Junkrat', 'Mei', 'Sombra', 'Torbjorn', 'Genji', 'Hanzo', 'Symmetra', 'Reaper', 'Soldier: 76', 'Tracer', 'Bastion', 'Ashe', 'Cassidy', 'Widowmaker']
-SUPPORT_HEROES = ['L\u00c3\u00bacio', 'Brigitte', 'Mercy', 'Moira', 'Zenyatta', 'Baptiste', 'Ana']
+TANK_HEROES = ['Reinhardt', 'Winston', 'Orisa', 'Wrecking Ball', \
+    'Roadhog', 'Zarya', 'Sigma', 'D.Va']
+
+DAMAGE_HEROES = ['Echo', 'Pharah', 'Doomfist', 'Junkrat', 'Mei', \
+    'Sombra', 'Torbjorn', 'Genji', 'Hanzo', 'Symmetra', 'Reaper', \
+    'Soldier: 76', 'Tracer', 'Bastion', 'Ashe', 'Cassidy', 'Widowmaker']
+
+SUPPORT_HEROES = ['L\u00c3\u00bacio', 'Brigitte', 'Mercy', 'Moira', \
+    'Zenyatta', 'Baptiste', 'Ana']
 
 class Player:
-    '''
-    A Player class that takes the name of the player, the game database, 
-    the index of the player in the game database, and the team the player is on as input
-    and calculates the rest of the data.
-    '''
+    """
+    A class used to represent a player
+
+    Attributes
+    ----------
+    game_db : dict
+        the game database
+    index : int
+        the index of the player in the game database
+    team : str
+        the team the player is on
+    data : dict
+        the player's data in the game database
+    name : str
+        the player's name
+    heroes_played : list
+        the heroes the player played
+    role : str
+        the role the player played
+    avg_time_to_ult : float
+        the average time it takes the player to get their ultimate
+    avg_time_ult_held : float
+        the average time the player holds their ultimate
+    final_stats : dict
+        the final stats of the player
+    stats_per_ten : dict
+        the stats of the player per 10 minutes
+    ult_timings : list
+        the times the player earns and uses their ultimate
+
+    Methods
+    -------
+    set_name()
+        Sets the name of the player.
+    set_heroes()
+        Sets the heroes the player played.
+    set_role()
+        Sets the role of the player based on the heroes they played.
+    set_time_stats()
+        Sets the timing, time held, and time to stats of the player's ultimates.
+    set_final_stats()
+        Sets the final stats of the player.
+    set_stats_per_ten()
+        Sets the stats of the player per 10 minutes.
+    set_game_stats()
+        Sets the game stats of the player.
+    set_all()
+        Sets all the attributes of the player.
+    """
     def __init__(self, game_db: dict, index: int, team: str):
         self.game_db = game_db
         self.index = index
@@ -56,13 +109,13 @@ class Player:
             role = 'Support'
         self.role = role
 
-    def set_ult_stats(self):
+    def set_time_stats(self):
         '''
         Sets the timing, time held, and time to stats of the player's ultimates.
         '''
         ult_charge_arr = self.data['_ultimate_charge']
         time_stamp_arr = self.game_db['_time_stamps']
-        
+
         ult_timings = []
         held_ult_arr = []
         to_ult_arr = []
@@ -72,7 +125,7 @@ class Player:
 
         for (charge, time) in zip(ult_charge_arr, time_stamp_arr):
             # the following is designed to prevent unnecessary checks while maintaining readability.
-            # i could have made it more efficient, but it would be hard to understand.
+            # i think i could have made it more efficient, but it would be hard to understand.
             round_starting = time - prev_time > 10
             ult_earned = prev_charge != 100 and charge == 100
             ult_used = prev_charge == 100 and charge == 0
@@ -81,20 +134,19 @@ class Player:
                 ult_timings.append([])
                 ult_timings[round_index] = []
                 start_time = time
-            else:
-                if ult_earned: # ult earned?
-                    earn_time = time
-                    time_to_ult = time - start_time
-                    to_ult_arr.append(time_to_ult)
-                elif ult_used: # ult used?
-                    start_time = time
-                    time_ult_held = time - earn_time
-                    ult_timings[round_index].append([round(earn_time), round(time)])
-                    held_ult_arr.append(time_ult_held)
-            
+            elif ult_earned: # ult earned?
+                earn_time = time
+                time_to_ult = time - start_time
+                to_ult_arr.append(time_to_ult)
+            elif ult_used: # ult used?
+                start_time = time
+                time_ult_held = time - earn_time
+                ult_timings[round_index].append([round(earn_time), round(time)])
+                held_ult_arr.append(time_ult_held)
+
             prev_charge = charge
             prev_time = time
-        
+
         self.avg_time_to_ult = round(sum(to_ult_arr) / len(to_ult_arr), 2)
         self.avg_time_ult_held = round(sum(held_ult_arr) / len(held_ult_arr), 2)
         self.ult_timings = ult_timings
@@ -125,7 +177,7 @@ class Player:
         }
         self.final_stats = final_stats
 
-    def set_stats_per_ten(self): #TODO
+    def set_per_ten_stats(self): #TODO
         '''
         Sets the stats of the player per 10 minutes.
         '''
@@ -151,12 +203,19 @@ class Player:
         }
         self.stats_per_ten = stats_per_ten
 
+    def set_game_stats(self):
+        '''
+        Sets the game stats of the player.
+        set_per_ten_stats() uses the values calculated by set_final_stats().
+        '''
+        self.set_final_stats()
+        self.set_per_ten_stats()
+
     def set_all(self):
         '''
         Sets all the player's stats.
         '''
         self.set_heroes()
         self.set_role()
-        self.set_ult_stats()
-        self.set_final_stats()
-        self.set_stats_per_ten()
+        self.set_time_stats()
+        self.set_game_stats()
