@@ -2,7 +2,6 @@
 This module contains the Player class, which is used to store the data of a player.
 '''
 __author__ = 'Park'
-# pylint: disable=fixme
 # TODO: look into using numpy arrays instead of lists if speed is an issue
 
 import decimal
@@ -125,6 +124,7 @@ class Player:
                 round_index += 1
                 ult_timings.append([])
                 ult_timings[round_index] = []
+                round_start = time
                 start_time = time
             elif ult_earned: # ult earned?
                 earn_time = time
@@ -133,14 +133,17 @@ class Player:
             elif ult_used: # ult used?
                 start_time = time
                 time_ult_held = time - earn_time
-                ult_timings[round_index].append([earn_time, time])
+                ult_timings[round_index].append([
+                        int(decimal.Decimal(earn_time - round_start)),
+                        int(decimal.Decimal(time - round_start))
+                    ])
                 held_ult_arr.append(time_ult_held)
 
             prev_charge = charge
             prev_time = time
 
-        avg_time_to_ult = round(sum(to_ult_arr) / len(to_ult_arr), 2) # TODO: time part is wrong
-        avg_time_ult_held = round(sum(held_ult_arr) / len(held_ult_arr), 2) # TODO: time part is wrong
+        avg_time_to_ult = round(sum(to_ult_arr) / len(to_ult_arr), 2) # FIXME: time part is wrong
+        avg_time_ult_held = round(sum(held_ult_arr) / len(held_ult_arr), 2) # FIXME: time part is wrong
 
         self.avg_time_to_ult = float(decimal.Decimal(avg_time_to_ult))
         self.avg_time_ult_held = float(decimal.Decimal(avg_time_ult_held))
@@ -212,3 +215,10 @@ class Player:
         print(f'ult_timings = {self.ult_timings}')
         print(f'final_stats = {json.dumps(self.final_stats, indent=2)}')
         print(f'stats_per_minute = {json.dumps(self.stats_per_minute, indent=2)}')
+
+    def print_ticks(self):
+        '''
+        Prints the number of ticks in the game.
+        '''
+        for (charge, (tick, time)) in zip(self.data['_ultimate_charge'], enumerate(self.game_db['_time_stamps'])):
+            print(f'tick {tick}: {time}, {charge}')
