@@ -6,6 +6,9 @@ __pycache__/
 # Virtual Environment
 .env
 .envrc
+.venv/
+venv/
+.env/
 env/
 
 # IDE generated files

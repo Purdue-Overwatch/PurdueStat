@@ -8,9 +8,9 @@ If you've played on a competitive Overwatch team since 2020, you're probably fam
 
 When we heard this, we decided we wanted to try creating our own version of OverStat. Although we wrote every line of code from scratch, we have taken an incredible amount of inspiration from the original OverStat and we want to give credit where credit is due. Matrix has been super helpful and helped us out in the beginning when we weren't super sure how to approach the project.
 
-### TODO: Meet the team
+### Meet the team
 
-Everyone on the PurdueStat team is a full time student at Purdue University, brought together by the Purdue University Overwatch Club. blah blah blah
+Everyone on the PurdueStat team is a full time student at Purdue University, brought together by the Purdue University Overwatch Club. TODO: add more info (and ppl?)
 
 - Josh "Park" Park:
 
@@ -18,18 +18,15 @@ Everyone on the PurdueStat team is a full time student at Purdue University, bro
 
 - Kaden "TechnoWizzy" Hardesty:
 
-- others if they want
+- Brody "SherdyShark" Cooke:
 
-## Setup
-
-TODO: virtual environment setup stuff
-https://docs.python.org/3/library/venv.html
+- others?
 
 ## Development
 
 As full time students, our priority is, has been, and will always be our education. This means that development on PurdueStat does not (and likely will never) have a regular schedule.
 
-That being said, we recognize that the Overwatch community is full of brilliant people, and we encourage you to create pull requests if you'd like to contribute! For major updates, please open an issue first to explain the changes you'd like to make.
+That being said, we recognize that the Overwatch community is full of brilliant people, and we encourage you to create pull requests if you'd like to contribute! Please be sure to properly document your code, follow the coding style conventions used in this project, and write a detailed explanation of what changes you've made. For major updates, please open an issue beforehand to explain what kind of changes you'd like to make.
 
 Submitting a pull request does not guarantee it will be merged, and we reserve the right to reject any request without explanation.
 
