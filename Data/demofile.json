@@ -1,1180 +1,1180 @@
 [
-  {
-    "map": "Oasis",
-    "map_score": [
-      0,
-      0
-    ],
-    "map_type": "Control",
-    "player1": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 19447.14,
-        "barrier_damage_dealt": 6260.64,
-        "cooldown1": 0.21,
-        "cooldown2": 5.24,
-        "damage_blocked": 18686.6,
-        "damage_taken": 13968.65,
-        "deaths": 9,
-        "eliminations": 40,
-        "environmental_deaths": 1,
-        "environmental_kills": 1,
-        "final_blows": 13,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 13186.5,
-        "objective_kills": 24,
-        "solo_kills": 1,
-        "ultimate_charge": 100,
-        "ultimates_earned": 8,
-        "ultimates_used": 7
-      },
-      "heroes_played": {
-        "Reinhardt": 534,
-        "Winston": 395,
-        "heroes": [
-          "Reinhardt",
-          "Winston"
-        ]
-      },
-      "name": "Golex",
-      "role": "main_tank",
-      "stats_per_minute": {
-        "all_damage_dealt": 1061.7182893539582,
-        "barrier_damage_dealt": 341.8001819836215,
-        "cooldown1": 0.011464968152866241,
-        "cooldown2": 0.2860782529572339,
-        "damage_blocked": 1020.1965423111919,
-        "damage_taken": 762.6196542311192,
-        "deaths": 0.4913557779799818,
-        "eliminations": 2.183803457688808,
-        "environmental_deaths": 0.0545950864422202,
-        "environmental_kills": 0.0545950864422202,
-        "final_blows": 0.7097361237488626,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 719.9181073703367,
-        "objective_kills": 1.3102820746132848,
-        "solo_kills": 0.0545950864422202,
-        "ultimate_charge": 5.45950864422202,
-        "ultimates_earned": 0.4367606915377616,
-        "ultimates_used": 0.3821656050955414
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
+    {
+        "map": "Oasis",
+        "map_score": [
+            0,
+            0
         ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player10": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 15303.869999999999,
-        "barrier_damage_dealt": 3159.96,
-        "cooldown1": 0,
-        "cooldown2": 0,
-        "damage_blocked": 10770.72,
-        "damage_taken": 9216.94,
-        "deaths": 11,
-        "eliminations": 35,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 13,
-        "healing_dealt": 949.56,
-        "healing_received": 0,
-        "hero_damage_dealt": 12143.91,
-        "objective_kills": 14,
-        "solo_kills": 2,
-        "ultimate_charge": 39,
-        "ultimates_earned": 5,
-        "ultimates_used": 5
-      },
-      "heroes_played": {
-        "Mei": 534,
-        "Pharah": 324,
-        "Soldier: 76": 71,
-        "heroes": [
-          "Mei",
-          "Pharah",
-          "Soldier: 76"
-        ]
-      },
-      "name": "FoldupRex",
-      "role": "flex_dps",
-      "stats_per_minute": {
-        "all_damage_dealt": 835.5161055505004,
-        "barrier_damage_dealt": 172.51828935395815,
-        "cooldown1": 0,
-        "cooldown2": 0,
-        "damage_blocked": 588.0283894449499,
-        "damage_taken": 503.1996360327571,
-        "deaths": 0.6005459508644222,
-        "eliminations": 1.910828025477707,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 0.7097361237488626,
-        "healing_dealt": 51.84131028207461,
-        "healing_received": 0,
-        "hero_damage_dealt": 662.9978161965423,
-        "objective_kills": 0.7643312101910829,
-        "solo_kills": 0.1091901728844404,
-        "ultimate_charge": 2.129208371246588,
-        "ultimates_earned": 0.272975432211101,
-        "ultimates_used": 0.272975432211101
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player11": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 8624.94,
-        "barrier_damage_dealt": 3044.55,
-        "cooldown1": 0,
-        "cooldown2": 9.63,
-        "damage_blocked": 0,
-        "damage_taken": 4531.64,
-        "deaths": 10,
-        "eliminations": 19,
-        "environmental_deaths": 1,
-        "environmental_kills": 1,
-        "final_blows": 2,
-        "healing_dealt": 11548.9,
-        "healing_received": 0,
-        "hero_damage_dealt": 5580.39,
-        "objective_kills": 7,
-        "solo_kills": 1,
-        "ultimate_charge": 50,
-        "ultimates_earned": 5,
-        "ultimates_used": 4
-      },
-      "heroes_played": {
-        "Ana": 395,
-        "L\u00c3\u00bacio": 534,
-        "heroes": [
-          "L\u00c3\u00bacio",
-          "Ana"
-        ]
-      },
-      "name": "AfterShock",
-      "role": "main_support",
-      "stats_per_minute": {
-        "all_damage_dealt": 470.8793448589627,
-        "barrier_damage_dealt": 166.2174704276615,
-        "cooldown1": 0,
-        "cooldown2": 0.5257506824385806,
-        "damage_blocked": 0,
-        "damage_taken": 247.40527752502277,
-        "deaths": 0.545950864422202,
-        "eliminations": 1.0373066424021837,
-        "environmental_deaths": 0.0545950864422202,
-        "environmental_kills": 0.0545950864422202,
-        "final_blows": 0.1091901728844404,
-        "healing_dealt": 630.5131938125569,
-        "healing_received": 0,
-        "hero_damage_dealt": 304.6618744313012,
-        "objective_kills": 0.3821656050955414,
-        "solo_kills": 0.0545950864422202,
-        "ultimate_charge": 2.72975432211101,
-        "ultimates_earned": 0.272975432211101,
-        "ultimates_used": 0.2183803457688808
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player12": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 2093,
-        "barrier_damage_dealt": 456,
-        "cooldown1": 0,
-        "cooldown2": 9.97,
-        "damage_blocked": 0,
-        "damage_taken": 4261.29,
-        "deaths": 10,
-        "eliminations": 4,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 0,
-        "healing_dealt": 17486.57,
-        "healing_received": 0,
-        "hero_damage_dealt": 1637,
-        "objective_kills": 2,
-        "solo_kills": 0,
-        "ultimate_charge": 6,
-        "ultimates_earned": 6,
-        "ultimates_used": 5
-      },
-      "heroes_played": {
-        "Baptiste": 534,
-        "L\u00c3\u00bacio": 32,
-        "Mercy": 363,
-        "heroes": [
-          "Baptiste",
-          "Mercy",
-          "L\u00c3\u00bacio"
-        ]
-      },
-      "name": "DreamWave",
-      "role": "flex_support",
-      "stats_per_minute": {
-        "all_damage_dealt": 114.26751592356688,
-        "barrier_damage_dealt": 24.89535941765241,
-        "cooldown1": 0,
-        "cooldown2": 0.5443130118289354,
-        "damage_blocked": 0,
-        "damage_taken": 232.6454959053685,
-        "deaths": 0.545950864422202,
-        "eliminations": 0.2183803457688808,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 0,
-        "healing_dealt": 954.6808007279345,
-        "healing_received": 0,
-        "hero_damage_dealt": 89.37215650591448,
-        "objective_kills": 0.1091901728844404,
-        "solo_kills": 0,
-        "ultimate_charge": 0.3275705186533212,
-        "ultimates_earned": 0.3275705186533212,
-        "ultimates_used": 0.272975432211101
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player2": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 17397.879999999997,
-        "barrier_damage_dealt": 7981.4,
-        "cooldown1": 0,
-        "cooldown2": 7.03,
-        "damage_blocked": 10730,
-        "damage_taken": 17221.91,
-        "deaths": 10,
-        "eliminations": 30,
-        "environmental_deaths": 1,
-        "environmental_kills": 0,
-        "final_blows": 13,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 9416.48,
-        "objective_kills": 12,
-        "solo_kills": 2,
-        "ultimate_charge": 100,
-        "ultimates_earned": 9,
-        "ultimates_used": 7
-      },
-      "heroes_played": {
-        "D.Va": 835,
-        "Wrecking Ball": 94,
-        "heroes": [
-          "D.Va",
-          "Wrecking Ball"
-        ]
-      },
-      "name": "Marshmallow",
-      "role": "off_tank",
-      "stats_per_minute": {
-        "all_damage_dealt": 949.8387625113738,
-        "barrier_damage_dealt": 435.7452229299363,
-        "cooldown1": 0,
-        "cooldown2": 0.383803457688808,
-        "damage_blocked": 585.8052775250228,
-        "damage_taken": 940.2316651501365,
-        "deaths": 0.545950864422202,
-        "eliminations": 1.637852593266606,
-        "environmental_deaths": 0.0545950864422202,
-        "environmental_kills": 0,
-        "final_blows": 0.7097361237488626,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 514.0935395814377,
-        "objective_kills": 0.6551410373066424,
-        "solo_kills": 0.1091901728844404,
-        "ultimate_charge": 5.45950864422202,
-        "ultimates_earned": 0.4913557779799818,
-        "ultimates_used": 0.3821656050955414
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player3": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 21067.95,
-        "barrier_damage_dealt": 4259.95,
-        "cooldown1": 0,
-        "cooldown2": 0,
-        "damage_blocked": 0,
-        "damage_taken": 5257.18,
-        "deaths": 13,
-        "eliminations": 33,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 22,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 16808,
-        "objective_kills": 18,
-        "solo_kills": 2,
-        "ultimate_charge": 90,
-        "ultimates_earned": 7,
-        "ultimates_used": 7
-      },
-      "heroes_played": {
-        "Ashe": 326,
-        "Cassidy": 327,
-        "Marshmallow": 1,
-        "Tracer": 69,
-        "heroes": [
-          "Cassidy",
-          "Marshmallow",
-          "Cassidy",
-          "Marshmallow",
-          "Ashe",
-          "Tracer"
-        ]
-      },
-      "name": "Clem",
-      "role": "hitscan_dps",
-      "stats_per_minute": {
-        "all_damage_dealt": 1150.206551410373,
-        "barrier_damage_dealt": 232.57233848953592,
-        "cooldown1": 0,
-        "cooldown2": 0,
-        "damage_blocked": 0,
-        "damage_taken": 287.0161965423112,
-        "deaths": 0.7097361237488626,
-        "eliminations": 1.8016378525932666,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 1.2010919017288444,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 917.6342129208372,
-        "objective_kills": 0.9827115559599636,
-        "solo_kills": 0.1091901728844404,
-        "ultimate_charge": 4.9135577797998184,
-        "ultimates_earned": 0.3821656050955414,
-        "ultimates_used": 0.3821656050955414
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player4": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 14870.35,
-        "barrier_damage_dealt": 2447.34,
-        "cooldown1": 0,
-        "cooldown2": 3.33,
-        "damage_blocked": 4598.77,
-        "damage_taken": 8527.58,
-        "deaths": 13,
-        "eliminations": 35,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 10,
-        "healing_dealt": 1106.39,
-        "healing_received": 0,
-        "hero_damage_dealt": 12423.01,
-        "objective_kills": 21,
-        "solo_kills": 1,
-        "ultimate_charge": 52,
-        "ultimates_earned": 9,
-        "ultimates_used": 9
-      },
-      "heroes_played": {
-        "Echo": 395,
-        "Mei": 534,
-        "heroes": [
-          "Mei",
-          "Echo"
-        ]
-      },
-      "name": "Sub1",
-      "role": "flex_dps",
-      "stats_per_minute": {
-        "all_damage_dealt": 811.8480436760692,
-        "barrier_damage_dealt": 133.6127388535032,
-        "cooldown1": 0,
-        "cooldown2": 0.18180163785259326,
-        "damage_blocked": 251.070245677889,
-        "damage_taken": 465.56396724294814,
-        "deaths": 0.7097361237488626,
-        "eliminations": 1.910828025477707,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 0.545950864422202,
-        "healing_dealt": 60.40345768880801,
-        "healing_received": 0,
-        "hero_damage_dealt": 678.235304822566,
-        "objective_kills": 1.1464968152866242,
-        "solo_kills": 0.0545950864422202,
-        "ultimate_charge": 2.8389444949954505,
-        "ultimates_earned": 0.4913557779799818,
-        "ultimates_used": 0.4913557779799818
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player5": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 6661.27,
-        "barrier_damage_dealt": 2369,
-        "cooldown1": 0,
-        "cooldown2": 6.02,
-        "damage_blocked": 0,
-        "damage_taken": 5362.98,
-        "deaths": 13,
-        "eliminations": 22,
-        "environmental_deaths": 0,
-        "environmental_kills": 2,
-        "final_blows": 3,
-        "healing_dealt": 7891.56,
-        "healing_received": 0,
-        "hero_damage_dealt": 4292.27,
-        "objective_kills": 12,
-        "solo_kills": 2,
-        "ultimate_charge": 36,
-        "ultimates_earned": 3,
-        "ultimates_used": 3
-      },
-      "heroes_played": {
-        "L\u00c3\u00bacio": 84,
-        "Mercy": 311,
-        "heroes": [
-          "L\u00c3\u00bacio",
-          "Mercy",
-          "L\u00c3\u00bacio"
-        ]
-      },
-      "name": "Monster",
-      "role": "main_support",
-      "stats_per_minute": {
-        "all_damage_dealt": 363.67261146496816,
-        "barrier_damage_dealt": 129.33575978161966,
-        "cooldown1": 0,
-        "cooldown2": 0.3286624203821656,
-        "damage_blocked": 0,
-        "damage_taken": 292.79235668789806,
-        "deaths": 0.7097361237488626,
-        "eliminations": 1.2010919017288444,
-        "environmental_deaths": 0,
-        "environmental_kills": 0.1091901728844404,
-        "final_blows": 0.1637852593266606,
-        "healing_dealt": 430.84040036396726,
-        "healing_received": 0,
-        "hero_damage_dealt": 234.33685168334853,
-        "objective_kills": 0.6551410373066424,
-        "solo_kills": 0.1091901728844404,
-        "ultimate_charge": 1.9654231119199272,
-        "ultimates_earned": 0.1637852593266606,
-        "ultimates_used": 0.1637852593266606
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player6": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 7680.0599999999995,
-        "barrier_damage_dealt": 3760.47,
-        "cooldown1": 0.54,
-        "cooldown2": 0,
-        "damage_blocked": 0,
-        "damage_taken": 5464.03,
-        "deaths": 13,
-        "eliminations": 19,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 4,
-        "healing_dealt": 18420.11,
-        "healing_received": 0,
-        "hero_damage_dealt": 3919.59,
-        "objective_kills": 12,
-        "solo_kills": 0,
-        "ultimate_charge": 0,
-        "ultimates_earned": 7,
-        "ultimates_used": 7
-      },
-      "heroes_played": {
-        "Ana": 282,
-        "Baptiste": 506,
-        "Moira": 113,
-        "heroes": [
-          "Ana",
-          "Baptiste",
-          "Ana",
-          "Moira"
-        ]
-      },
-      "name": "BouncyBear",
-      "role": "flex_support",
-      "stats_per_minute": {
-        "all_damage_dealt": 419.29353958143764,
-        "barrier_damage_dealt": 205.3031847133758,
-        "cooldown1": 0.02948134667879891,
-        "cooldown2": 0,
-        "damage_blocked": 0,
-        "damage_taken": 298.3091901728844,
-        "deaths": 0.7097361237488626,
-        "eliminations": 1.0373066424021837,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 0.2183803457688808,
-        "healing_dealt": 1005.6474977252047,
-        "healing_received": 0,
-        "hero_damage_dealt": 213.99035486806187,
-        "objective_kills": 0.6551410373066424,
-        "solo_kills": 0,
-        "ultimate_charge": 0,
-        "ultimates_earned": 0.3821656050955414,
-        "ultimates_used": 0.3821656050955414
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player7": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 13678.16,
-        "barrier_damage_dealt": 2908.67,
-        "cooldown1": 0,
-        "cooldown2": 0,
-        "damage_blocked": 15714.35,
-        "damage_taken": 19798.64,
-        "deaths": 16,
-        "eliminations": 26,
-        "environmental_deaths": 1,
-        "environmental_kills": 0,
-        "final_blows": 11,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 10769.49,
-        "objective_kills": 8,
-        "solo_kills": 0,
-        "ultimate_charge": 34,
-        "ultimates_earned": 6,
-        "ultimates_used": 6
-      },
-      "heroes_played": {
-        "Reinhardt": 534,
-        "Winston": 363,
-        "Wrecking Ball": 27,
-        "Zarya": 5,
-        "heroes": [
-          "Reinhardt",
-          "Winston",
-          "Zarya",
-          "Wrecking Ball"
-        ]
-      },
-      "name": "AllMike",
-      "role": "main_tank",
-      "stats_per_minute": {
-        "all_damage_dealt": 746.7603275705187,
-        "barrier_damage_dealt": 158.79909008189264,
-        "cooldown1": 0,
-        "cooldown2": 0,
-        "damage_blocked": 857.9262966333031,
-        "damage_taken": 1080.9084622383984,
-        "deaths": 0.8735213830755232,
-        "eliminations": 1.4194722474977253,
-        "environmental_deaths": 0.0545950864422202,
-        "environmental_kills": 0,
-        "final_blows": 0.6005459508644222,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 587.961237488626,
-        "objective_kills": 0.4367606915377616,
-        "solo_kills": 0,
-        "ultimate_charge": 1.8562329390354868,
-        "ultimates_earned": 0.3275705186533212,
-        "ultimates_used": 0.3275705186533212
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player8": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 19019,
-        "barrier_damage_dealt": 7697.85,
-        "cooldown1": 0,
-        "cooldown2": 5.64,
-        "damage_blocked": 8896.94,
-        "damage_taken": 15773.33,
-        "deaths": 10,
-        "eliminations": 38,
-        "environmental_deaths": 1,
-        "environmental_kills": 0,
-        "final_blows": 15,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 11321.15,
-        "objective_kills": 16,
-        "solo_kills": 3,
-        "ultimate_charge": 24,
-        "ultimates_earned": 10,
-        "ultimates_used": 15
-      },
-      "heroes_played": {
-        "D.Va": 908,
-        "Winston": 21,
-        "heroes": [
-          "D.Va",
-          "Winston"
-        ]
-      },
-      "name": "\u00c7\u00a2\u00c5\u00b4\u00c5\u00b6\u00c5\u00a6\u00c7\u00be\u00c5\u00a6\u00c7\u017e",
-      "role": "off_tank",
-      "stats_per_minute": {
-        "all_damage_dealt": 1038.343949044586,
-        "barrier_damage_dealt": 420.2647861692448,
-        "cooldown1": 0,
-        "cooldown2": 0.3079162875341219,
-        "damage_blocked": 485.7292083712466,
-        "damage_taken": 861.1463148316651,
-        "deaths": 0.545950864422202,
-        "eliminations": 2.0746132848043675,
-        "environmental_deaths": 0.0545950864422202,
-        "environmental_kills": 0,
-        "final_blows": 0.818926296633303,
-        "healing_dealt": 0,
-        "healing_received": 0,
-        "hero_damage_dealt": 618.0791628753412,
-        "objective_kills": 0.8735213830755232,
-        "solo_kills": 0.1637852593266606,
-        "ultimate_charge": 1.3102820746132848,
-        "ultimates_earned": 0.545950864422202,
-        "ultimates_used": 0.818926296633303
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
-    },
-    "player9": {
-      "avg_time_to_ult": 88.375,
-      "avg_time_ult_held": 19.857,
-      "final_stats": {
-        "all_damage_dealt": 19986,
-        "barrier_damage_dealt": 6018.33,
-        "cooldown1": 0,
-        "cooldown2": 3.48,
-        "damage_blocked": 0,
-        "damage_taken": 6765.77,
-        "deaths": 11,
-        "eliminations": 39,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 28,
-        "healing_dealt": 1583.12,
-        "healing_received": 3571.43,
-        "hero_damage_dealt": 13967.67,
-        "objective_kills": 16,
-        "solo_kills": 8,
-        "ultimate_charge": 2,
-        "ultimates_earned": 8,
-        "ultimates_used": 8
-      },
-      "heroes_played": {
-        "Reaper": 534,
-        "Tracer": 395,
-        "heroes": [
-          "Reaper",
-          "Tracer"
-        ]
-      },
-      "name": "Jinx",
-      "role": "hitscan_dps",
-      "stats_per_minute": {
-        "all_damage_dealt": 1091.137397634213,
-        "barrier_damage_dealt": 328.5712465878071,
-        "cooldown1": 0,
-        "cooldown2": 0.1899909008189263,
-        "damage_blocked": 0,
-        "damage_taken": 369.3777979981802,
-        "deaths": 0.6005459508644222,
-        "eliminations": 2.129208371246588,
-        "environmental_deaths": 0,
-        "environmental_kills": 0,
-        "final_blows": 1.5286624203821657,
-        "healing_dealt": 86.43057324840764,
-        "healing_received": 194.98252957233848,
-        "hero_damage_dealt": 762.5661510464058,
-        "objective_kills": 0.8735213830755232,
-        "solo_kills": 0.4367606915377616,
-        "ultimate_charge": 0.1091901728844404,
-        "ultimates_earned": 0.4367606915377616,
-        "ultimates_used": 0.4367606915377616
-      },
-      "ult_timings": [
-        [
-          [
-            52,
-            57
-          ],
-          [
-            153,
-            154
-          ]
-        ],
-        [
-          [
-            64,
-            120
-          ],
-          [
-            168,
-            169
-          ],
-          [
-            294,
-            309
-          ]
-        ],
-        [
-          [
-            125,
-            160
-          ],
-          [
-            234,
-            277
-          ],
-          [
-            390,
-            -1
-          ]
-        ]
-      ]
+        "map_type": "Control",
+        "player1": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 19447.14,
+                "barrier_damage_dealt": 6260.64,
+                "cooldown1": 0.21,
+                "cooldown2": 5.24,
+                "damage_blocked": 18686.6,
+                "damage_taken": 13968.65,
+                "deaths": 9,
+                "eliminations": 40,
+                "environmental_deaths": 1,
+                "environmental_kills": 1,
+                "final_blows": 13,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 13186.5,
+                "objective_kills": 24,
+                "solo_kills": 1,
+                "ultimate_charge": 100,
+                "ultimates_earned": 8,
+                "ultimates_used": 7
+            },
+            "heroes_played": {
+                "Reinhardt": 534,
+                "Winston": 395,
+                "heroes": [
+                    "Reinhardt",
+                    "Winston"
+                ]
+            },
+            "name": "Golex",
+            "role": "main_tank",
+            "stats_per_minute": {
+                "all_damage_dealt": 1061.7182893539582,
+                "barrier_damage_dealt": 341.8001819836215,
+                "cooldown1": 0.011464968152866241,
+                "cooldown2": 0.2860782529572339,
+                "damage_blocked": 1020.1965423111919,
+                "damage_taken": 762.6196542311192,
+                "deaths": 0.4913557779799818,
+                "eliminations": 2.183803457688808,
+                "environmental_deaths": 0.0545950864422202,
+                "environmental_kills": 0.0545950864422202,
+                "final_blows": 0.7097361237488626,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 719.9181073703367,
+                "objective_kills": 1.3102820746132848,
+                "solo_kills": 0.0545950864422202,
+                "ultimate_charge": 5.45950864422202,
+                "ultimates_earned": 0.4367606915377616,
+                "ultimates_used": 0.3821656050955414
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player10": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 15303.869999999999,
+                "barrier_damage_dealt": 3159.96,
+                "cooldown1": 0,
+                "cooldown2": 0,
+                "damage_blocked": 10770.72,
+                "damage_taken": 9216.94,
+                "deaths": 11,
+                "eliminations": 35,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 13,
+                "healing_dealt": 949.56,
+                "healing_received": 0,
+                "hero_damage_dealt": 12143.91,
+                "objective_kills": 14,
+                "solo_kills": 2,
+                "ultimate_charge": 39,
+                "ultimates_earned": 5,
+                "ultimates_used": 5
+            },
+            "heroes_played": {
+                "Mei": 534,
+                "Pharah": 324,
+                "Soldier: 76": 71,
+                "heroes": [
+                    "Mei",
+                    "Pharah",
+                    "Soldier: 76"
+                ]
+            },
+            "name": "FoldupRex",
+            "role": "flex_dps",
+            "stats_per_minute": {
+                "all_damage_dealt": 835.5161055505004,
+                "barrier_damage_dealt": 172.51828935395815,
+                "cooldown1": 0,
+                "cooldown2": 0,
+                "damage_blocked": 588.0283894449499,
+                "damage_taken": 503.1996360327571,
+                "deaths": 0.6005459508644222,
+                "eliminations": 1.910828025477707,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 0.7097361237488626,
+                "healing_dealt": 51.84131028207461,
+                "healing_received": 0,
+                "hero_damage_dealt": 662.9978161965423,
+                "objective_kills": 0.7643312101910829,
+                "solo_kills": 0.1091901728844404,
+                "ultimate_charge": 2.129208371246588,
+                "ultimates_earned": 0.272975432211101,
+                "ultimates_used": 0.272975432211101
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player11": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 8624.94,
+                "barrier_damage_dealt": 3044.55,
+                "cooldown1": 0,
+                "cooldown2": 9.63,
+                "damage_blocked": 0,
+                "damage_taken": 4531.64,
+                "deaths": 10,
+                "eliminations": 19,
+                "environmental_deaths": 1,
+                "environmental_kills": 1,
+                "final_blows": 2,
+                "healing_dealt": 11548.9,
+                "healing_received": 0,
+                "hero_damage_dealt": 5580.39,
+                "objective_kills": 7,
+                "solo_kills": 1,
+                "ultimate_charge": 50,
+                "ultimates_earned": 5,
+                "ultimates_used": 4
+            },
+            "heroes_played": {
+                "Ana": 395,
+                "L\u00c3\u00bacio": 534,
+                "heroes": [
+                    "L\u00c3\u00bacio",
+                    "Ana"
+                ]
+            },
+            "name": "AfterShock",
+            "role": "main_support",
+            "stats_per_minute": {
+                "all_damage_dealt": 470.8793448589627,
+                "barrier_damage_dealt": 166.2174704276615,
+                "cooldown1": 0,
+                "cooldown2": 0.5257506824385806,
+                "damage_blocked": 0,
+                "damage_taken": 247.40527752502277,
+                "deaths": 0.545950864422202,
+                "eliminations": 1.0373066424021837,
+                "environmental_deaths": 0.0545950864422202,
+                "environmental_kills": 0.0545950864422202,
+                "final_blows": 0.1091901728844404,
+                "healing_dealt": 630.5131938125569,
+                "healing_received": 0,
+                "hero_damage_dealt": 304.6618744313012,
+                "objective_kills": 0.3821656050955414,
+                "solo_kills": 0.0545950864422202,
+                "ultimate_charge": 2.72975432211101,
+                "ultimates_earned": 0.272975432211101,
+                "ultimates_used": 0.2183803457688808
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player12": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 2093,
+                "barrier_damage_dealt": 456,
+                "cooldown1": 0,
+                "cooldown2": 9.97,
+                "damage_blocked": 0,
+                "damage_taken": 4261.29,
+                "deaths": 10,
+                "eliminations": 4,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 0,
+                "healing_dealt": 17486.57,
+                "healing_received": 0,
+                "hero_damage_dealt": 1637,
+                "objective_kills": 2,
+                "solo_kills": 0,
+                "ultimate_charge": 6,
+                "ultimates_earned": 6,
+                "ultimates_used": 5
+            },
+            "heroes_played": {
+                "Baptiste": 534,
+                "L\u00c3\u00bacio": 32,
+                "Mercy": 363,
+                "heroes": [
+                    "Baptiste",
+                    "Mercy",
+                    "L\u00c3\u00bacio"
+                ]
+            },
+            "name": "DreamWave",
+            "role": "flex_support",
+            "stats_per_minute": {
+                "all_damage_dealt": 114.26751592356688,
+                "barrier_damage_dealt": 24.89535941765241,
+                "cooldown1": 0,
+                "cooldown2": 0.5443130118289354,
+                "damage_blocked": 0,
+                "damage_taken": 232.6454959053685,
+                "deaths": 0.545950864422202,
+                "eliminations": 0.2183803457688808,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 0,
+                "healing_dealt": 954.6808007279345,
+                "healing_received": 0,
+                "hero_damage_dealt": 89.37215650591448,
+                "objective_kills": 0.1091901728844404,
+                "solo_kills": 0,
+                "ultimate_charge": 0.3275705186533212,
+                "ultimates_earned": 0.3275705186533212,
+                "ultimates_used": 0.272975432211101
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player2": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 17397.879999999997,
+                "barrier_damage_dealt": 7981.4,
+                "cooldown1": 0,
+                "cooldown2": 7.03,
+                "damage_blocked": 10730,
+                "damage_taken": 17221.91,
+                "deaths": 10,
+                "eliminations": 30,
+                "environmental_deaths": 1,
+                "environmental_kills": 0,
+                "final_blows": 13,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 9416.48,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 100,
+                "ultimates_earned": 9,
+                "ultimates_used": 7
+            },
+            "heroes_played": {
+                "D.Va": 835,
+                "Wrecking Ball": 94,
+                "heroes": [
+                    "D.Va",
+                    "Wrecking Ball"
+                ]
+            },
+            "name": "Marshmallow",
+            "role": "off_tank",
+            "stats_per_minute": {
+                "all_damage_dealt": 949.8387625113738,
+                "barrier_damage_dealt": 435.7452229299363,
+                "cooldown1": 0,
+                "cooldown2": 0.383803457688808,
+                "damage_blocked": 585.8052775250228,
+                "damage_taken": 940.2316651501365,
+                "deaths": 0.545950864422202,
+                "eliminations": 1.637852593266606,
+                "environmental_deaths": 0.0545950864422202,
+                "environmental_kills": 0,
+                "final_blows": 0.7097361237488626,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 514.0935395814377,
+                "objective_kills": 0.6551410373066424,
+                "solo_kills": 0.1091901728844404,
+                "ultimate_charge": 5.45950864422202,
+                "ultimates_earned": 0.4913557779799818,
+                "ultimates_used": 0.3821656050955414
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player3": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 21067.95,
+                "barrier_damage_dealt": 4259.95,
+                "cooldown1": 0,
+                "cooldown2": 0,
+                "damage_blocked": 0,
+                "damage_taken": 5257.18,
+                "deaths": 13,
+                "eliminations": 33,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 22,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 16808,
+                "objective_kills": 18,
+                "solo_kills": 2,
+                "ultimate_charge": 90,
+                "ultimates_earned": 7,
+                "ultimates_used": 7
+            },
+            "heroes_played": {
+                "Ashe": 326,
+                "Cassidy": 327,
+                "Marshmallow": 1,
+                "Tracer": 69,
+                "heroes": [
+                    "Cassidy",
+                    "Marshmallow",
+                    "Cassidy",
+                    "Marshmallow",
+                    "Ashe",
+                    "Tracer"
+                ]
+            },
+            "name": "Clem",
+            "role": "hitscan_dps",
+            "stats_per_minute": {
+                "all_damage_dealt": 1150.206551410373,
+                "barrier_damage_dealt": 232.57233848953592,
+                "cooldown1": 0,
+                "cooldown2": 0,
+                "damage_blocked": 0,
+                "damage_taken": 287.0161965423112,
+                "deaths": 0.7097361237488626,
+                "eliminations": 1.8016378525932666,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 1.2010919017288444,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 917.6342129208372,
+                "objective_kills": 0.9827115559599636,
+                "solo_kills": 0.1091901728844404,
+                "ultimate_charge": 4.9135577797998184,
+                "ultimates_earned": 0.3821656050955414,
+                "ultimates_used": 0.3821656050955414
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player4": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 14870.35,
+                "barrier_damage_dealt": 2447.34,
+                "cooldown1": 0,
+                "cooldown2": 3.33,
+                "damage_blocked": 4598.77,
+                "damage_taken": 8527.58,
+                "deaths": 13,
+                "eliminations": 35,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 10,
+                "healing_dealt": 1106.39,
+                "healing_received": 0,
+                "hero_damage_dealt": 12423.01,
+                "objective_kills": 21,
+                "solo_kills": 1,
+                "ultimate_charge": 52,
+                "ultimates_earned": 9,
+                "ultimates_used": 9
+            },
+            "heroes_played": {
+                "Echo": 395,
+                "Mei": 534,
+                "heroes": [
+                    "Mei",
+                    "Echo"
+                ]
+            },
+            "name": "Sub1",
+            "role": "flex_dps",
+            "stats_per_minute": {
+                "all_damage_dealt": 811.8480436760692,
+                "barrier_damage_dealt": 133.6127388535032,
+                "cooldown1": 0,
+                "cooldown2": 0.18180163785259326,
+                "damage_blocked": 251.070245677889,
+                "damage_taken": 465.56396724294814,
+                "deaths": 0.7097361237488626,
+                "eliminations": 1.910828025477707,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 0.545950864422202,
+                "healing_dealt": 60.40345768880801,
+                "healing_received": 0,
+                "hero_damage_dealt": 678.235304822566,
+                "objective_kills": 1.1464968152866242,
+                "solo_kills": 0.0545950864422202,
+                "ultimate_charge": 2.8389444949954505,
+                "ultimates_earned": 0.4913557779799818,
+                "ultimates_used": 0.4913557779799818
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player5": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 6661.27,
+                "barrier_damage_dealt": 2369,
+                "cooldown1": 0,
+                "cooldown2": 6.02,
+                "damage_blocked": 0,
+                "damage_taken": 5362.98,
+                "deaths": 13,
+                "eliminations": 22,
+                "environmental_deaths": 0,
+                "environmental_kills": 2,
+                "final_blows": 3,
+                "healing_dealt": 7891.56,
+                "healing_received": 0,
+                "hero_damage_dealt": 4292.27,
+                "objective_kills": 12,
+                "solo_kills": 2,
+                "ultimate_charge": 36,
+                "ultimates_earned": 3,
+                "ultimates_used": 3
+            },
+            "heroes_played": {
+                "L\u00c3\u00bacio": 84,
+                "Mercy": 311,
+                "heroes": [
+                    "L\u00c3\u00bacio",
+                    "Mercy",
+                    "L\u00c3\u00bacio"
+                ]
+            },
+            "name": "Monster",
+            "role": "main_support",
+            "stats_per_minute": {
+                "all_damage_dealt": 363.67261146496816,
+                "barrier_damage_dealt": 129.33575978161966,
+                "cooldown1": 0,
+                "cooldown2": 0.3286624203821656,
+                "damage_blocked": 0,
+                "damage_taken": 292.79235668789806,
+                "deaths": 0.7097361237488626,
+                "eliminations": 1.2010919017288444,
+                "environmental_deaths": 0,
+                "environmental_kills": 0.1091901728844404,
+                "final_blows": 0.1637852593266606,
+                "healing_dealt": 430.84040036396726,
+                "healing_received": 0,
+                "hero_damage_dealt": 234.33685168334853,
+                "objective_kills": 0.6551410373066424,
+                "solo_kills": 0.1091901728844404,
+                "ultimate_charge": 1.9654231119199272,
+                "ultimates_earned": 0.1637852593266606,
+                "ultimates_used": 0.1637852593266606
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player6": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 7680.0599999999995,
+                "barrier_damage_dealt": 3760.47,
+                "cooldown1": 0.54,
+                "cooldown2": 0,
+                "damage_blocked": 0,
+                "damage_taken": 5464.03,
+                "deaths": 13,
+                "eliminations": 19,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 4,
+                "healing_dealt": 18420.11,
+                "healing_received": 0,
+                "hero_damage_dealt": 3919.59,
+                "objective_kills": 12,
+                "solo_kills": 0,
+                "ultimate_charge": 0,
+                "ultimates_earned": 7,
+                "ultimates_used": 7
+            },
+            "heroes_played": {
+                "Ana": 282,
+                "Baptiste": 506,
+                "Moira": 113,
+                "heroes": [
+                    "Ana",
+                    "Baptiste",
+                    "Ana",
+                    "Moira"
+                ]
+            },
+            "name": "BouncyBear",
+            "role": "flex_support",
+            "stats_per_minute": {
+                "all_damage_dealt": 419.29353958143764,
+                "barrier_damage_dealt": 205.3031847133758,
+                "cooldown1": 0.02948134667879891,
+                "cooldown2": 0,
+                "damage_blocked": 0,
+                "damage_taken": 298.3091901728844,
+                "deaths": 0.7097361237488626,
+                "eliminations": 1.0373066424021837,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 0.2183803457688808,
+                "healing_dealt": 1005.6474977252047,
+                "healing_received": 0,
+                "hero_damage_dealt": 213.99035486806187,
+                "objective_kills": 0.6551410373066424,
+                "solo_kills": 0,
+                "ultimate_charge": 0,
+                "ultimates_earned": 0.3821656050955414,
+                "ultimates_used": 0.3821656050955414
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player7": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 13678.16,
+                "barrier_damage_dealt": 2908.67,
+                "cooldown1": 0,
+                "cooldown2": 0,
+                "damage_blocked": 15714.35,
+                "damage_taken": 19798.64,
+                "deaths": 16,
+                "eliminations": 26,
+                "environmental_deaths": 1,
+                "environmental_kills": 0,
+                "final_blows": 11,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 10769.49,
+                "objective_kills": 8,
+                "solo_kills": 0,
+                "ultimate_charge": 34,
+                "ultimates_earned": 6,
+                "ultimates_used": 6
+            },
+            "heroes_played": {
+                "Reinhardt": 534,
+                "Winston": 363,
+                "Wrecking Ball": 27,
+                "Zarya": 5,
+                "heroes": [
+                    "Reinhardt",
+                    "Winston",
+                    "Zarya",
+                    "Wrecking Ball"
+                ]
+            },
+            "name": "AllMike",
+            "role": "main_tank",
+            "stats_per_minute": {
+                "all_damage_dealt": 746.7603275705187,
+                "barrier_damage_dealt": 158.79909008189264,
+                "cooldown1": 0,
+                "cooldown2": 0,
+                "damage_blocked": 857.9262966333031,
+                "damage_taken": 1080.9084622383984,
+                "deaths": 0.8735213830755232,
+                "eliminations": 1.4194722474977253,
+                "environmental_deaths": 0.0545950864422202,
+                "environmental_kills": 0,
+                "final_blows": 0.6005459508644222,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 587.961237488626,
+                "objective_kills": 0.4367606915377616,
+                "solo_kills": 0,
+                "ultimate_charge": 1.8562329390354868,
+                "ultimates_earned": 0.3275705186533212,
+                "ultimates_used": 0.3275705186533212
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player8": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 19019,
+                "barrier_damage_dealt": 7697.85,
+                "cooldown1": 0,
+                "cooldown2": 5.64,
+                "damage_blocked": 8896.94,
+                "damage_taken": 15773.33,
+                "deaths": 10,
+                "eliminations": 38,
+                "environmental_deaths": 1,
+                "environmental_kills": 0,
+                "final_blows": 15,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 11321.15,
+                "objective_kills": 16,
+                "solo_kills": 3,
+                "ultimate_charge": 24,
+                "ultimates_earned": 10,
+                "ultimates_used": 15
+            },
+            "heroes_played": {
+                "D.Va": 908,
+                "Winston": 21,
+                "heroes": [
+                    "D.Va",
+                    "Winston"
+                ]
+            },
+            "name": "\u00c7\u00a2\u00c5\u00b4\u00c5\u00b6\u00c5\u00a6\u00c7\u00be\u00c5\u00a6\u00c7\u017e",
+            "role": "off_tank",
+            "stats_per_minute": {
+                "all_damage_dealt": 1038.343949044586,
+                "barrier_damage_dealt": 420.2647861692448,
+                "cooldown1": 0,
+                "cooldown2": 0.3079162875341219,
+                "damage_blocked": 485.7292083712466,
+                "damage_taken": 861.1463148316651,
+                "deaths": 0.545950864422202,
+                "eliminations": 2.0746132848043675,
+                "environmental_deaths": 0.0545950864422202,
+                "environmental_kills": 0,
+                "final_blows": 0.818926296633303,
+                "healing_dealt": 0,
+                "healing_received": 0,
+                "hero_damage_dealt": 618.0791628753412,
+                "objective_kills": 0.8735213830755232,
+                "solo_kills": 0.1637852593266606,
+                "ultimate_charge": 1.3102820746132848,
+                "ultimates_earned": 0.545950864422202,
+                "ultimates_used": 0.818926296633303
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        },
+        "player9": {
+            "avg_time_to_ult": 88.375,
+            "avg_time_ult_held": 19.857,
+            "final_stats": {
+                "all_damage_dealt": 19986,
+                "barrier_damage_dealt": 6018.33,
+                "cooldown1": 0,
+                "cooldown2": 3.48,
+                "damage_blocked": 0,
+                "damage_taken": 6765.77,
+                "deaths": 11,
+                "eliminations": 39,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 28,
+                "healing_dealt": 1583.12,
+                "healing_received": 3571.43,
+                "hero_damage_dealt": 13967.67,
+                "objective_kills": 16,
+                "solo_kills": 8,
+                "ultimate_charge": 2,
+                "ultimates_earned": 8,
+                "ultimates_used": 8
+            },
+            "heroes_played": {
+                "Reaper": 534,
+                "Tracer": 395,
+                "heroes": [
+                    "Reaper",
+                    "Tracer"
+                ]
+            },
+            "name": "Jinx",
+            "role": "hitscan_dps",
+            "stats_per_minute": {
+                "all_damage_dealt": 1091.137397634213,
+                "barrier_damage_dealt": 328.5712465878071,
+                "cooldown1": 0,
+                "cooldown2": 0.1899909008189263,
+                "damage_blocked": 0,
+                "damage_taken": 369.3777979981802,
+                "deaths": 0.6005459508644222,
+                "eliminations": 2.129208371246588,
+                "environmental_deaths": 0,
+                "environmental_kills": 0,
+                "final_blows": 1.5286624203821657,
+                "healing_dealt": 86.43057324840764,
+                "healing_received": 194.98252957233848,
+                "hero_damage_dealt": 762.5661510464058,
+                "objective_kills": 0.8735213830755232,
+                "solo_kills": 0.4367606915377616,
+                "ultimate_charge": 0.1091901728844404,
+                "ultimates_earned": 0.4367606915377616,
+                "ultimates_used": 0.4367606915377616
+            },
+            "ult_timings": [
+                [
+                    [
+                        52,
+                        57
+                    ],
+                    [
+                        153,
+                        154
+                    ]
+                ],
+                [
+                    [
+                        64,
+                        120
+                    ],
+                    [
+                        168,
+                        169
+                    ],
+                    [
+                        294,
+                        309
+                    ]
+                ],
+                [
+                    [
+                        125,
+                        160
+                    ],
+                    [
+                        234,
+                        277
+                    ],
+                    [
+                        390,
+                        -1
+                    ]
+                ]
+            ]
+        }
     }
-  }
 ]

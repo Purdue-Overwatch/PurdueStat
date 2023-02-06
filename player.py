@@ -1,6 +1,5 @@
-"""
-This module contains the Player class, which is used to store the data of a player.
-"""
+"""This module contains the Player class, which is used to store the data of a
+player."""
 __author__ = "Park"
 # look into using numpy arrays over lists if speed is an issue
 
@@ -52,8 +51,7 @@ SUPPORT_HEROES = [
 
 
 class Player:
-    """
-    A player class that stores the data of a player.
+    """A player class that stores the data of a player.
 
     Attributes
     ----------
@@ -115,16 +113,12 @@ class Player:
         self.ult_timings = None
 
     def set_heroes_played(self):
-        """
-        Sets the heroes the player played.
-        """
+        """Sets the heroes the player played."""
         heroes = set(self.data["_heroes"])
         self.heroes_played = list(heroes)
 
     def set_role(self):
-        """
-        Sets the role of the player based on the heroes they played.
-        """
+        """Sets the role of the player based on the heroes they played."""
         hero = self.heroes_played[0]
 
         if hero in TANK_HEROES:
@@ -135,9 +129,7 @@ class Player:
             self.role = "Support"
 
     def set_ult_time_stats(self):
-        """
-        Sets the time related stats of the player's ultimates.
-        """
+        """Sets the time related stats of the player's ultimates."""
         ult_charge_arr = self.data["_ultimate_charge"]
         time_stamp_arr = self.game_db["_time_stamps"]
 
@@ -191,10 +183,11 @@ class Player:
         self.ult_timings = ult_timings
 
     def set_in_game_stats(self):
-        """
-        Sets the in-game related stats of the player.
+        """Sets the in-game related stats of the player.
+
         Final stats are set by accessing the final index of each array.
-        Stats per min are set by dividing the final stat by the game length in seconds and multiplying by 60.
+        Stats per min are set by dividing the final stat by the game
+        length in seconds and multiplying by 60.
         """
         hero_dmg = self.data["_hero_damage"][-1]
         barrier_dmg = self.data["_barrier_damage"][-1]
@@ -217,9 +210,7 @@ class Player:
             "ultimates_used": self.data["_ultimates_used"][-1],
         }
 
-        time_stamps = self.game_db[
-            "_time_stamps"
-        ]  # line 179 to 188 calcultes the game length
+        time_stamps = self.game_db["_time_stamps"]
         game_length = 0
         prev_time = 0
         start_time = time_stamps[0]
@@ -240,18 +231,14 @@ class Player:
         self.stats_per_minute = stats_per_minute
 
     def set_all(self):
-        """
-        Sets all the player's stats.
-        """
+        """Sets all the player's stats."""
         self.set_heroes_played()  # heroes_played
         self.set_role()  # role
         self.set_ult_time_stats()  # avg_time_to_ult, avg_time_ult_held, ult_timings
         self.set_in_game_stats()  # final_stats, stats_per_minute
 
     def print_all_attributes(self):
-        """
-        Prints all the player's attributes.
-        """
+        """Prints all the player's attributes."""
         print(f"name = {self.name}")
         print(f"heroes_played = {self.heroes_played}")
         print(f"role = {self.role}")
@@ -262,9 +249,7 @@ class Player:
         print(f"stats_per_minute = {json.dumps(self.stats_per_minute, indent=2)}")
 
     def print_ticks(self):
-        """
-        Prints the number of ticks in the game.
-        """
+        """Prints the number of ticks in the game."""
         for charge, (tick, time) in zip(
             self.data["_ultimate_charge"], enumerate(self.game_db["_time_stamps"])
         ):
