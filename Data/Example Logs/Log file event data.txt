@@ -1,0 +1,100 @@
+[00:02:22] 142.90,FinalBlow,EONic,DreamWave,Primary Fire
+[00:02:24] 144.75,FinalBlow,FoldupRex,EONic,Secondary Fire
+[00:02:25] 145.65,FinalBlow,Marshmallow,FoldupRex,Primary Fire
+[00:02:27] 147.44,FinalBlow,AfterShock,Sub1,Secondary Fire
+[00:02:59] 179.74,FinalBlow,EONic,AllMike,Primary Fire
+[00:03:02] 182.93,FinalBlow,Jinx,Clem,Secondary Fire
+[00:03:30] 210.54,FinalBlow,EONic,AfterShock,Primary Fire
+[00:03:33] 213.60,FinalBlow,Sub1,DreamWave,Secondary Fire
+[00:03:38] 218.72,FinalBlow,EONic,AllMike,Ability 1
+[00:03:39] 219.63,FinalBlow,Jinx,Clem,Primary Fire
+[00:03:40] 220.98,FinalBlow,Monster,Jinx,Primary Fire
+[00:03:41] 221.90,FinalBlow,Marshmallow,FoldupRex,Primary Fire
+[00:03:43] 223.49,FinalBlow,Marshmallow,ǢŴŶŦǾŦǞ,Primary Fire
+[00:04:28] 268.70,FinalBlow,Jinx,Marshmallow,Primary Fire
+[00:04:28] 268.78,FinalBlow,Sub1,AllMike,Secondary Fire
+[00:04:38] 278.16,FinalBlow,Jinx,EONic,Secondary Fire
+[00:04:42] 282.80,FinalBlow,Sub1,FoldupRex,Ultimate
+[00:04:45] 285.74,FinalBlow,Jinx,Clem,Primary Fire
+[00:04:48] 288.37,FinalBlow,Sub1,Jinx,Secondary Fire
+[00:05:11] 311.14,FinalBlow,FoldupRex,Monster,Secondary Fire
+[00:05:14] 314.69,FinalBlow,Clem,AllMike,Ultimate
+[00:05:16] 316.32,FinalBlow,Jinx,BouncyBear,Ultimate
+[00:05:19] 319.44,FinalBlow,DreamWave,Sub1,Ability 2
+[00:05:22] 322.86,FinalBlow,Jinx,Clem,Primary Fire
+[00:05:24] 324.54,FinalBlow,Jinx,Marshmallow,Primary Fire
+[00:05:27] 327.61,FinalBlow,Jinx,EONic,Primary Fire
+[00:06:04] 364.22,FinalBlow,AllMike,BouncyBear,Primary Fire
+[00:06:04] 364.24,FinalBlow,AllMike,Monster,Primary Fire
+[00:06:04] 364.46,FinalBlow,AllMike,Sub1,Primary Fire
+[00:06:04] 364.98,FinalBlow,ǢŴŶŦǾŦǞ,Marshmallow,Primary Fire
+[00:06:07] 367.18,FinalBlow,ǢŴŶŦǾŦǞ,EONic,Primary Fire
+[00:06:07] 367.31,FinalBlow,FoldupRex,Clem,Secondary Fire
+[00:06:49] 409.49,FinalBlow,AllMike,EONic,Primary Fire
+[00:06:54] 414.91,FinalBlow,Clem,ǢŴŶŦǾŦǞ,Primary Fire
+[00:06:56] 416.67,FinalBlow,Jinx,Clem,Ultimate
+[00:06:56] 416.80,FinalBlow,Jinx,BouncyBear,Ultimate
+[00:06:56] 416.94,FinalBlow,Jinx,Marshmallow,Ultimate
+[00:06:58] 418.62,FinalBlow,AllMike,Monster,Primary Fire
+[00:07:01] 421.36,FinalBlow,AllMike,Sub1,Primary Fire
+[00:07:28] 448.58,FinalBlow,EONic,AllMike,Ability 1
+[00:07:30] 450.61,FinalBlow,Jinx,Monster,Secondary Fire
+[00:07:31] 451.10,FinalBlow,FoldupRex,Clem,Secondary Fire
+[00:07:42] 462.22,FinalBlow,Jinx,Sub1,Secondary Fire
+[00:07:52] 472.11,FinalBlow,AllMike,EONic,Primary Fire
+[00:08:14] 494.80,FinalBlow,BouncyBear,AllMike,Primary Fire
+[00:08:19] 499.66,FinalBlow,Clem,AfterShock,Ultimate
+[00:08:19] 499.95,FinalBlow,EONic,FoldupRex,Primary Fire
+[00:08:22] 502.54,FinalBlow,Sub1,ǢŴŶŦǾŦǞ,Secondary Fire
+[00:08:50] 530.61,FinalBlow,AllMike,Sub1,Primary Fire
+[00:08:51] 531.09,FinalBlow,ǢŴŶŦǾŦǞ,Clem,Ultimate
+[00:09:01] 541.29,FinalBlow,ǢŴŶŦǾŦǞ,EONic,Primary Fire
+[00:09:03] 543.85,FinalBlow,FoldupRex,Marshmallow,Secondary Fire
+[00:09:05] 545.95,FinalBlow,DreamWave,Monster,Primary Fire
+[00:09:06] 546.37,FinalBlow,Monster,AllMike,Secondary Fire
+[00:09:07] 547.04,FinalBlow,ǢŴŶŦǾŦǞ,BouncyBear,Primary Fire
+[00:09:10] 550.66,FinalBlow,ǢŴŶŦǾŦǞ,Clem,Primary Fire
+[00:09:19] 559.47,FinalBlow,ǢŴŶŦǾŦǞ,Sub1,Primary Fire
+[00:09:31] 571.81,FinalBlow,Jinx,EONic,Primary Fire
+[00:09:33] 573.98,FinalBlow,Jinx,Clem,Primary Fire
+[00:09:38] 578.61,FinalBlow,FoldupRex,Sub1,Secondary Fire
+[00:09:40] 580.45,FinalBlow,DreamWave,Monster,Ability 2
+[00:09:45] 585.09,FinalBlow,AllMike,Marshmallow,Primary Fire
+[00:09:46] 586.53,FinalBlow,ǢŴŶŦǾŦǞ,BouncyBear,Ultimate
+[00:12:21] 741.95,FinalBlow,BouncyBear,DreamWave,Primary Fire
+[00:12:22] 742.34,FinalBlow,Clem,AfterShock,Primary Fire
+[00:12:23] 743.28,FinalBlow,Sub1,AllMike,Secondary Fire
+[00:12:27] 747.65,FinalBlow,Clem,Jinx,Primary Fire
+[00:12:27] 747.81,FinalBlow,Monster,ǢŴŶŦǾŦǞ,Secondary Fire
+[00:12:30] 750.73,FinalBlow,EONic,FoldupRex,Primary Fire
+[00:13:11] 791.58,FinalBlow,Jinx,Clem,Primary Fire
+[00:13:19] 799.01,FinalBlow,Monster,AllMike,Primary Fire
+[00:13:23] 803.68,FinalBlow,Marshmallow,Jinx,Primary Fire
+[00:13:24] 804.77,FinalBlow,EONic,AfterShock,Primary Fire
+[00:13:28] 808.30,FinalBlow,Sub1,FoldupRex,Secondary Fire
+[00:13:29] 809.15,FinalBlow,Marshmallow,DreamWave,Primary Fire
+[00:13:32] 812.02,FinalBlow,EONic,ǢŴŶŦǾŦǞ,Primary Fire
+[00:14:02] 842.40,FinalBlow,Jinx,BouncyBear,Primary Fire
+[00:14:10] 850.03,FinalBlow,Jinx,EONic,Primary Fire
+[00:14:12] 852.72,FinalBlow,Sub1,AllMike,Secondary Fire
+[00:14:16] 856.38,FinalBlow,FoldupRex,Sub1,Secondary Fire
+[00:14:18] 858.46,FinalBlow,Marshmallow,Jinx,Melee
+[00:14:20] 860.22,FinalBlow,ǢŴŶŦǾŦǞ,Monster,Ultimate
+[00:14:24] 864.37,FinalBlow,ǢŴŶŦǾŦǞ,Marshmallow,Primary Fire
+[00:14:30] 870.48,FinalBlow,AfterShock,Clem,Secondary Fire
+[00:15:13] 913.38,FinalBlow,Monster,FoldupRex,Primary Fire
+[00:15:17] 917.71,FinalBlow,Monster,AllMike,Primary Fire
+[00:15:21] 921.47,FinalBlow,Clem,AfterShock,Primary Fire
+[00:15:23] 923.57,FinalBlow,BouncyBear,ǢŴŶŦǾŦǞ,Melee
+[00:15:26] 926.90,FinalBlow,Clem,Jinx,Ability 2
+[00:15:31] 931.66,FinalBlow,Sub1,DreamWave,Secondary Fire
+[00:16:02] 962.73,FinalBlow,ǢŴŶŦǾŦǞ,Sub1,Primary Fire
+[00:16:06] 966.02,FinalBlow,Marshmallow,FoldupRex,Primary Fire
+[00:16:10] 970.30,FinalBlow,BouncyBear,AllMike,Primary Fire
+[00:16:20] 980.21,FinalBlow,Clem,DreamWave,Primary Fire
+[00:16:24] 984.80,FinalBlow,Clem,FoldupRex,Ultimate
+[00:16:27] 987.60,FinalBlow,Marshmallow,AfterShock,Primary Fire
+[00:16:28] 988.49,FinalBlow,Marshmallow,ǢŴŶŦǾŦǞ,Primary Fire
+[00:16:30] 990.46,FinalBlow,Jinx,Monster,Ultimate
+[00:16:31] 991.85,FinalBlow,EONic,AllMike,Ability 1
+[00:16:33] 993.39,FinalBlow,Marshmallow,Jinx,Primary Fire
