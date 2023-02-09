@@ -51,7 +51,7 @@ SUPPORT_HEROES = [
 
 
 class Player:
-    """A player class that stores the data of a player.
+    """A player class that calculates a player's various statistics.
 
     Attributes
     ----------
@@ -87,7 +87,7 @@ class Player:
     set_role()
         Sets the role of the player based on the heroes they played.
     set_ult_time_stats()
-        Sets the timing, time held, and time to stats of the player's ultimates.
+        Sets the time related stats of the player's ultimates.
     set_final_stats()
         Sets the final stats of the player.
     set_stats_per_minute()

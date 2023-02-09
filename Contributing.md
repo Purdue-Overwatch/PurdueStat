@@ -1,54 +1,54 @@
 # Contributing
 
-## Joining the team
+## Introduction
 
-So you want to help out with PurdueStat? That's awesome! We're always looking for new contributors, and we're glad you're interested in helping out. PurdueStat's code is designed to be accessible to everyone, so don't worry if you are new to programming! This document will explain how to get started with development, and how to submit a pull request. If you have any questions, don't hesitate to reach out on Discord at park#0001.
+Welcome to the team! This document will explain how to get started with development. If you have any questions, don't hesitate to contact me on Discord at park#0001.
+
+___
 
 ## Setup
 
-If you are already familiar with installing packages via pip, you can skip this section after creating a virtual environment and/or installing packages from `requirements.txt`. If not, continue reading.
+> **Prerequisites**: `python3`, `pip3`, `make`.
 
-There are two methods of setting up a development environment for PurdueStat. The first is to install the packages within a virtual environment, and the second is to install the packages globally. We recommend using a virtual environment, because it will allow you to contain the packages locally. This means that you can install the packages without affecting your global python installation, which could be useful if you are working on other projects that use different versions of the same packages.
-
-### Prerequisites
-
-- python 3.x and pip3 (python 3.11 was used for development)
+This section will walk you through how to install the dependencies with and without the use of a virtual environment.
 
 ### Method 1: Using a virtual environment (recommended)
 
-**You may use a command line tool such as `direnv` to automatically activate/deactivate the virtual environment for you, but it is not required.**
+1. Verify that you are in the root directory of the repo and run `make virtualenv` in your command line.
+2. Activate the virtual environment by running `source .venv/bin/activate` in your command line.
 
-- Verify that you are in the root directory of the repo and run `make virtualenv` in your command line.
-  - This creates a virtual environment in your directory called `.venv`, and installs the packages from `requirements.txt` into it.
-- Activate the virtual environment by running `source .venv/bin/activate` in your command line.
-  - If using an unmodified shell, you should see `(venv)` appear at the beginning of your command line. This means that you are now in the virtual environment.
-  - If you are using a modified shell or you do not see the name of the environment, you can run `echo $VIRTUAL_ENV` to verify that you are in the virtual environment.
+When you want to disable to environment, run `deactivate` to turn it off.
+
+> _CLI tools like_ `direnv` _can automatically activate and deactivate your virtual environment for you._
 
 ### Method 2: Installing packages globally
 
-  **This is not the recommended method of installation, as it will install the packages globally and may affect other projects you are working on.**
+1. Run `pip3 install -r requirements.txt` to install package dependencies
 
-- Step 1: Install python3 and pip3
-- Step 2: Run `python3 install -r requirements.txt` to install package dependencies
-  - Depending on your system, you may need to run `pip3 install -r requirements.txt` instead
+Depending on your system, you may need to subsititute `pip3` with either `pip` or `python3`.
 
-That's it! If you opted to use a virtual environment, you can deactivate it by running `deactivate` in your command line. If you are using a modified shell, you may need to run `exit` to exit the virtual environment.
+___
 
 ## Development
 
+### Making changes
+
+Before starting to make changes, please create your own branch from `develop`. Any attempts to push changes to `develop` or `main` will automatically be rejected.
+
 ### Code style
 
-PurdueStat uses the [black](https://www.github.com/psf/black) code formatter. This means that all code is formatted using black before being committed. This is done automatically by the [pre-commit](https://github.com/pre-commit) hook whenever you commit changes, but you can manually run black by entering `black .` into your command line. This can be useful if you want to see how the formatted code looks before you commit.
+PurdueStat adheres to [black](https://www.github.com/psf/black)'s uncompromising style conventions. This is done automatically by the [pre-commit](https://github.com/pre-commit) hook whenever you commit changes, but you can manually run black by entering `black .` into your command line.
 
 ### Documentation
 
-All functions and classes should be documented using PEP 257 style docstrings. This means that the first line of the docstring should be a short description of the function or class, and the rest of the docstring should be a detailed explanation of the function or class. For example:
+PurdueStat is documented using modified [PEP 257](https://peps.python.org/pep-0257/) style docstrings. I will not provide an exact style guide, just do your best to follow any existing documentation! The most important part of any documentation is keeping it detailed and consistent.
 
-  ```python
-  def test_function():
-      """This is a short description of the function.
+### Committing
 
-      This is a detailed explanation of the function. It should explain what the function does, and how it does it.
-      """
-      pass
-  ```
+When you run `git commit`, a series of commit hooks specified in `.pre-commit-config.yaml` will run and multiple pass/skip/fail messages will show up in your console. Some errors can be corrected automatically, so you might just need to restage any modified files before trying to commit again.
+
+___
+
+To merge your changes, simply submit a pull request with a detailed explanation of what you've changed. For any major updates, please open an issue beforehand to explain what kind of changes you'd like to make!
+
+Submitting a pull request does not guarantee it will be merged, and we reserve the right to deny a pull request for any reason.

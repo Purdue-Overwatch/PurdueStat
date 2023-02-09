@@ -26,9 +26,7 @@ Everyone on the PurdueStat team is a full time student at Purdue University, bro
 
 As full time students, our priority is, has been, and will always be our education. This means that development on PurdueStat does not (and likely will never) have a regular schedule.
 
-That being said, we recognize that the Overwatch community is full of brilliant people, and we encourage you to create pull requests if you'd like to contribute! Please be sure to properly document your code, follow the coding style conventions used in this project, and write a detailed explanation of what changes you've made. For major updates, please open an issue beforehand to explain what kind of changes you'd like to make.
-
-Submitting a pull request does not guarantee it will be merged, and we reserve the right to reject any request without explanation.
+That being said, we recognize that the Overwatch community is full of brilliant people, and pull requests are welcome! Check `Contributing.md` for more details on how to contribute.
 
 ## License
 
