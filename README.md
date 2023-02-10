@@ -26,7 +26,7 @@ Everyone on the PurdueStat team is a full time student at Purdue University, bro
 
 As full time students, our priority is, has been, and will always be our education. This means that development on PurdueStat does not (and likely will never) have a regular schedule.
 
-That being said, we recognize that the Overwatch community is full of brilliant people, and pull requests are welcome! Check `Contributing.md` for more details on how to contribute.
+That being said, we recognize that the Overwatch community is full of brilliant people, and pull requests are encouraged! Check `Contributing.md` for more details on how to contribute.
 
 ## License
 
