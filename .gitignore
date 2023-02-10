@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # OS generated files
-.DS_Store?
+.DS_Store/
 
 # Virtual Environment
 .env
