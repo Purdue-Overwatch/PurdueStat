@@ -8,7 +8,7 @@ repos:
     -   id: mixed-line-ending
     -   id: end-of-file-fixer
     -   id: no-commit-to-branch
-        args: [--branch, main]
+        args: [--branch, develop, --branch, main]
     -   id: trailing-whitespace
     -   id: check-docstring-first
     -   id: requirements-txt-fixer
