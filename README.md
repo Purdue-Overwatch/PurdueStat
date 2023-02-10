@@ -8,7 +8,8 @@ If you've played on a competitive Overwatch team since 2020, you're probably fam
 
 Everyone on the PurdueStat team is a full time student at Purdue University, brought together by the Purdue University Overwatch Club. 
 
-- Josh "Park" Park: Hi! I'm Josh, and I'm a second-year student at Purdue studying Math & CS. I am currrently on a co-op at Sub-Zero Group Inc. working as a Software Quality Assurance Co-op until August 2023! I've been playing Overwatch since 2016, and I was team captain for Purdue's White Team in fall of freshman year. I also became president of the club during that spring semester, but gave up my position to go on my co-op in January of 2023. I first learned how to code during my senior year of high school, and was hired as an Application Support Developer at Purdue University's Rosen Center for Advanced Computing. My personal website is linked [here](https://www.joshpark.dev), and you can also contact me on Discord at park#0001!
+- Josh Park (joshpark8): 
+  - About me: Hi! I'm Josh, and I am one of the founding members of PurdueStat. I'm a second-year student at Purdue studying Math and CS. I was previously a team captain for the Purdue Overwatch Club, leading my team to a conference championship and third place at nationals. I also served as the president of the Purdue Overwatch Club for around a year, but I surrendered my position to work at Sub-Zero Group Inc. as a Software QA Co-op, where I am now. When I am at Purdue, I work as an Application Support Developer at Purdue's Rosen Center for Advanced Computing. If you'd like to learn more about me or get in touch, you can find my resume and links to my social media on my [website](https://www.joshpark.dev/)!
 
 ## Development
 
