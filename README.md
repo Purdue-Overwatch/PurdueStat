@@ -8,7 +8,8 @@ If you've played on a competitive Overwatch team since 2020, you're probably fam
 
 Everyone on the PurdueStat team is a full time student at Purdue University, brought together by the Purdue University Overwatch Club.
 
-- [Josh Park](https://www.joshpark.dev) (joshpark8): Hi! I'm Josh, and I am one of the founding members of PurdueStat. I'm a second-year student at Purdue studying Math and CS. I was previously the president of the Purdue Overwatch Club for around a year, but gave up my position when I left for a co-op. 
+- [Josh Park](https://www.joshpark.dev) (joshpark8): Hi! I'm Josh, and I am one of the founding members of PurdueStat. I'm a second-year student at Purdue studying Math and CS, and I was previously the president of the Purdue Overwatch Club for 2 semesters. I worked a lot on the data aggregation portion of the project, which is done entirely in python.
+
 ## Development
 
 As full time students, our priority is, has been, and will always be our education. This means that development on PurdueStat does not (and likely will never) have a regular schedule.
