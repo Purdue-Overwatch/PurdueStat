@@ -1,6 +1,5 @@
-"""
-A game class that stores the game database, the players in the game, and the teams in the game.
-"""
+"""A game class that stores the game database, the players in the game, and the
+teams in the game."""
 __author__ = "Park"
 
 from player import Player
@@ -28,7 +27,6 @@ class Map:
     -------
     set_players()
         Adds players to teams.
-
     """
 
     def __init__(self, game_db):
@@ -51,7 +49,8 @@ class Map:
                 player.print_all_attributes()
 
         self.players = team_dict
-        print(self.players)
+
+    #    print(self.players)
 
 
 # Snippets

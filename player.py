@@ -104,7 +104,7 @@ class Player:
         self.team = team
         self.data = game_db[team]["_players"][index]
         self.name = self.data["_name"]
-        self.heroes_played = None
+        self.heroes_played = []
         self.role = None
         self.avg_time_to_ult = None
         self.avg_time_ult_held = None
@@ -137,27 +137,29 @@ class Player:
         held_ult_arr = []
         to_ult_arr = []
         prev_charge = 0
+        round_start = 0
         prev_time = 0
-        round_index = -1  # offset by 1 to account for the first round
+        start_time = 0
+        earn_time = 0
+
+        round_index = -1  # offset by 1 to account for first round
 
         for charge, time in zip(ult_charge_arr, time_stamp_arr):
-            # the following is designed to prevent unnecessary checks while maintaining readability.
-            # i think i could have made it more efficient, but it would be hard to understand.
             round_starting = time - prev_time > 3
             ult_earned = prev_charge != 100 and charge == 100
             ult_used = prev_charge == 100 and charge == 0
 
-            if round_starting:  # new round?
+            if round_starting:
                 round_index += 1
                 ult_timings.append([])
                 ult_timings[round_index] = []
                 round_start = time
                 start_time = time
-            elif ult_earned:  # ult earned?
+            elif ult_earned:
                 earn_time = time
                 time_to_ult = time - start_time
                 to_ult_arr.append(time_to_ult)
-            elif ult_used:  # ult used?
+            elif ult_used:
                 start_time = time
                 time_ult_held = time - earn_time
                 ult_timings[round_index].append(
