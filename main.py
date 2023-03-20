@@ -1,20 +1,20 @@
-# Main class
+"""Main class."""
 __author__ = "Park"
 
-import os
-import pymongo
-from player import Player
-from map import Map
+from src.map import Map
 
-address = os.getenv("PURDUESTAT_MONGO_ADDRESS")
-client = pymongo.MongoClient(address)
-db = client["game_server"]
-collection = db["games"]
-GAME_DB = collection.find_one({"_id": "a1a809890993"})  # take in id(s)
-
+MAPS = ["a1a809890993"]
 DB_TEAMS = ["_team_one", "_team_two"]
 DB_PLAYERS = "_players"
 
+
+def main(**argv):
+    """Main function."""
+    maps = argv
+    for map_id in MAPS:
+        game = Map(map_id)
+        game.set_players()
+
+
 if __name__ == "__main__":
-    map = Map(GAME_DB)
-    map.set_players()
+    main()

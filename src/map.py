@@ -1,11 +1,17 @@
-"""
-A game class that stores the game database, the players in the game, and the teams in the game.
-"""
+"""A game class that stores the game database, the players in the game, and the
+teams in the game."""
 __author__ = "Park"
 
-from player import Player
+import os
 
+import pymongo
+
+from src.player import Player
+
+MONGOCLIENT = pymongo.MongoClient(os.getenv("PURDUESTAT_MONGO_ADDRESS"))
 TEAM_LIST = ["_team_one", "_team_two"]
+
+collection = MONGOCLIENT["game_server"]["games"]
 
 
 class Map:
@@ -15,6 +21,8 @@ class Map:
 
     Attributes
     ----------
+    map_id : str
+        the map id
     game_db : dict
         the game database
     players : dict
@@ -28,11 +36,11 @@ class Map:
     -------
     set_players()
         Adds players to teams.
-
     """
 
-    def __init__(self, game_db):
-        self.game_db = game_db
+    def __init__(self, map_id: str):
+        self.map_id = map_id
+        self.game_db = collection.find_one({"_id": map_id})
         self.players = None
         self.team1 = None
         self.team2 = None

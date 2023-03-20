@@ -128,7 +128,7 @@ class Player:
         elif hero in SUPPORT_HEROES:
             self.role = "Support"
 
-    def set_ult_time_stats(self):
+    def set_ult_time_stats(self):  # FIXME: this is a mess, probably better to split up
         """Sets the time related stats of the player's ultimates."""
         ult_charge_arr = self.data["_ultimate_charge"]
         time_stamp_arr = self.game_db["_time_stamps"]
@@ -141,11 +141,9 @@ class Player:
         round_index = -1  # offset by 1 to account for the first round
 
         for charge, time in zip(ult_charge_arr, time_stamp_arr):
-            # the following is designed to prevent unnecessary checks while maintaining readability.
-            # i think i could have made it more efficient, but it would be hard to understand.
-            round_starting = time - prev_time > 3
-            ult_earned = prev_charge != 100 and charge == 100
-            ult_used = prev_charge == 100 and charge == 0
+            round_starting = (time - prev_time) > 3
+            ult_earned = (prev_charge != 100) and (charge == 100)
+            ult_used = (prev_charge == 100) and (charge == 0)
 
             if round_starting:  # new round?
                 round_index += 1
