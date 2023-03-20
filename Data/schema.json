@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "player": {
+            "properties": {
+                "avg_time_to_ult": {
+                    "type": "number"
+                },
+                "avg_time_ult_held": {
+                    "type": "number"
+                },
+                "final_stats": {
+                    "type": "object"
+                },
+                "heroes_played": {
+                    "type": "object"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "role": {
+                    "type": "string"
+                },
+                "stats_per_minute": {
+                    "type": "object"
+                },
+                "ult_timings": {
+                    "items": {},
+                    "type": "array"
+                }
+            },
+            "required": [
+                "avg_time_to_ult",
+                "avg_time_ult_held",
+                "final_stats",
+                "heroes_played",
+                "name",
+                "role",
+                "stats_per_minute",
+                "ult_timings"
+            ],
+            "type": "object"
+        }
+    },
+    "properties": {
+        "map_name": {
+            "type": "string"
+        },
+        "map_score": {
+            "items": {},
+            "type": "array"
+        },
+        "map_type": {
+            "type": "string"
+        },
+        "player1": {
+            "$ref": "#/definitions/player"
+        },
+        "player10": {
+            "$ref": "#/definitions/player"
+        },
+        "player2": {
+            "$ref": "#/definitions/player"
+        },
+        "player3": {
+            "$ref": "#/definitions/player"
+        },
+        "player4": {
+            "$ref": "#/definitions/player"
+        },
+        "player5": {
+            "$ref": "#/definitions/player"
+        },
+        "player6": {
+            "$ref": "#/definitions/player"
+        },
+        "player7": {
+            "$ref": "#/definitions/player"
+        },
+        "player8": {
+            "$ref": "#/definitions/player"
+        },
+        "player9": {
+            "$ref": "#/definitions/player"
+        }
+    },
+    "required": [
+        "map_name",
+        "map_score",
+        "map_type",
+        "player1",
+        "player2",
+        "player3",
+        "player4",
+        "player5",
+        "player6",
+        "player7",
+        "player8",
+        "player9",
+        "player10"
+    ],
+    "type": "object"
+}

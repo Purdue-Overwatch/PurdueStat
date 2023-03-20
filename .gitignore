@@ -4,15 +4,15 @@ __pycache__/
 *$py.class
 
 # OS generated files
-.DS_Store?
+**/.DS_Store?
 
 # Virtual Environment
-.env
-.envrc
-.venv/
-venv/
-.env/
 env/
+.env*
+.env/
+.envrc
+venv/
+.venv/
 
 # IDE generated files
 .idea/
@@ -20,7 +20,7 @@ env/
 
 # Development stuff
 development/
-dev_*
+**/dev_*
 
 # Old stuff
 Archive/
