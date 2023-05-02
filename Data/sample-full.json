@@ -985,27 +985,6 @@
         "player9": {
             "avg_time_to_ult": 99.375,
             "avg_time_ult_held": 12.125,
-            "final_stats": {
-                "all_damage_dealt": 19986,
-                "barrier_damage_dealt": 6018.33,
-                "cooldown1": 0,
-                "cooldown2": 3.48,
-                "damage_blocked": 0,
-                "damage_taken": 6765.77,
-                "deaths": 11,
-                "eliminations": 39,
-                "environmental_deaths": 0,
-                "environmental_kills": 0,
-                "final_blows": 28,
-                "healing_dealt": 1583.12,
-                "healing_received": 3571.43,
-                "hero_damage_dealt": 13967.67,
-                "objective_kills": 16,
-                "solo_kills": 8,
-                "ultimate_charge": 2,
-                "ultimates_earned": 8,
-                "ultimates_used": 8
-            },
             "heroes_played": {
                 "Reaper": 534,
                 "Tracer": 395,
@@ -1016,27 +995,6 @@
             },
             "name": "Jinx",
             "role": "hitscan_dps",
-            "stats_per_minute": {
-                "all_damage_dealt": 1290.8073196986008,
-                "barrier_damage_dealt": 388.69730893433797,
-                "cooldown1": 0,
-                "cooldown2": 0.2247578040904198,
-                "damage_blocked": 0,
-                "damage_taken": 436.97115177610334,
-                "deaths": 0.7104413347685683,
-                "eliminations": 2.518837459634015,
-                "environmental_deaths": 0,
-                "environmental_kills": 0,
-                "final_blows": 1.8083961248654468,
-                "healing_dealt": 102.24671689989235,
-                "healing_received": 230.66286329386438,
-                "hero_damage_dealt": 902.1100107642627,
-                "objective_kills": 1.0333692142088267,
-                "solo_kills": 0.5166846071044133,
-                "ultimate_charge": 0.12917115177610333,
-                "ultimates_earned": 0.5166846071044133,
-                "ultimates_used": 0.5166846071044133
-            },
             "ult_timings": [
                 [
                     [
@@ -1080,11 +1038,55 @@
         }
     },
     {
+        "final_stats": {
+            "all_damage_dealt": 19986,
+            "barrier_damage_dealt": 6018.33,
+            "cooldown1": 0,
+            "cooldown2": 3.48,
+            "damage_blocked": 0,
+            "damage_taken": 6765.77,
+            "deaths": 11,
+            "eliminations": 39,
+            "environmental_deaths": 0,
+            "environmental_kills": 0,
+            "final_blows": 28,
+            "healing_dealt": 1583.12,
+            "healing_received": 3571.43,
+            "hero_damage_dealt": 13967.67,
+            "objective_kills": 16,
+            "solo_kills": 8,
+            "ultimate_charge": 2,
+            "ultimates_earned": 8,
+            "ultimates_used": 8
+        },
         "map": "King's Row",
         "map_score": [
             0,
             0
         ],
+        "stats_per_minute": {
+            "all_damage_dealt": 1290.8073196986008,
+            "barrier_damage_dealt": 388.69730893433797,
+            "cooldown1": 0,
+            "cooldown2": 0.2247578040904198,
+            "damage_blocked": 0,
+            "damage_taken": 436.97115177610334,
+            "deaths": 0.7104413347685683,
+            "eliminations": 2.518837459634015,
+            "environmental_deaths": 0,
+            "environmental_kills": 0,
+            "final_blows": 1.8083961248654468,
+            "healing_dealt": 102.24671689989235,
+            "healing_received": 230.66286329386438,
+            "hero_damage_dealt": 902.1100107642627,
+            "objective_kills": 1.0333692142088267,
+            "solo_kills": 0.5166846071044133,
+            "ultimate_charge": 0.12917115177610333,
+            "ultimates_earned": 0.5166846071044133,
+            "ultimates_used": 0.5166846071044133
+        }
+    },
+    {
         "map_type": "Hybrid",
         "player1": {
             "avg_time_to_ult": 90.4,
@@ -2003,27 +2005,6 @@
         "player9": {
             "avg_time_to_ult": 87.42857142857143,
             "avg_time_ult_held": 16,
-            "final_stats": {
-                "all_damage_dealt": 18609.07,
-                "barrier_damage_dealt": 6714.22,
-                "cooldown1": 2.83,
-                "cooldown2": 0,
-                "damage_blocked": 0,
-                "damage_taken": 4540.52,
-                "deaths": 7,
-                "eliminations": 29,
-                "environmental_deaths": 0,
-                "environmental_kills": 0,
-                "final_blows": 20,
-                "healing_dealt": 0,
-                "healing_received": 0,
-                "hero_damage_dealt": 11894.85,
-                "objective_kills": 14,
-                "solo_kills": 2,
-                "ultimate_charge": 3,
-                "ultimates_earned": 7,
-                "ultimates_used": 7
-            },
             "heroes_played": {
                 "Cassidy": 534,
                 "heroes": [
@@ -2032,27 +2013,6 @@
             },
             "name": "Jinx",
             "role": "hitscan_dps",
-            "stats_per_minute": {
-                "all_damage_dealt": 1465.2811023622048,
-                "barrier_damage_dealt": 528.6787401574803,
-                "cooldown1": 0.22283464566929134,
-                "cooldown2": 0,
-                "damage_blocked": 0,
-                "damage_taken": 357.5212598425197,
-                "deaths": 0.5511811023622047,
-                "eliminations": 2.283464566929134,
-                "environmental_deaths": 0,
-                "environmental_kills": 0,
-                "final_blows": 1.574803149606299,
-                "healing_dealt": 0,
-                "healing_received": 0,
-                "hero_damage_dealt": 936.6023622047245,
-                "objective_kills": 1.1023622047244095,
-                "solo_kills": 0.15748031496062992,
-                "ultimate_charge": 0.23622047244094488,
-                "ultimates_earned": 0.5511811023622047,
-                "ultimates_used": 0.5511811023622047
-            },
             "ult_timings": [
                 [
                     [
