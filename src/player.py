@@ -128,7 +128,7 @@ class Player:
         elif hero in SUPPORT_HEROES:
             self.role = "Support"
 
-    def set_ult_time_stats(self):  # FIXME: this is a mess, probably better to split up
+    def set_ult_time_stats(self):
         """Sets the time related stats of the player's ultimates."""
         ult_charge_arr = self.data["_ultimate_charge"]
         time_stamp_arr = self.game_db["_time_stamps"]
@@ -145,17 +145,17 @@ class Player:
             ult_earned = (prev_charge != 100) and (charge == 100)
             ult_used = (prev_charge == 100) and (charge == 0)
 
-            if round_starting:  # new round?
+            if round_starting:
                 round_index += 1
                 ult_timings.append([])
                 ult_timings[round_index] = []
                 round_start = time
                 start_time = time
-            elif ult_earned:  # ult earned?
+            elif ult_earned:
                 earn_time = time
                 time_to_ult = time - start_time
                 to_ult_arr.append(time_to_ult)
-            elif ult_used:  # ult used?
+            elif ult_used:
                 start_time = time
                 time_ult_held = time - earn_time
                 ult_timings[round_index].append(
@@ -169,12 +169,8 @@ class Player:
             prev_charge = charge
             prev_time = time
 
-        avg_time_to_ult = round(
-            sum(to_ult_arr) / len(to_ult_arr), 2
-        )  # FIXME: time part is wrong
-        avg_time_ult_held = round(
-            sum(held_ult_arr) / len(held_ult_arr), 2
-        )  # FIXME: time part is wrong
+        avg_time_to_ult = round(sum(to_ult_arr) / len(to_ult_arr), 2)
+        avg_time_ult_held = round(sum(held_ult_arr) / len(held_ult_arr), 2)
 
         self.avg_time_to_ult = float(decimal.Decimal(avg_time_to_ult))
         self.avg_time_ult_held = float(decimal.Decimal(avg_time_ult_held))
