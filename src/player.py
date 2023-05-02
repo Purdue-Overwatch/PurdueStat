@@ -40,7 +40,7 @@ DAMAGE_HEROES = [
 ]
 
 SUPPORT_HEROES = [
-    "L\u00c3\u00bacio",
+    "L\u00facio",
     "Brigitte",
     "Mercy",
     "Moira",
@@ -117,7 +117,7 @@ class Player:
         self.set_ult_time_stats()  # avg_time_to_ult, avg_time_ult_held, ult_timings
         self.set_in_game_stats()  # final_stats, stats_per_minute
 
-    def set_heroes_played(self):
+    def set_heroes_played(self):  # TODO: set hero play times
         """Sets the heroes the player played."""
         heroes = set(self.data["_heroes"])
         self.heroes_played = list(heroes)
@@ -228,6 +228,19 @@ class Player:
 
         self.final_stats = final_stats
         self.stats_per_minute = stats_per_minute
+
+    def output(self) -> dict:
+        player_dict = {
+            "name": self.name,
+            "heroes_played": self.heroes_played,
+            "role": self.role,
+            "avg_time_to_ult": self.avg_time_to_ult,
+            "avg_time_ult_held": self.avg_time_ult_held,
+            "ult_timings": self.ult_timings,
+            "final_stats": self.final_stats,
+            "stats_per_minute": self.stats_per_minute,
+        }
+        return player_dict
 
     #################################### DEBUGGING METHODS ####################################
 

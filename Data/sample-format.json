@@ -79,27 +79,27 @@
             "final_stats": {},
             "heroes_played": {},
             "name": "name8",
-            "player10": {
-                "avg_time_to_ult": 0,
-                "avg_time_ult_held": 0,
-                "final_stats": {},
-                "heroes_played": {},
-                "name": "name10",
-                "role": "role10",
-                "stats_per_minute": {},
-                "ult_timings": []
-            },
-            "player9": {
-                "avg_time_to_ult": 0,
-                "avg_time_ult_held": 0,
-                "final_stats": {},
-                "heroes_played": {},
-                "name": "name9",
-                "role": "role9",
-                "stats_per_minute": {},
-                "ult_timings": []
-            },
             "role": "role8",
+            "stats_per_minute": {},
+            "ult_timings": []
+        },
+        "player9": {
+            "avg_time_to_ult": 0,
+            "avg_time_ult_held": 0,
+            "final_stats": {},
+            "heroes_played": {},
+            "name": "name9",
+            "role": "role9",
+            "stats_per_minute": {},
+            "ult_timings": []
+        },
+        "player10": {
+            "avg_time_to_ult": 0,
+            "avg_time_ult_held": 0,
+            "final_stats": {},
+            "heroes_played": {},
+            "name": "name10",
+            "role": "role10",
             "stats_per_minute": {},
             "ult_timings": []
         }

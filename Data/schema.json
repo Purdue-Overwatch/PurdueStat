@@ -13,7 +13,7 @@
                     "type": "object"
                 },
                 "heroes_played": {
-                    "type": "object"
+                    "type": "array"
                 },
                 "name": {
                     "type": "string"
@@ -56,9 +56,6 @@
         "player1": {
             "$ref": "#/definitions/player"
         },
-        "player10": {
-            "$ref": "#/definitions/player"
-        },
         "player2": {
             "$ref": "#/definitions/player"
         },
@@ -82,12 +79,12 @@
         },
         "player9": {
             "$ref": "#/definitions/player"
+        },
+        "player10": {
+            "$ref": "#/definitions/player"
         }
     },
     "required": [
-        "map_name",
-        "map_score",
-        "map_type",
         "player1",
         "player2",
         "player3",
