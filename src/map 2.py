@@ -41,9 +41,19 @@ class Map:
     def __init__(self, map_id: str):
         self.map_id = map_id
         self.game_db = collection.find_one({"_id": map_id})
+        self.map_name = self.game_db["_map_name"]
+        self.round_start_times = []
         self.players = None
         self.team1 = None
         self.team2 = None
+
+    def find_round_start_times(self):
+        """Finds the times when a new round starts."""
+        timestamps = self.game_db["_time_stamps"]
+
+        for i in range(1, len(timestamps)):
+            if timestamps[i] - timestamps[i - 1] >= 5:
+                self.round_start_times.append(timestamps[i])
 
     def set_players(self):
         """Adds players to teams."""

@@ -51,7 +51,7 @@ SUPPORT_HEROES = [
 
 
 class Player:
-    """A player class that calculates a player's various statistics.
+    """A Player subclass of Map that calculates a player's various statistics.
 
     Attributes
     ----------
@@ -213,8 +213,8 @@ class Player:
         prev_time = 0
         start_time = time_stamps[0]
         for time in time_stamps:
-            if time - prev_time > 5:  # if new round
-                game_length += time - start_time  # add round length
+            if time - prev_time > 5 and prev_time != 0:  # if new round
+                game_length += prev_time - start_time  # add previous round length
                 start_time = time
             prev_time = time
         game_length += prev_time - start_time  # add last round
