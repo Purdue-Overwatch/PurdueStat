@@ -229,6 +229,8 @@ class Player:
         self.final_stats = final_stats
         self.stats_per_minute = stats_per_minute
 
+    #################################### DEBUGGING METHODS ####################################
+
     def print_all_attributes(self):
         """Prints all the player's attributes."""
         print(f"{self.name=}")
@@ -241,7 +243,7 @@ class Player:
         print(f"{json.dumps(self.stats_per_minute, indent=2)=}")
 
     def print_ticks(self):
-        """Prints the number of ticks in the game."""
+        """Prints the ticks with corresponding time and charge values."""
         for charge, (tick, time) in zip(
             self.data["_ultimate_charge"], enumerate(self.game_db["_time_stamps"])
         ):
