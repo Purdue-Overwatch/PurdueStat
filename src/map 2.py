@@ -69,7 +69,8 @@ class Map:
                 player.print_all_attributes()
 
         self.players = team_dict
-        print(self.players)
+
+    #    print(self.players)
 
 
 # Snippets

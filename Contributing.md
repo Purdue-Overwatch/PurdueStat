@@ -33,7 +33,7 @@ ___
 
 ### Making changes
 
-Before starting to make changes, please create your own branch from `develop`. Any attempts to push changes to `develop` or `main` will automatically be rejected.
+Before starting to make changes, please create your own branch from `develop`. Any attempts to push changes to `main` will automatically be rejected.
 
 ### Code style
 
