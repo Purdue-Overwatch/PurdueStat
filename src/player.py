@@ -112,6 +112,11 @@ class Player:
         self.stats_per_minute = {}
         self.ult_timings = None
 
+        self.set_heroes_played()  # heroes_played
+        self.set_role()  # role
+        self.set_ult_time_stats()  # avg_time_to_ult, avg_time_ult_held, ult_timings
+        self.set_in_game_stats()  # final_stats, stats_per_minute
+
     def set_heroes_played(self):
         """Sets the heroes the player played."""
         heroes = set(self.data["_heroes"])
@@ -224,23 +229,16 @@ class Player:
         self.final_stats = final_stats
         self.stats_per_minute = stats_per_minute
 
-    def set_all(self):
-        """Sets all the player's stats."""
-        self.set_heroes_played()  # heroes_played
-        self.set_role()  # role
-        self.set_ult_time_stats()  # avg_time_to_ult, avg_time_ult_held, ult_timings
-        self.set_in_game_stats()  # final_stats, stats_per_minute
-
     def print_all_attributes(self):
         """Prints all the player's attributes."""
-        print(f"name = {self.name}")
-        print(f"heroes_played = {self.heroes_played}")
-        print(f"role = {self.role}")
-        print(f"avg_time_to_ult = {self.avg_time_to_ult}")
-        print(f"avg_time_ult_held = {self.avg_time_ult_held}")
-        print(f"ult_timings = {self.ult_timings}")
-        print(f"final_stats = {json.dumps(self.final_stats, indent=2)}")
-        print(f"stats_per_minute = {json.dumps(self.stats_per_minute, indent=2)}")
+        print(f"{self.name=}")
+        print(f"{self.heroes_played=}")
+        print(f"{self.role=}")
+        print(f"{self.avg_time_to_ult=}")
+        print(f"{self.avg_time_ult_held=}")
+        print(f"{self.ult_timings=}")
+        print(f"{json.dumps(self.final_stats, indent=2)=}")
+        print(f"{json.dumps(self.stats_per_minute, indent=2)=}")
 
     def print_ticks(self):
         """Prints the number of ticks in the game."""

@@ -12,7 +12,7 @@ DB_PLAYERS = "_players"
 
 def main():
     """Main function."""
-    for map_id in MAPS:  # sys.argv[1:]:
+    for map_id in MAPS:  # replace MAPS with sys.argv[1:]:
         game = Map(map_id)
         game.set_players()
         print(game.map_name)
